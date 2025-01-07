@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <script src="analytics.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Quiz Game</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #4facfe, #00f2fe);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        .container {
-            width: 100%;
-            max-width: 400px; /* Matches your other pages' size */
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-        }
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-        header img {
-            max-width: 120px; /* Adjusted to match other pages */
-        }
-        .ads-container {
-            background: rgba(240, 240, 240, 0.9);
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        .ads-container::before {
-            content: "Advertisement";
-            display: block;
-            font-size: 12px;
-            color: #888;
-            margin-bottom: 5px;
-        }
-        .about-us {
-            padding: 15px;
-            text-align: center;
-        }
-        .about-us h1 {
-            font-size: 24px; /* Smaller title for mobile */
-            color: #0072ff;
-            margin-bottom: 10px;
-        }
-        .about-us p {
-            font-size: 14px; /* Smaller text size for mobile */
-            line-height: 1.5;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            background: rgba(255, 255, 255, 0.9);
-        }
-        footer .footer-links {
-            margin-bottom: 10px;
-        }
-        footer .footer-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 14px;
-            color: #0072ff;
-        }
-        footer .footer-links a:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        overflow-x: hidden;
+        position: relative;
+      }
+      body::after {
+        background: url(https://images.atmequiz.com/bg_quiz.jpg);
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.05;
+        min-height: 100vh;
+      }
+      .container {
+        width: 428px;
+        min-height: 100vh;
+        min-height: 100vh !important;
+        margin: 0 auto;
+        position: relative;
+        background-color: #0e0a5f;
+        z-index: 2;
+        height: auto;
+      }
+      header {
+        background: linear-gradient(180deg, #282d93, #15136e);
+        text-align: center;
+        box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%);
+        position: sticky; /* Makes the header sticky */
+        top: 0; /* Sticks to the top of the viewport */
+        z-index: 1000; /* Ensures it stays above other elements */
+        padding: 10px 0px;
+      }
+      header p {
+        margin: 0;
+      }
+      .ads-container {
+        background: rgba(240, 240, 240, 0.9);
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+      .ads-container::before {
+        content: "Advertisement";
+        display: block;
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+      .about-us {
+        padding: 15px;
+        text-align: center;
+      }
+      .about-us h1 {
+        font-size: 24px; /* Smaller title for mobile */
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      .about-us p {
+        font-size: 14px; /* Smaller text size for mobile */
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+      }
+      footer .footer-links {
+        margin-bottom: 10px;
+      }
+      footer .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+      }
+      footer .footer-links a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <img src="logo.png" alt="Quiz Game Logo">
-        </header>
-        <div class="ads-container">
-            <p>Your Ad Code Here</p>
+      <header>
+        <p>LOGO</p>
+      </header>
+      <div class="ads-container">
+        <p>Your Ad Code Here</p>
+      </div>
+      <div class="about-us">
+        <h1>About Quiz Game</h1>
+        <p>
+          Welcome to <strong>Quiz Game</strong>, your ultimate destination for
+          engaging and entertaining quizzes, informative articles, and much
+          more! At Quiz Game, we strive to bring you not only fun but also a
+          platform to test and improve your knowledge.
+        </p>
+        <p>
+          Our mission is to provide a seamless and enjoyable experience for quiz
+          enthusiasts while offering a chance to win exciting rewards. Whether
+          you're here to challenge your intellect or just to have fun, Quiz Game
+          is the place for you.
+        </p>
+        <p>
+          Thank you for choosing Quiz Game. Keep exploring, keep learning, and
+          keep winning!
+        </p>
+      </div>
+      <footer>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
         </div>
-        <div class="about-us">
-            <h1>About Quiz Game</h1>
-            <p>
-                Welcome to <strong>Quiz Game</strong>, your ultimate destination for engaging and entertaining quizzes, 
-                informative articles, and much more! At Quiz Game, we strive to bring you not only fun but also a platform 
-                to test and improve your knowledge.
-            </p>
-            <p>
-                Our mission is to provide a seamless and enjoyable experience for quiz enthusiasts while offering 
-                a chance to win exciting rewards. Whether you're here to challenge your intellect or just to have fun, 
-                Quiz Game is the place for you.
-            </p>
-            <p>
-                Thank you for choosing Quiz Game. Keep exploring, keep learning, and keep winning!
-            </p>
-        </div>
-        <footer>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-            </div>
-            <p>&copy; 2024 Quiz Game. All rights reserved.</p>
-        </footer>
+        <p style="color: #fff">&copy; 2024 Quiz Game. All rights reserved.</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+    
     <script src="analytics.js"></script>
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script defer id="jb-rewd-ad" src="https://mcm.justbaat.org/scripts/jb-rewarded-ad.min.js"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script defer id="jb-rewd-ad" src="https://mcm.justbaat.org/scripts/jb-rewarded-ad.min.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,36 +14,51 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #4facfe, #00f2fe);
-            color: #333;
+          
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
             overflow-x: hidden;
+            position: relative;
+            
         }
-
+        body::after {
+        background: url(https://images.atmequiz.com/bg_quiz.jpg);
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.05;
+        min-height: 100vh;
+      }
         .container {
-            width: 100%;
-            max-width: 400px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin: 20px;
+           
+        width: 428px;
+        min-height: 100vh;
+        min-height: 100vh !important;
+        margin: 0 auto;
+        position: relative;
+        background-color: #0e0a5f;
+        z-index: 2;
+        height: auto;
         }
-
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        header img {
-            max-width: 150px;
-        }
-
+          header {
+    background: linear-gradient(180deg, #282d93, #15136e);
+    text-align: center;
+    box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 10px 0px;
+}
+header p {
+    margin: 0;
+}
         .ads-container {
             background: rgba(240, 240, 240, 0.9);
             padding: 10px;
@@ -53,7 +67,6 @@
             border-top: 1px solid #ddd;
             border-bottom: 1px solid #ddd;
         }
-
         .ads-container::before {
             content: "Advertisement";
             display: block;
@@ -61,17 +74,14 @@
             color: #888;
             margin-bottom: 5px;
         }
-
         .age-confirmation {
             padding: 20px;
             text-align: center;
         }
-
         .age-confirmation h2 {
             font-size: 18px;
             margin-bottom: 20px;
         }
-
         .age-confirmation button {
             display: block;
             width: 100%;
@@ -86,77 +96,64 @@
             transition: transform 0.2s ease, background 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-
         .age-confirmation button:hover {
             transform: scale(1.05);
         }
-
         .age-confirmation .above-18 {
             background: #28a745;
         }
-
         .age-confirmation .above-18:hover {
             background: #218838;
         }
-
         .age-confirmation .below-18 {
             background: #dc3545;
         }
-
         .age-confirmation .below-18:hover {
             background: #c82333;
         }
-
         .article-section {
             padding: 20px;
-            background: #f9f9f9;
+           
             border-top: 1px solid #ddd;
             border-radius: 0 0 10px 10px;
             font-size: 14px;
-            color: #555;
+            color: #fff;
         }
-
         .article-section h3 {
             font-size: 18px;
             margin-bottom: 10px;
         }
-
         .article-section p {
             line-height: 1.6;
             margin-bottom: 10px;
         }
-
         footer {
             text-align: center;
             padding: 10px;
             font-size: 12px;
-            background: rgba(255, 255, 255, 0.9);
+           
         }
-
         footer .footer-links a {
             margin: 0 10px;
             text-decoration: none;
             font-size: 14px;
-            color: #0072ff;
+            color: #fff;
         }
-
         footer .footer-links a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <header>
-            <img src="logo.png" alt="Logo">
+         <header>
+           <p>LOGO</p>
         </header>
         <div class="ads-container">
-            <p>
-                <div id="gpt-passback">
-                    <script defer src="okay.js"></script>
-                </div>
-            </p>
+            <p><div id="gpt-passback">
+ <script defer src="okay.js"></script>
+</div>
+</p>
         </div>
         <div class="age-confirmation">
             <h2>Confirm Your Age</h2>
@@ -173,7 +170,7 @@
                 <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="terms.html">Terms & Conditions</a>
             </div>
-            <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+            <p style="color: #fff;">&copy; 2024 Quiz Game. All rights reserved.</p>
         </footer>
     </div>
     <script>
@@ -190,18 +187,18 @@
 
         // Display a random article
         function displayRandomArticle(articles) {
-            const randomIndex = Math.floor(Math.random() * articles.length);
-            const article = articles[randomIndex];
-            const articleSection = document.getElementById('article-section');
+    const randomIndex = Math.floor(Math.random() * articles.length);
+    const article = articles[randomIndex];
+    const articleSection = document.getElementById('article-section');
 
-            // Construct the article content with paragraphs
-            const paragraphs = article.content.map(paragraph => `<p>${paragraph}</p>`).join('');
+    // Construct the article content with paragraphs
+    const paragraphs = article.content.map(paragraph => `<p>${paragraph}</p>`).join('');
 
-            articleSection.innerHTML = `
+    articleSection.innerHTML = `
         <h3>${article.title}</h3>
         ${paragraphs}
     `;
-        }
+}
 
 
         // Redirect function for buttons
@@ -212,58 +209,59 @@
         // Fetch and display articles on page load
         fetchArticles();
     </script>
-
+    
     <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
-            const adHandler = new JbRewardedAdHandler();
+    document.addEventListener("DOMContentLoaded", () => {
+        const adHandler = new JbRewardedAdHandler();
+        console.log("Dom loaded",adHandler);
+        
+        const onAdGranted = (passbackConfig) => {
+            console.log("Ad was granted.", passbackConfig);
+            if (passbackConfig?.href) {
+                window.location.href = passbackConfig.href;
+            }
+        };
 
-            const onAdGranted = (passbackConfig) => {
-                console.log("Ad was granted.", passbackConfig);
-                if (passbackConfig ? .href) {
-                    window.location.href = passbackConfig.href;
-                }
-            };
+        const onAdRejected = (passbackConfig) => {
+            console.log("Ad was rejected.", passbackConfig);
+        };
+        console.log("onAdGranted",onAdGranted);
+        
+        adHandler.onAdGranted(onAdGranted);
+        adHandler.onAdRejected(onAdRejected);
 
-            const onAdRejected = (passbackConfig) => {
-                console.log("Ad was rejected.", passbackConfig);
-            };
-
-            adHandler.onAdGranted(onAdGranted);
-            adHandler.onAdRejected(onAdRejected);
-
-            const onClick = (evt) => {
-                evt.preventDefault();
-                console.log("Ad click event triggered.", evt.target);
-                adHandler.renderAd({
-                    href: evt.target.href,
-                });
-            };
-
-            const setupEventListeners = () => {
-                const btns = document.getElementsByClassName("above-18");
-
-                Array.from(btns).forEach((btn) => {
-                    btn.addEventListener("click", onClick);
-                });
-            };
-
-            const removeEventListeners = () => {
-                const btns = document.getElementsByClassName("below-18");
-
-                Array.from(btns).forEach((btn) => {
-                    btn.removeEventListener("click", onClick);
-                });
-            };
-
-            adHandler.onReady(() => {
-                console.log("Rewarded Ad Handler is ready.");
-                setupEventListeners();
+        const onClick = (evt) => {
+            evt.preventDefault();
+            console.log("Ad click event triggered.", evt.target);
+            adHandler.renderAd({
+                href: evt.target.href,
             });
+        };
 
-            window.addEventListener("unload", removeEventListeners);
+        const setupEventListeners = () => {
+            const btns = document.getElementsByClassName("above-18");
+
+            Array.from(btns).forEach((btn) => {
+                btn.addEventListener("click", onClick);
+            });
+        };
+
+        const removeEventListeners = () => {
+            const btns = document.getElementsByClassName("below-18");
+
+            Array.from(btns).forEach((btn) => {
+                btn.removeEventListener("click", onClick);
+            });
+        };
+
+        adHandler.onReady(() => {
+            console.log("Rewarded Ad Handler is ready.");
+            setupEventListeners();
         });
-    </script>
 
+        window.addEventListener("unload", removeEventListeners);
+    });
+</script>
+    
 </body>
-
 </html>
