@@ -213,8 +213,7 @@ header p {
     <script defer>
     document.addEventListener("DOMContentLoaded", () => {
         const adHandler = new JbRewardedAdHandler();
-        console.log("Dom loaded",adHandler);
-        
+
         const onAdGranted = (passbackConfig) => {
             console.log("Ad was granted.", passbackConfig);
             if (passbackConfig?.href) {
@@ -225,8 +224,7 @@ header p {
         const onAdRejected = (passbackConfig) => {
             console.log("Ad was rejected.", passbackConfig);
         };
-        console.log("onAdGranted",onAdGranted);
-        
+
         adHandler.onAdGranted(onAdGranted);
         adHandler.onAdRejected(onAdRejected);
 
