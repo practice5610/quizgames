@@ -1,149 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="analytics.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms and Conditions - Quiz Game</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #4facfe, #00f2fe);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        .container {
-            width: 100%;
-            max-width: 400px; /* Ensures the size matches other pages */
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-        }
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-        header img {
-            max-width: 120px; /* Matches other pages' logo size */
-        }
-        .ads-container {
-            background: rgba(240, 240, 240, 0.9);
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        .ads-container::before {
-            content: "Advertisement";
-            display: block;
-            font-size: 12px;
-            color: #888;
-            margin-bottom: 5px;
-        }
-        .terms-conditions {
-            padding: 15px;
-            text-align: left;
-        }
-        .terms-conditions h1 {
-            font-size: 22px; /* Matches other pages' title size */
-            color: #0072ff;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        .terms-conditions h2 {
-            font-size: 18px;
-            color: #0072ff;
-            margin-bottom: 10px;
-        }
-        .terms-conditions p, .terms-conditions ul {
-            font-size: 14px;
-            line-height: 1.5;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .terms-conditions ul {
-            padding-left: 20px;
-        }
-        .terms-conditions ul li {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            background: rgba(255, 255, 255, 0.9);
-        }
-        footer .footer-links {
-            margin-bottom: 10px;
-        }
-        footer .footer-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 14px;
-            color: #0072ff;
-        }
-        footer .footer-links a:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      body:after {
+        background: url(https://images.atmequiz.com/bg_quiz.jpg);
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.05;
+        min-height: 100vh;
+      }
+      .container {
+        width: 428px;
+        min-height: 100vh;
+        min-height: 100vh !important;
+        margin: 0 auto;
+        position: relative;
+        background-color: #0e0a5f;
+        z-index: 2;
+        height: auto;
+      }
+      header {
+        background: linear-gradient(180deg, #282d93, #15136e);
+        text-align: center;
+        box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%);
+        position: sticky; /* Makes the header sticky */
+        top: 0; /* Sticks to the top of the viewport */
+        z-index: 1000; /* Ensures it stays above other elements */
+        padding: 10px 0px;
+      }
+      header p {
+        margin: 0;
+        color: white;
+      }
+      .ads-container {
+        background: rgba(240, 240, 240, 0.9);
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+      .ads-container::before {
+        content: "Advertisement";
+        display: block;
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+      .terms-conditions {
+        padding: 15px;
+        text-align: left;
+      }
+      .terms-conditions h1 {
+        font-size: 22px; /* Matches other pages' title size */
+        color: #fff;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .terms-conditions h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      .terms-conditions p,
+      .terms-conditions ul {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      .terms-conditions ul {
+        padding-left: 20px;
+      }
+      .terms-conditions ul li {
+        margin-bottom: 10px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+      }
+      footer .footer-links {
+        margin-bottom: 10px;
+      }
+      footer .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+      }
+      footer .footer-links a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <img src="logo.png" alt="Quiz Game Logo">
-        </header>
-        <div class="ads-container">
-            <p>Your Ad Code Here</p>
+      <header>
+        <p>LOGO</p>
+      </header>
+      <div class="ads-container">
+        <p>Your Ad Code Here</p>
+      </div>
+      <div class="terms-conditions">
+        <h1>Terms and Conditions</h1>
+        <p>
+          Welcome to <strong>Quiz Game</strong>. By accessing or using our
+          website, you agree to comply with the following terms and conditions.
+          Please read them carefully.
+        </p>
+        <h2>Use of Our Website</h2>
+        <ul>
+          <li>You must use this website only for lawful purposes.</li>
+          <li>
+            Content on this site is for informational and entertainment purposes
+            only.
+          </li>
+          <li>
+            You agree not to disrupt or interfere with the site's security or
+            services.
+          </li>
+        </ul>
+        <h2>Intellectual Property</h2>
+        <p>
+          All content, including text, graphics, and logos, is the property of
+          <strong>Quiz Game</strong> and protected under copyright laws.
+          Unauthorized use is strictly prohibited.
+        </p>
+        <h2>Limitation of Liability</h2>
+        <p>
+          <strong>Quiz Game</strong> is not liable for any damages or losses
+          resulting from your use of our website or services. Use the site at
+          your own risk.
+        </p>
+        <h2>Changes to Terms</h2>
+        <p>
+          We reserve the right to modify these terms at any time. Changes will
+          be effective immediately upon posting. Please review this page
+          regularly.
+        </p>
+        <h2>Contact Us</h2>
+        <p>
+          For any questions regarding these terms, contact us at:
+          <a
+            href="/cdn-cgi/l/email-protection#5231373d12333b20302b263735333f37217c313d3f"
+            ><span
+              class="__cf_email__"
+              data-cfemail="8eedebe1ceefe7fcecf7faebe9efe3ebfda0ede1e3"
+              >[email&#160;protected]</span
+            ></a
+          >.
+        </p>
+      </div>
+      <footer>
+        <div class="footer-links">
+          <a href="/quiz22/index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
         </div>
-        <div class="terms-conditions">
-            <h1>Terms and Conditions</h1>
-            <p>
-                Welcome to <strong>Quiz Game</strong>. By accessing or using our website, you agree to comply with the following terms and conditions. Please read them carefully.
-            </p>
-            <h2>Use of Our Website</h2>
-            <ul>
-                <li>You must use this website only for lawful purposes.</li>
-                <li>Content on this site is for informational and entertainment purposes only.</li>
-                <li>You agree not to disrupt or interfere with the site's security or services.</li>
-            </ul>
-            <h2>Intellectual Property</h2>
-            <p>
-                All content, including text, graphics, and logos, is the property of <strong>Quiz Game</strong> and protected under copyright laws. Unauthorized use is strictly prohibited.
-            </p>
-            <h2>Limitation of Liability</h2>
-            <p>
-                <strong>Quiz Game</strong> is not liable for any damages or losses resulting from your use of our website or services. Use the site at your own risk.
-            </p>
-            <h2>Changes to Terms</h2>
-            <p>
-                We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Please review this page regularly.
-            </p>
-            <h2>Contact Us</h2>
-            <p>
-                For any questions regarding these terms, contact us at: <a href="/cdn-cgi/l/email-protection#5231373d12333b20302b263735333f37217c313d3f"><span class="__cf_email__" data-cfemail="8eedebe1ceefe7fcecf7faebe9efe3ebfda0ede1e3">[email&#160;protected]</span></a>.
-            </p>
-        </div>
-        <footer>
-            <div class="footer-links">
-                <a href="/quiz22/index.html">Home</a>
-                <a href="about-us.html">About Us</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
-            <p>&copy; 2024 Quiz Game. All rights reserved.</p>
-        </footer>
+        <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+      </footer>
     </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script src="analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Categories</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+          
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body:after {
+    background: url(https://images.atmequiz.com/bg_quiz.jpg);
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .05;
+    min-height: 100vh;
+}
+        .container {
+         
+        width: 428px;
+        min-height: 100vh;
+        min-height: 100vh !important;
+        margin: 0 auto;
+        position: relative;
+        background-color: #0e0a5f;
+        z-index: 2;
+        height: auto;
+        }
+         header {
+    background: linear-gradient(180deg, #282d93, #15136e);
+    text-align: center;
+    box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 10px 0px;
+}
+header p {
+    margin: 0;
+    color: white;
+}
+        .ads-container {
+          
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .ads-container::before {
+            content: "Advertisement";
+            display: block;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+            background-color: #fff;
+        }
+        .final-score {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .categories {
+            padding: 10px 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+
+        }
+        footer .footer-links {
+            margin-bottom: 10px;
+        }
+        footer .footer-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+        }
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+
+
+        .quizList_quizList__cR_4_ {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    width: 100%
+}
+.quizList_quizList__cR_4_ ,h3,p{
+    margin: 0px;
+}
+.quizList_quizList__cR_4_ .quizList_quizCard__jlB0Q {
+    display: flex;
+    flex-wrap: wrap;
+    background: #282d93;
+    border: 0 solid #4c51af;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+    min-height: 146px;
+    background: #1f237e
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 12px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_thumbnialImg__bQxNW {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76px;
+    background: #fff;
+    border-radius: 16px;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    min-width: 76px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_thumbnialImg__bQxNW img {
+    width: 60px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_quizNameStatus__iCCuv {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    align-content: flex-start
+}
+
+.quizList_categoryLiveDiv__9RGte {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase
+}
+
+.quizList_categoryLiveDiv__9RGte .quizList_categories__L5V9f {
+    font-size: 10px;
+    font-weight: 600;
+    color: #dfe1fc
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_quizNameStatus__iCCuv h3 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_quizNameStatus__iCCuv h3 img {
+    margin-left: 6px;
+    margin-top: -2px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_quizNameStatus__iCCuv p {
+    font-size: 14px;
+    color: #b6b3ff
+}
+
+@media only screen and (max-width: 375px) {
+    .quizList_quizCard__jlB0Q .quizList_cardContent__XUqLV .quizList_quizNameStatus__iCCuv p {
+        font-size:13px
+    }
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #4c51af8c;
+    font-size: 12px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK p {
+    color: #dfe1fc
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK p span {
+    margin-right: 8px
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK p strong {
+    color: #f5f6ff
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK p span img {
+    vertical-align: text-bottom;
+    margin-right: 6px
+}
+
+.quizList_btn__bQLHf {
+    background: #f27c2c;
+    padding: 16px;
+    height: 56px;
+    width: 100%;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.quizList_btn__bQLHf.quizList_btnSmall__Exetl {
+    height: 20px;
+    width: 80px;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #f27c2c;
+    line-height: 20px;
+    text-transform: uppercase;
+    float: right;
+    border-radius: 50px;
+    margin-top: 0
+}
+
+.quizList_statusLive__Cn83J {
+    color: #55e6c1;
+    font-size: 10px;
+    display: flex;
+    position: relative;
+    font-weight: 700
+}
+
+.quizList_statusLive__Cn83J:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    color: #fff;
+    background: #55e6c1;
+    border-radius: 8px;
+    margin-right: 6px;
+    animation: quizList_glowing__rS8H5 1s infinite;
+    box-shadow: 0 0 2px 3px #55e6c1
+}
+
+
+
+@keyframes quizList_glowing__rS8H5 {
+    0% {
+        box-shadow: 0 0 0 0 #55e6c1
+    }
+
+    to {
+        box-shadow: 0 0 0 5px rgba(141,183,247,.09)
+    }
+}
+
+.quizList_quizCard__jlB0Q .quizList_cardFooter__pl4gK span .quizList_spacer__dtBaC {
+    margin-right: 4px
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <header>
+           <p>LOGO</p>
+        </header>
+        <div class="ads-container">
+            <p><div id="gpt-passback">
+ <script defer src="okay.js"></script>
+</div>
+</p>
+        </div>
+        <div class="final-score">
+            Your Final Score: 💵 <span id="final-score">0</span>
+        </div>
+        <div class="categories">
+            <!-- Category 1 -->
+            
+             <div class="quizList_quizList__cR_4_"><div class="quizList_quizCard__jlB0Q"><div class="quizList_cardContent__XUqLV"><div class="quizList_thumbnialImg__bQxNW"><img alt="Play Math Quiz" title="Play Math Quiz" fetchpriority="high" width="60" height="60" decoding="async" data-nimg="1" src="https://static.atmequiz.com/thumbs/math.png" style="color: transparent;"></div><div class="quizList_quizNameStatus__iCCuv"><div class="quizList_categoryLiveDiv__9RGte"><span class="quizList_categories__L5V9f">Math Quiz</span><span class="quizList_statusLive__Cn83J">Live</span></div><h3> Win  10,000 Coins<img title="coin" alt="coin" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"></h3><p> Winner announcement: <span id="timer1">02:06:35</span></p></div></div><div class="quizList_cardFooter__pl4gK"><p><span><span class="quizList_spacer__dtBaC">Entry: 20 </span><img title="coin" alt="coin" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"> <strong>6311</strong> Users Playing</span></p><a class="quizList_btn__bQLHf quizList_btnSmall__Exetl" title="Play Math Quiz" onclick="redirectToPage('math-quiz.html')" >Play</a></div></div></div>
+            <!-- Category 2 -->
+             <div class="quizList_quizList__cR_4_"><div class="quizList_quizCard__jlB0Q"><div class="quizList_cardContent__XUqLV"><div class="quizList_thumbnialImg__bQxNW"><img alt="Play GK Online Quiz" title="Play GK Online Quiz" loading="lazy" width="60" height="60" decoding="async" data-nimg="1" src="https://static.atmequiz.com/thumbs/gk.png" style="color: transparent;"></div><div class="quizList_quizNameStatus__iCCuv"><div class="quizList_categoryLiveDiv__9RGte"><span class="quizList_categories__L5V9f">GK</span><span class="quizList_statusLive__Cn83J">Live</span></div><h3>Win 5,000 Coins<img title="coin" alt="coin" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"></h3><p>Winner announcement: <span id="timer2">01:45:10</span></p></div></div><div class="quizList_cardFooter__pl4gK"><p><span><span class="quizList_spacer__dtBaC">Entry: 10 </span><img title="coin" alt="coin" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"> <strong>5113</strong> Users Playing</span></p><a class="quizList_btn__bQLHf quizList_btnSmall__Exetl" title="Play GK contest" onclick="redirectToPage('gk-quiz.html')">Play</a></div></div></div>
+            
+          <!-- Category 3 -->
+           <div class="quizList_quizList__cR_4_"><div class="quizList_quizCard__jlB0Q"><div class="quizList_cardContent__XUqLV"><div class="quizList_thumbnialImg__bQxNW"><img alt="Play SPORTS Online Quiz" title="Play SPORTS Online Quiz" fetchpriority="high" width="60" height="60" decoding="async" data-nimg="1" src="https://static.atmequiz.com/thumbs/sports.png" style="color: transparent;"></div><div class="quizList_quizNameStatus__iCCuv"><div class="quizList_categoryLiveDiv__9RGte"><span class="quizList_categories__L5V9f">IPL Quiz</span><span class="quizList_statusLive__Cn83J">Live</span></div><h3> Win 15,000 Coins<img title="coin" alt="coin" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"></h3><p>Winner announcement: <span id="timer1">02:30:35</span></p></div></div><div class="quizList_cardFooter__pl4gK"><p><span><span class="quizList_spacer__dtBaC">Entry: 50 </span><img title="coin" alt="coin" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"> <strong>5821</strong> Users Playing</span></p><a class="quizList_btn__bQLHf quizList_btnSmall__Exetl" title="Play SPORTS contest" onclick="redirectToPage('ipl-quiz.html')">Play</a></div></div></div>
+          
+
+          <!-- Category 4 -->
+           <div class="quizList_quizList__cR_4_"><div class="quizList_quizCard__jlB0Q"><div class="quizList_cardContent__XUqLV"><div class="quizList_thumbnialImg__bQxNW"><img alt="Play WORLD Online Quiz" title="Play WORLD Online Quiz" loading="lazy" width="60" height="60" decoding="async" data-nimg="1" src="https://static.atmequiz.com/thumbs/world.png" style="color: transparent;"></div><div class="quizList_quizNameStatus__iCCuv"><div class="quizList_categoryLiveDiv__9RGte"><span class="quizList_categories__L5V9f">Bollywood Quiz</span><span class="quizList_statusLive__Cn83J">Live</span></div><h3>Win 15,000 Coins<img title="coin" alt="coin" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"></h3><p>Winner announcement: <span id="timer1">03:06:35</span></p></div></div><div class="quizList_cardFooter__pl4gK"><p><span><span class="quizList_spacer__dtBaC">Entry: 50 </span><img title="coin" alt="coin" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"> <strong>6288</strong> Users Playing</span></p><a class="quizList_btn__bQLHf quizList_btnSmall__Exetl" title="Play WORLD contest" onclick="redirectToPage('bollywood-quiz.html')">Play</a></div></div></div>
+         
+          <!-- Category 5 -->
+           <div class="quizList_quizList__cR_4_"><div class="quizList_quizCard__jlB0Q"><div class="quizList_cardContent__XUqLV"><div class="quizList_thumbnialImg__bQxNW"><img alt="Play SCIENCE Online Quiz" title="Play SCIENCE Online Quiz" loading="lazy" width="60" height="60" decoding="async" data-nimg="1" src="https://static.atmequiz.com/thumbs/science.png" style="color: transparent;"></div><div class="quizList_quizNameStatus__iCCuv"><div class="quizList_categoryLiveDiv__9RGte"><span class="quizList_categories__L5V9f">SCIENCE</span><span class="quizList_statusLive__Cn83J">Live</span></div><h3>  Win 10,000 Coins<img title="coin" alt="coin" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"></h3><p> Winner announcement: <span id="timer1">02:16:35</span></p></div></div><div class="quizList_cardFooter__pl4gK"><p><span><span class="quizList_spacer__dtBaC">Entry: 50 </span><img title="coin" alt="coin" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="" src="https://images.atmequiz.com/img/coin-icon.png" style="color: transparent;"> <strong>5358</strong> Users Playing</span></p><a class="quizList_btn__bQLHf quizList_btnSmall__Exetl" title="Play SCIENCE contest" onclick="redirectToPage('science-quiz.html')">Play</a></div></div></div>
+      
+
+        </div>
+        <footer>
+            <div class="footer-links">
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <p style="color: #fff;">&copy; 2024 Quiz Game. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url; // Redirect to category-specific pages
+        }
+
+        function startTimer(timerId, timeInSeconds) {
+            const timerElement = document.getElementById(timerId);
+            const interval = setInterval(() => {
+                const hours = Math.floor(timeInSeconds / 3600);
+                const minutes = Math.floor((timeInSeconds % 3600) / 60);
+                const seconds = timeInSeconds % 60;
+                timerElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                timeInSeconds--;
+                if (timeInSeconds < 0) clearInterval(interval);
+            }, 1000);
+        }
+
+        // Start the timers
+        startTimer("timer1", 7595); // Example: 2 hours, 6 minutes, 35 seconds
+        startTimer("timer2", 6310); // Example: 1 hour, 45 minutes, 10 seconds
+
+        // Display the final score from the previous page
+        const finalScore = localStorage.getItem('finalScore') || 0;
+        document.getElementById('final-score').textContent = finalScore;
+    </script>
+</body>
+</html>
