@@ -1,1 +1,1 @@
-No Content: https://airbytegames.com/quizgames/analytics.js
+No Content: https://quiz.buddddy.in/quizgames/analytics.js
