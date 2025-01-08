@@ -1,24 +1,21 @@
 (function () {
   const script = document.createElement("script");
   script.async = true;
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-M7G2W5XLDE";
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-FKGJDDN31P";
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
-
   function gtag() {
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("config", "G-M7G2W5XLDE");
+  gtag("config", "G-FKGJDDN31P");
 })();
 
-window.googletag = window.googletag || {
-  cmd: [],
-};
+window.googletag = window.googletag || { cmd: [] };
 googletag.cmd.push(function () {
   googletag
     .defineSlot(
-      "/22724716340/fluid_1",
+      "/22846411849,23007846454/JBM_airbytegames.com_Res1",
       [[336, 280], [300, 250], "fluid"],
       "gpt-passback"
     )
@@ -43,14 +40,12 @@ googletag.cmd.push(function () {
 googletag.cmd.push(function () {
   googletag.display("gpt-passback");
 });
-window.googletag = window.googletag || {
-  cmd: [],
-};
+window.googletag = window.googletag || { cmd: [] };
 let rewardedSlot;
 googletag.cmd.push(function () {
   rewardedSlot = googletag
     .defineOutOfPageSlot(
-      "/22724716340/reward_1",
+      "/22846411849,23007846454/JBM_airbytegames.com_Res2",
       googletag.enums.OutOfPageFormat.REWARDED
     )
     .addService(googletag.pubads());
