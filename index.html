@@ -1,10 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="analytics.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url=age.html" />
-    <title>Redirecting...</title>
+    <title>Loading...</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #4facfe, #00f2fe);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .intro-container {
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .intro-logo {
+        max-width: 150px;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .intro-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0072ff;
+        margin-bottom: 20px;
+      }
+      .loading-bar {
+        position: relative;
+        width: 200px;
+        height: 10px;
+        background: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .loading-bar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #4facfe, #00c6ff);
+        animation: loading 2s linear forwards;
+      }
+      @keyframes loading {
+        to {
+          width: 100%;
+        }
+      }
+      .loading-text {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #555;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="intro-container">
+      <img src="logo.png" alt="Logo" class="intro-logo" />
+      <p class="intro-message">Welcome to Premium Quiz!</p>
+      <div class="loading-bar"></div>
+      <p class="loading-text">Loading...</p>
+    </div>
+    <script>
+      // Redirect to age.html after 2 seconds
+      setTimeout(() => {
+        window.location.href = "age.html";
+      }, 2000);
+    </script>
+  </body>
 </html>
