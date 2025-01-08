@@ -11,13 +11,25 @@
         font-family: "Poppins", sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to bottom, #4facfe, #00f2fe);
-        color: #333;
+        position: relative;
+        color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         overflow: hidden;
+      }
+      body::after {
+        background: url(https://images.atmequiz.com/bg_quiz.jpg);
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.05;
+        min-height: 100vh;
       }
       .intro-container {
         text-align: center;
@@ -25,11 +37,9 @@
       }
       @keyframes fadeIn {
         from {
-          opacity: 0;
           transform: scale(0.9);
         }
         to {
-          opacity: 1;
           transform: scale(1);
         }
       }
@@ -69,7 +79,7 @@
         left: 0;
         width: 0%;
         height: 100%;
-        background: linear-gradient(90deg, #4facfe, #00c6ff);
+        background: linear-gradient(90deg, #4facfe, #0e0a5f);
         animation: loading 2s linear forwards;
       }
       @keyframes loading {
@@ -86,7 +96,7 @@
   </head>
   <body>
     <div class="intro-container">
-      <img src="logo.png" alt="Logo" class="intro-logo" />
+      <img src="logo.svg" alt="Logo" class="intro-logo" />
       <p class="intro-message">Welcome to Premium Quiz!</p>
       <div class="loading-bar"></div>
       <p class="loading-text">Loading...</p>
