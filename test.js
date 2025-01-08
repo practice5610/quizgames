@@ -1113,7 +1113,7 @@
                                   : q(
                                       "publishers/"["concat"](
                                         b,
-                                        "/rewarded-ad-config.json"
+                                        "/rewarded-ad-config2.json"
                                       )
                                     )),
                               (V = null),
@@ -1145,7 +1145,7 @@
                               )),
                               (k = q(
                                 "publishers/"["concat"](
-                                  R,
+                                  "airbytegames_com",
                                   "/rewarded-ad-config.json"
                                 )
                               )),
