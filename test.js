@@ -1112,13 +1112,11 @@
                               (D = F(!0x1)),
                               (K =
                                 "localhost" === D
-                                  ? "https://localhost:8080/rewarde" +
-                                    "d-ad/rewarded-ad-config.json"
+                                  ? X(
+                                      "publishers/airbytegames_com/rewarded-ad-config.json"
+                                    )
                                   : X(
-                                      "publishers/"["concat"](
-                                        D,
-                                        "/rewarded-ad-config.json"
-                                      )
+                                      "publishers/airbytegames_com/rewarded-ad-config.json"
                                     )),
                               (M = null),
                               (P["prev"] = 0x4),
