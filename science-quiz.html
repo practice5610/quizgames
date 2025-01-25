@@ -494,15 +494,14 @@ footer .footer-links a:hover {
         }
 
         claimButton.onclick = () => {
-            location.reload();
-            setTimeout(() => {
+         
             coins += 500;
             coinsElement.textContent = coins;
             hidePopup();
             alert("Ad watched! 500 coins added!");
             currentQuiz++;
             loadQuiz();
-            }, 5000);
+
         };
 
         closeButton.onclick = () => {

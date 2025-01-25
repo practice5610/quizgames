@@ -700,6 +700,7 @@
                       googletag["pubads"]()["refresh"]([m["rewardedSlot"]]);
                 } catch (W) {
                   console["error"]("Error\x20initializing\x20ad:\x20", W);
+                  console.log("file loaded");
                 }
               });
             },
