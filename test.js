@@ -1187,7 +1187,7 @@
                                     "d-ad/rewarded-ad-config.json"
                                   : X(
                                       "publishers/"["concat"](
-                                        D,
+                                        "localhost",
                                         "/rewarded-ad-config.json"
                                       )
                                     )),
@@ -1220,7 +1220,7 @@
                               )),
                               (L = X(
                                 "publishers/"["concat"](
-                                  w,
+                                  "localhost",
                                   "/rewarded-ad-config.json"
                                 )
                               )),
