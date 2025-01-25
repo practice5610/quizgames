@@ -49,6 +49,7 @@
     },
   };
   X("publishers");
+
   function H() {
     for (
       var N =
@@ -69,6 +70,7 @@
     }
     return G;
   }
+
   function F() {
     var N,
       J,
@@ -91,6 +93,7 @@
       N
     );
   }
+
   function R(N) {
     var J =
       arguments["length"] > 0x1 && void 0x0 !== arguments[0x1]
@@ -129,6 +132,7 @@
             );
     });
   }
+
   function O(N, J) {
     var G = ["__comment"],
       E = N;
@@ -143,6 +147,7 @@
       }
     return E;
   }
+
   function q() {
     q = function () {
       return J;
@@ -160,6 +165,7 @@
       Y = M["iterator"] || "@@iterator",
       Q = M["asyncIterator"] || "@@asyncIterator",
       T = M["toStringTag"] || "@@toStringTag";
+
     function t0(tz, tv, tu) {
       return (
         Object["defineProperty"](tz, tv, {
@@ -178,17 +184,30 @@
         return (tv[tu] = tZ);
       };
     }
+
     function t1(tv, tu, tZ, tk) {
       var tB = tu && tu["prototype"] instanceof t8 ? tu : t8,
         tV = Object["create"](tB["prototype"]),
         tm = new tC(tk || []);
-      return K(tV, "_invoke", { value: tR(tv, tZ, tm) }), tV;
+      return (
+        K(tV, "_invoke", {
+          value: tR(tv, tZ, tm),
+        }),
+        tV
+      );
     }
+
     function t2(tv, tu, tZ) {
       try {
-        return { type: "normal", arg: tv["call"](tu, tZ) };
+        return {
+          type: "normal",
+          arg: tv["call"](tu, tZ),
+        };
       } catch (tk) {
-        return { type: "throw", arg: tk };
+        return {
+          type: "throw",
+          arg: tk,
+        };
       }
     }
     J["wrap"] = t1;
@@ -197,8 +216,11 @@
       t5 = "executing",
       t6 = "completed",
       t7 = {};
+
     function t8() {}
+
     function t9() {}
+
     function tt() {}
     var tn = {};
     t0(tn, Y, function () {
@@ -208,6 +230,7 @@
       tU = tX && tX(tX(tW([])));
     tU && tU !== G && D["call"](tU, Y) && (tn = tU);
     var tH = (tt["prototype"] = t8["prototype"] = Object["create"](tn));
+
     function tf(tv) {
       ["next", "throw", "return"]["forEach"](function (tu) {
         t0(tv, tu, function (tZ) {
@@ -215,6 +238,7 @@
         });
       });
     }
+
     function tF(tv, tu) {
       function tZ(tB, tV, tm, tN) {
         var tc = t2(tv[tB], tv, tV);
@@ -253,13 +277,17 @@
         },
       });
     }
+
     function tR(tv, tu, tZ) {
       var tk = t3;
       return function (tB, tV) {
         if (tk === t5) throw Error("Generator\x20is\x20already\x20running");
         if (tk === t6) {
           if ("throw" === tB) throw tV;
-          return { value: N, done: !0x0 };
+          return {
+            value: N,
+            done: !0x0,
+          };
         }
         for (tZ["method"] = tB, tZ["arg"] = tV; ; ) {
           var tm = tZ["delegate"];
@@ -282,13 +310,17 @@
           var tc = t2(tv, tu, tZ);
           if ("normal" === tc["type"]) {
             if (((tk = tZ["done"] ? t6 : t4), tc["arg"] === t7)) continue;
-            return { value: tc["arg"], done: tZ["done"] };
+            return {
+              value: tc["arg"],
+              done: tZ["done"],
+            };
           }
           "throw" === tc["type"] &&
             ((tk = t6), (tZ["method"] = "throw"), (tZ["arg"] = tc["arg"]));
         }
       };
     }
+
     function tO(tv, tu) {
       var tZ = tu["method"],
         tk = tv["iterator"][tZ];
@@ -336,21 +368,31 @@
           (tu["delegate"] = null),
           t7);
     }
+
     function tq(tv) {
-      var tu = { tryLoc: tv[0x0] };
+      var tu = {
+        tryLoc: tv[0x0],
+      };
       0x1 in tv && (tu["catchLoc"] = tv[0x1]),
         0x2 in tv && ((tu["finallyLoc"] = tv[0x2]), (tu["afterLoc"] = tv[0x3])),
         this["tryEntries"]["push"](tu);
     }
+
     function tI(tv) {
       var tu = tv["completion"] || {};
       (tu["type"] = "normal"), delete tu["arg"], (tv["completion"] = tu);
     }
+
     function tC(tv) {
-      (this["tryEntries"] = [{ tryLoc: "root" }]),
+      (this["tryEntries"] = [
+        {
+          tryLoc: "root",
+        },
+      ]),
         tv["forEach"](tq, this),
         this["reset"](!0x0);
     }
+
     function tW(tv) {
       if (tv || "" === tv) {
         var tu = tv[Y];
@@ -371,8 +413,14 @@
     }
     return (
       (t9["prototype"] = tt),
-      K(tH, "constructor", { value: tt, configurable: !0x0 }),
-      K(tt, "constructor", { value: t9, configurable: !0x0 }),
+      K(tH, "constructor", {
+        value: tt,
+        configurable: !0x0,
+      }),
+      K(tt, "constructor", {
+        value: t9,
+        configurable: !0x0,
+      }),
       (t9["displayName"] = t0(tt, T, "GeneratorFunction")),
       (J["isGeneratorFunction"] = function (tv) {
         var tu = "function" == typeof tv && tv["constructor"];
@@ -392,7 +440,9 @@
         );
       }),
       (J["awrap"] = function (tv) {
-        return { __await: tv };
+        return {
+          __await: tv,
+        };
       }),
       tf(tF["prototype"]),
       t0(tF["prototype"], Q, function () {
@@ -462,6 +512,7 @@
         dispatchException: function (tv) {
           if (this["done"]) throw tv;
           var tu = this;
+
           function tZ(tc, ti) {
             return (
               (tV["type"] = "throw"),
@@ -579,6 +630,7 @@
       J
     );
   }
+
   function I(N, J, G, E, x, D, K) {
     try {
       var M = N[D](K),
@@ -588,15 +640,18 @@
     }
     M["done"] ? J(w) : Promise["resolve"](w)["then"](E, x);
   }
+
   function C(N) {
     return function () {
       var J = this,
         G = arguments;
       return new Promise(function (E, x) {
         var D = N["apply"](J, G);
+
         function K(w) {
           I(D, E, x, K, M, "next", w);
         }
+
         function M(w) {
           I(D, E, x, K, M, "throw", w);
         }
@@ -604,6 +659,7 @@
       });
     };
   }
+
   function W(N) {
     return (
       (W =
@@ -622,12 +678,14 @@
       W(N)
     );
   }
+
   function z(N, J) {
     if (!(N instanceof J))
       throw new TypeError(
         "Cannot\x20call\x20a\x20class\x20as\x20a\x20funct" + "ion"
       );
   }
+
   function v(N, J) {
     for (var G = 0x0; G < J["length"]; G++) {
       var E = J[G];
@@ -637,14 +695,18 @@
         Object["defineProperty"](N, k(E["key"]), E);
     }
   }
+
   function Z(N, J, G) {
     return (
       J && v(N["prototype"], J),
       G && v(N, G),
-      Object["defineProperty"](N, "prototype", { writable: !0x1 }),
+      Object["defineProperty"](N, "prototype", {
+        writable: !0x1,
+      }),
       N
     );
   }
+
   function k(N) {
     var J = (function (G, E) {
       if ("object" != W(G) || !G) return G;
@@ -665,7 +727,9 @@
         function N(J, G, E) {
           if ((z(this, N), !J))
             throw new Error("Ad\x20unit\x20path\x20is\x20required.");
-          (window["googletag"] = window["googletag"] || { cmd: [] }),
+          (window["googletag"] = window["googletag"] || {
+            cmd: [],
+          }),
             (this["adUnitPath"] = J),
             (this["grantedCallback"] = G),
             (this["rejectedCallback"] = E),
@@ -1082,14 +1146,21 @@
                   "hing\x20an\x20ad",
                 showAdBtnText: "Continue",
               },
-              adUnit: [{ id: "/22639388115/rewarded_web_exam" + "ple" }],
+              adUnit: [
+                {
+                  id: "/22639388115/rewarded_web_exam" + "ple",
+                },
+              ],
               CTA: {
                 onSuccess: {
                   action: "REDIRECT",
                   redirectUrl: "https://google.com",
                   target: "_blank",
                 },
-                onReject: { action: "REDIRECT", redirectUrl: "" },
+                onReject: {
+                  action: "REDIRECT",
+                  redirectUrl: "",
+                },
               },
             }),
             (this["onPluginReadyCallbacks"] = []),
@@ -1111,12 +1182,14 @@
                               (P["prev"] = 0x0),
                               (D = F(!0x1)),
                               (K =
-                                "localhost" === D
-                                  ? X(
-                                      "publishers/airbytegames_com/rewarded-ad-config.json"
-                                    )
+                                "localhost" != D
+                                  ? "https://localhost:8080/rewarde" +
+                                    "d-ad/rewarded-ad-config.json"
                                   : X(
-                                      "publishers/airbytegames_com/rewarded-ad-config.json"
+                                      "publishers/"["concat"](
+                                        D,
+                                        "/rewarded-ad-config.json"
+                                      )
                                     )),
                               (M = null),
                               (P["prev"] = 0x4),
