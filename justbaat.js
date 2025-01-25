@@ -1182,7 +1182,7 @@
                               (P["prev"] = 0x0),
                               (D = F(!0x1)),
                               (K =
-                                "localhost" != D
+                                "localhost" === D
                                   ? "https://localhost:8080/rewarde" +
                                     "d-ad/rewarded-ad-config.json"
                                   : X(
