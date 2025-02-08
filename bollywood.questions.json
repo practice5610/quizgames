@@ -1,0 +1,157 @@
+[
+  {
+    "question": "Who is known as the 'King of Bollywood'?",
+    "description": "This actor has had an illustrious career in Bollywood, starring in numerous iconic films and earning global recognition for his work.",
+    "options": [
+      "Amitabh Bachchan",
+      "Salman Khan",
+      "Shah Rukh Khan",
+      "Aamir Khan"
+    ],
+    "answer": "Shah Rukh Khan"
+  },
+  {
+    "question": "Which was the first Bollywood movie ever made?",
+    "description": "This silent film, directed by Dadasaheb Phalke, marked the beginning of Indian cinema in 1913.",
+    "options": [
+      "Raja Harishchandra",
+      "Mughal-e-Azam",
+      "Mother India",
+      "Alam Ara"
+    ],
+    "answer": "Raja Harishchandra"
+  },
+  {
+    "question": "Which Bollywood movie has the highest box office collection worldwide?",
+    "description": "This movie, starring Aamir Khan, became the highest-grossing Indian film worldwide, particularly in China.",
+    "options": ["Dangal", "Pathaan", "Baahubali 2", "Gadar 2"],
+    "answer": "Dangal"
+  },
+  {
+    "question": "Which Bollywood actor is known as 'Big B'?",
+    "description": "This legendary Bollywood actor is widely regarded as one of the greatest and most influential figures in Indian cinema.",
+    "options": [
+      "Shah Rukh Khan",
+      "Salman Khan",
+      "Amitabh Bachchan",
+      "Ranbir Kapoor"
+    ],
+    "answer": "Amitabh Bachchan"
+  },
+  {
+    "question": "Which Bollywood movie won the first Oscar for India?",
+    "description": "Though not a Bollywood movie, this film, directed by Danny Boyle, won the Academy Award for Best Picture and featured Indian actors.",
+    "options": ["Lagaan", "Mother India", "Slumdog Millionaire", "Gandhi"],
+    "answer": "Slumdog Millionaire"
+  },
+  {
+    "question": "Which Bollywood actress is known as 'Dhak Dhak Girl'?",
+    "description": "This actress earned this title after her iconic dance performance in the song 'Dhak Dhak Karne Laga.'",
+    "options": ["Madhuri Dixit", "Sridevi", "Aishwarya Rai", "Kajol"],
+    "answer": "Madhuri Dixit"
+  },
+  {
+    "question": "Which director is famous for making epic Bollywood movies like 'Baahubali'?",
+    "description": "This visionary director is known for his grand storytelling and record-breaking movies in Indian cinema.",
+    "options": [
+      "Karan Johar",
+      "Sanjay Leela Bhansali",
+      "Rakesh Roshan",
+      "S. S. Rajamouli"
+    ],
+    "answer": "S. S. Rajamouli"
+  },
+  {
+    "question": "Which Bollywood movie was India's official entry to the Oscars in 2023?",
+    "description": "This Gujarati-language film was selected as India's entry for the Best International Feature Film category at the Academy Awards.",
+    "options": ["RRR", "Gangubai Kathiawadi", "Chhello Show", "Kantara"],
+    "answer": "Chhello Show"
+  },
+  {
+    "question": "Which Bollywood movie features the song 'Tum Hi Ho'?",
+    "description": "This romantic drama became a blockbuster due to its soulful music and heart-wrenching love story.",
+    "options": ["Aashiqui 2", "Kabir Singh", "Ae Dil Hai Mushkil", "Dilwale"],
+    "answer": "Aashiqui 2"
+  },
+  {
+    "question": "Which Bollywood actor played the lead role in 'Bajrangi Bhaijaan'?",
+    "description": "This actor starred in the emotional drama about a man's journey to reunite a lost Pakistani girl with her family.",
+    "options": [
+      "Salman Khan",
+      "Shah Rukh Khan",
+      "Aamir Khan",
+      "Hrithik Roshan"
+    ],
+    "answer": "Salman Khan"
+  },
+  {
+    "question": "Which was the first Bollywood film to cross 100 crores at the box office?",
+    "description": "This 2008 film starring Aamir Khan was the first to set the 100-crore benchmark in Bollywood.",
+    "options": ["Ghajini", "3 Idiots", "Dhoom 2", "Om Shanti Om"],
+    "answer": "Ghajini"
+  },
+  {
+    "question": "Which Bollywood actress won the Miss World title in 2000?",
+    "description": "This actress went on to have a successful Bollywood and Hollywood career after winning the Miss World pageant.",
+    "options": [
+      "Aishwarya Rai",
+      "Sushmita Sen",
+      "Priyanka Chopra",
+      "Lara Dutta"
+    ],
+    "answer": "Priyanka Chopra"
+  },
+  {
+    "question": "Which Bollywood movie is based on the life of Milkha Singh?",
+    "description": "This biographical film tells the inspiring story of India's legendary sprinter, Milkha Singh.",
+    "options": ["Dangal", "Paan Singh Tomar", "Bhaag Milkha Bhaag", "Mary Kom"],
+    "answer": "Bhaag Milkha Bhaag"
+  },
+  {
+    "question": "Which Bollywood actor is famous for the 'Khiladi' series?",
+    "description": "This action star earned the nickname 'Khiladi' after starring in multiple films with the word 'Khiladi' in the title.",
+    "options": ["Ajay Devgn", "Shah Rukh Khan", "Akshay Kumar", "Salman Khan"],
+    "answer": "Akshay Kumar"
+  },
+  {
+    "question": "Which was the first Indian film to win a Palme d'Or at Cannes?",
+    "description": "Directed by Satyajit Ray, this Bengali film won the prestigious award at the Cannes Film Festival in 1956.",
+    "options": ["Mother India", "Pather Panchali", "Salaam Bombay", "Masaan"],
+    "answer": "Pather Panchali"
+  },
+  {
+    "question": "Which Bollywood movie features the dialogue 'Mogambo Khush Hua'?",
+    "description": "This 1987 movie is famous for its iconic villain Mogambo and his memorable dialogue.",
+    "options": ["Sholay", "Mr. India", "Deewaar", "Don"],
+    "answer": "Mr. India"
+  },
+  {
+    "question": "Which Bollywood actor made his debut with the film 'Student of the Year'?",
+    "description": "This actor was launched by Karan Johar in a youthful campus romance film in 2012.",
+    "options": [
+      "Ranveer Singh",
+      "Varun Dhawan",
+      "Sidharth Malhotra",
+      "Tiger Shroff"
+    ],
+    "answer": "Varun Dhawan"
+  },
+  {
+    "question": "Which Bollywood movie is a remake of the Hollywood film 'Knight and Day'?",
+    "description": "This action-packed Bollywood film, starring Hrithik Roshan and Katrina Kaif, was an official remake of a Hollywood blockbuster.",
+    "options": ["Bang Bang", "Dhoom 3", "Ek Tha Tiger", "War"],
+    "answer": "Bang Bang"
+  },
+  {
+    "question": "Which Bollywood film is inspired by the real-life story of the mathematician Anand Kumar?",
+    "description": "This biopic tells the story of Anand Kumar, a teacher who started the Super 30 program to train underprivileged students for IIT entrance exams.",
+    "options": ["Super 30", "Mission Mangal", "Chhichhore", "Article 15"],
+    "answer": "Super 30"
+  },
+  {
+    "question": "Which Bollywood movie features the song 'Ek Do Teen'?",
+    "description": "This 1988 film featured an iconic dance number performed by Madhuri Dixit, making it one of Bollywood’s most famous songs.",
+    "options": ["Tezaab", "Dil To Pagal Hai", "Hum Aapke Hain Koun", "Devdas"],
+    "answer": "Tezaab"
+  }
+]
