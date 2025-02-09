@@ -1,0 +1,182 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Kolkata", "Bengaluru"],
+    "answer": "New Delhi"
+  },
+  {
+    "question": "Which river is considered the holiest in India?",
+    "options": ["Yamuna", "Brahmaputra", "Ganges", "Godavari"],
+    "answer": "Ganges"
+  },
+  {
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Indira Gandhi"
+    ],
+    "answer": "Jawaharlal Nehru"
+  },
+  {
+    "question": "Which festival is known as the Festival of Lights?",
+    "options": ["Holi", "Diwali", "Eid", "Navratri"],
+    "answer": "Diwali"
+  },
+  {
+    "question": "What is the national animal of India?",
+    "options": ["Lion", "Elephant", "Tiger", "Leopard"],
+    "answer": "Tiger"
+  },
+  {
+    "question": "Which Indian state has the largest population?",
+    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
+    "answer": "Uttar Pradesh"
+  },
+  {
+    "question": "Who wrote the Indian national anthem?",
+    "options": [
+      "Bankim Chandra Chatterjee",
+      "Rabindranath Tagore",
+      "Sarojini Naidu",
+      "Subhas Chandra Bose"
+    ],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "question": "Which of these is an Indian classical dance form?",
+    "options": ["Ballet", "Salsa", "Kathak", "Hip-hop"],
+    "answer": "Kathak"
+  },
+  {
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "options": ["Hyderabad", "Chennai", "Bengaluru", "Pune"],
+    "answer": "Bengaluru"
+  },
+  {
+    "question": "What is the currency of India?",
+    "options": ["Rupee", "Taka", "Dinar", "Yen"],
+    "answer": "Rupee"
+  },
+  {
+    "question": "Which Indian monument is one of the New Seven Wonders of the World?",
+    "options": ["Qutub Minar", "Taj Mahal", "India Gate", "Hawa Mahal"],
+    "answer": "Taj Mahal"
+  },
+  {
+    "question": "Who is known as the Father of the Nation in India?",
+    "options": [
+      "Bhagat Singh",
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose"
+    ],
+    "answer": "Mahatma Gandhi"
+  },
+  {
+    "question": "Which state is famous for its tea gardens?",
+    "options": ["Assam", "Kerala", "Rajasthan", "Punjab"],
+    "answer": "Assam"
+  },
+  {
+    "question": "What is the national bird of India?",
+    "options": ["Peacock", "Eagle", "Parrot", "Sparrow"],
+    "answer": "Peacock"
+  },
+  {
+    "question": "Which Indian state has the longest coastline?",
+    "options": ["Maharashtra", "Tamil Nadu", "Gujarat", "Kerala"],
+    "answer": "Gujarat"
+  },
+  {
+    "question": "Which is the largest Indian state by area?",
+    "options": ["Maharashtra", "Madhya Pradesh", "Rajasthan", "Uttar Pradesh"],
+    "answer": "Rajasthan"
+  },
+  {
+    "question": "In which year did India gain independence?",
+    "options": ["1942", "1945", "1947", "1950"],
+    "answer": "1947"
+  },
+  {
+    "question": "Which of these is a famous Indian dish?",
+    "options": ["Sushi", "Tacos", "Biryani", "Pizza"],
+    "answer": "Biryani"
+  },
+  {
+    "question": "Who is known as the Missile Man of India?",
+    "options": [
+      "Vikram Sarabhai",
+      "Homi Bhabha",
+      "APJ Abdul Kalam",
+      "C.V. Raman"
+    ],
+    "answer": "APJ Abdul Kalam"
+  },
+  {
+    "question": "Which is the highest mountain peak in India?",
+    "options": ["K2", "Mount Everest", "Kangchenjunga", "Nanda Devi"],
+    "answer": "Kangchenjunga"
+  },
+  {
+    "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+    "options": ["Haryana", "Punjab", "Uttarakhand", "Himachal Pradesh"],
+    "answer": "Punjab"
+  },
+  {
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
+    "answer": "Shah Jahan"
+  },
+  {
+    "question": "Which Indian festival marks the arrival of spring?",
+    "options": ["Diwali", "Eid", "Holi", "Navratri"],
+    "answer": "Holi"
+  },
+  {
+    "question": "Which planetarium is the largest in India?",
+    "options": [
+      "Nehru Planetarium",
+      "Birla Planetarium",
+      "Indira Gandhi Planetarium",
+      "Jawaharlal Planetarium"
+    ],
+    "answer": "Birla Planetarium"
+  },
+  {
+    "question": "Which Indian sportsperson is known as the 'God of Cricket'?",
+    "options": ["Virat Kohli", "MS Dhoni", "Sachin Tendulkar", "Kapil Dev"],
+    "answer": "Sachin Tendulkar"
+  },
+  {
+    "question": "Which dance form originates from Tamil Nadu?",
+    "options": ["Bharatanatyam", "Kathakali", "Odissi", "Manipuri"],
+    "answer": "Bharatanatyam"
+  },
+  {
+    "question": "Which city is famous for its diamond industry?",
+    "options": ["Mumbai", "Jaipur", "Surat", "Hyderabad"],
+    "answer": "Surat"
+  },
+  {
+    "question": "Which state is famous for its backwaters?",
+    "options": ["Goa", "Kerala", "Andhra Pradesh", "West Bengal"],
+    "answer": "Kerala"
+  },
+  {
+    "question": "Who was India's first President?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Sarvepalli Radhakrishnan",
+      "Zakir Hussain",
+      "V.V. Giri"
+    ],
+    "answer": "Dr. Rajendra Prasad"
+  },
+  {
+    "question": "Which Indian IT city is known as 'Cyberabad'?",
+    "options": ["Mumbai", "Hyderabad", "Bengaluru", "Pune"],
+    "answer": "Hyderabad"
+  }
+]

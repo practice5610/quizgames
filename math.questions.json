@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is the value of π (pi) approximately?",
+    "options": ["3.14", "2.71", "1.41", "1.61"],
+    "answer": "3.14",
+    "description": "Pi (π) is a mathematical constant that represents the ratio of a circle's circumference to its diameter, approximately equal to 3.14159."
+  },
+  {
+    "question": "What is 25 × 4?",
+    "options": ["50", "75", "100", "125"],
+    "answer": "100",
+    "description": "Multiplication of 25 by 4 results in 100, as 25 added four times equals 100."
+  },
+  {
+    "question": "What is the square root of 144?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "12",
+    "description": "The square root of a number is a value that, when multiplied by itself, gives the original number. The square root of 144 is 12 (12 × 12 = 144)."
+  },
+  {
+    "question": "If a triangle has angles 90°, 45°, and 45°, what type of triangle is it?",
+    "options": ["Scalene", "Isosceles", "Equilateral", "Right-angled"],
+    "answer": "Right-angled",
+    "description": "A right-angled triangle has one 90° angle. Since the other two angles are equal, it is also an isosceles triangle."
+  },
+  {
+    "question": "What is 15% of 200?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30",
+    "description": "15% of 200 is calculated as (15/100) × 200 = 30."
+  },
+  {
+    "question": "What is the value of 2³?",
+    "options": ["4", "6", "8", "10"],
+    "answer": "8",
+    "description": "Exponentiation means multiplying a number by itself multiple times. 2³ (2 × 2 × 2) equals 8."
+  },
+  {
+    "question": "What is the sum of the interior angles of a pentagon?",
+    "options": ["360°", "540°", "720°", "900°"],
+    "answer": "540°",
+    "description": "The formula for the sum of interior angles of a polygon is (n-2) × 180°. For a pentagon (5 sides), it is (5-2) × 180° = 540°."
+  },
+  {
+    "question": "Solve: 8 + (2 × 5) - 3",
+    "options": ["15", "13", "10", "11"],
+    "answer": "15",
+    "description": "Following the order of operations (PEMDAS/BODMAS), we first multiply (2 × 5 = 10), then add 8, and subtract 3. The result is 15."
+  },
+  {
+    "question": "If x = 3 and y = 4, what is the value of x² + y²?",
+    "options": ["12", "16", "24", "25"],
+    "answer": "25",
+    "description": "Squaring both values: (3 × 3) + (4 × 4) = 9 + 16 = 25."
+  },
+  {
+    "question": "What is the perimeter of a square with side length 6 cm?",
+    "options": ["12 cm", "18 cm", "24 cm", "36 cm"],
+    "answer": "24 cm",
+    "description": "The perimeter of a square is given by 4 × side length. Here, 4 × 6 cm = 24 cm."
+  },
+  {
+    "question": "Which of the following is a prime number?",
+    "options": ["21", "27", "31", "33"],
+    "answer": "31",
+    "description": "A prime number is a number that has only two factors: 1 and itself. 31 is a prime number because it is only divisible by 1 and 31."
+  },
+  {
+    "question": "What is 7 × 9?",
+    "options": ["56", "63", "72", "81"],
+    "answer": "63",
+    "description": "Multiplication of 7 and 9 gives 63 (7 × 9 = 63)."
+  },
+  {
+    "question": "A train travels at 60 km/h for 2 hours. How far does it go?",
+    "options": ["60 km", "100 km", "120 km", "150 km"],
+    "answer": "120 km",
+    "description": "Distance = Speed × Time. 60 km/h × 2 hours = 120 km."
+  },
+  {
+    "question": "What is the LCM (Least Common Multiple) of 4 and 6?",
+    "options": ["8", "12", "16", "24"],
+    "answer": "12",
+    "description": "The least common multiple (LCM) is the smallest number that is a multiple of both numbers. The LCM of 4 and 6 is 12."
+  },
+  {
+    "question": "What is the formula for the area of a circle?",
+    "options": ["πr²", "2πr", "πd", "r²"],
+    "answer": "πr²",
+    "description": "The area of a circle is calculated using the formula πr², where r is the radius."
+  },
+  {
+    "question": "What is the sum of all angles in a quadrilateral?",
+    "options": ["180°", "270°", "360°", "450°"],
+    "answer": "360°",
+    "description": "The sum of the interior angles of a quadrilateral is always 360°."
+  },
+  {
+    "question": "What is 9³ (9 raised to the power 3)?",
+    "options": ["729", "81", "243", "512"],
+    "answer": "729",
+    "description": "Exponentiation means multiplying the number by itself multiple times. 9³ = 9 × 9 × 9 = 729."
+  },
+  {
+    "question": "What is the median of the numbers: 5, 8, 12, 15, 20?",
+    "options": ["8", "12", "15", "20"],
+    "answer": "12",
+    "description": "The median is the middle number when arranged in ascending order. Here, 12 is the middle number."
+  },
+  {
+    "question": "If a = 5 and b = 3, what is (a² - b²)?",
+    "options": ["9", "16", "25", "34"],
+    "answer": "16",
+    "description": "Using the formula (a² - b²): (5 × 5) - (3 × 3) = 25 - 9 = 16."
+  },
+  {
+    "question": "How many faces does a cube have?",
+    "options": ["4", "6", "8", "12"],
+    "answer": "6",
+    "description": "A cube is a 3D shape with six equal square faces."
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "question": "Who was the first Prime Minister of India?",
+    "description": "The first Prime Minister of independent India played a crucial role in shaping the nation's policies and governance.",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Dr. B.R. Ambedkar"
+    ],
+    "answer": "Jawaharlal Nehru"
+  },
+  {
+    "question": "Which is the national sport of India?",
+    "description": "Despite the popularity of cricket, this sport has been officially recognized as India's national sport due to its historical significance.",
+    "options": ["Cricket", "Hockey", "Kabaddi", "Football"],
+    "answer": "Hockey"
+  },
+  {
+    "question": "Who is known as the 'Missile Man of India'?",
+    "description": "This renowned scientist contributed significantly to India's missile development and later served as the country's President.",
+    "options": [
+      "Vikram Sarabhai",
+      "Dr. A.P.J. Abdul Kalam",
+      "C.V. Raman",
+      "Homi Bhabha"
+    ],
+    "answer": "Dr. A.P.J. Abdul Kalam"
+  },
+  {
+    "question": "Which Indian city is known as the 'Silicon Valley of India'?",
+    "description": "This city is the hub of India's information technology industry and houses many tech companies.",
+    "options": ["Mumbai", "Hyderabad", "Bengaluru", "Pune"],
+    "answer": "Bengaluru"
+  },
+  {
+    "question": "Which river is known as the 'Ganga of the South'?",
+    "description": "This river is one of the major rivers in southern India and holds religious significance similar to the Ganges.",
+    "options": ["Yamuna", "Krishna", "Godavari", "Kaveri"],
+    "answer": "Godavari"
+  },
+  {
+    "question": "Who wrote the Indian National Anthem?",
+    "description": "This renowned poet and writer composed the national anthem, which was later adopted as India's official anthem.",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chattopadhyay",
+      "Sarojini Naidu",
+      "Subhash Chandra Bose"
+    ],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "question": "Which is the largest state in India by area?",
+    "description": "This Indian state covers the largest geographical area in the country.",
+    "options": ["Uttar Pradesh", "Rajasthan", "Maharashtra", "Madhya Pradesh"],
+    "answer": "Rajasthan"
+  },
+  {
+    "question": "In which year did India gain independence?",
+    "description": "India officially became independent from British rule in this year.",
+    "options": ["1942", "1945", "1947", "1950"],
+    "answer": "1947"
+  },
+  {
+    "question": "Who was the first Indian to travel in space?",
+    "description": "This astronaut became the first Indian to venture into space in 1984.",
+    "options": [
+      "Rakesh Sharma",
+      "Kalpana Chawla",
+      "Vikram Sarabhai",
+      "Sunita Williams"
+    ],
+    "answer": "Rakesh Sharma"
+  },
+  {
+    "question": "Which is the tallest mountain in India?",
+    "description": "This mountain peak is the highest in India and the third highest in the world.",
+    "options": ["K2", "Mount Everest", "Kangchenjunga", "Nanda Devi"],
+    "answer": "Kangchenjunga"
+  },
+  {
+    "question": "Which Indian festival is known as the 'Festival of Lights'?",
+    "description": "This Hindu festival is celebrated with lamps, fireworks, and sweets.",
+    "options": ["Holi", "Navratri", "Diwali", "Eid"],
+    "answer": "Diwali"
+  },
+  {
+    "question": "Which is the longest river in India?",
+    "description": "This river is considered sacred and is the longest river in India.",
+    "options": ["Brahmaputra", "Yamuna", "Ganga", "Godavari"],
+    "answer": "Ganga"
+  },
+  {
+    "question": "Which Indian scientist won the Nobel Prize for Physics in 1930?",
+    "description": "This Indian physicist was awarded the Nobel Prize for his groundbreaking work in light scattering.",
+    "options": [
+      "C.V. Raman",
+      "Homi Bhabha",
+      "Dr. A.P.J. Abdul Kalam",
+      "Vikram Sarabhai"
+    ],
+    "answer": "C.V. Raman"
+  },
+  {
+    "question": "Which Indian state is famous for its tea gardens?",
+    "description": "This state is well known for producing high-quality tea, exported worldwide.",
+    "options": ["Sikkim", "West Bengal", "Assam", "Kerala"],
+    "answer": "Assam"
+  },
+  {
+    "question": "Which city is known as the 'Pink City' of India?",
+    "description": "This city in Rajasthan is famous for its pink-colored buildings and historical forts.",
+    "options": ["Jaipur", "Udaipur", "Jodhpur", "Bhopal"],
+    "answer": "Jaipur"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "description": "This leader served as India's first President after independence.",
+    "options": [
+      "Dr. B.R. Ambedkar",
+      "Dr. Rajendra Prasad",
+      "Sardar Patel",
+      "Jawaharlal Nehru"
+    ],
+    "answer": "Dr. Rajendra Prasad"
+  },
+  {
+    "question": "What is the currency of India?",
+    "description": "The official currency of India is used for all economic transactions.",
+    "options": ["Rupee", "Dollar", "Pound", "Euro"],
+    "answer": "Rupee"
+  },
+  {
+    "question": "Which Indian monument is one of the Seven Wonders of the World?",
+    "description": "This famous white marble mausoleum is a UNESCO World Heritage Site and one of the Seven Wonders of the World.",
+    "options": ["Qutub Minar", "Taj Mahal", "India Gate", "Gateway of India"],
+    "answer": "Taj Mahal"
+  },
+  {
+    "question": "Which state is known as the 'Land of Five Rivers'?",
+    "description": "This state gets its name from the five rivers that flow through it.",
+    "options": ["Haryana", "Punjab", "Himachal Pradesh", "Uttarakhand"],
+    "answer": "Punjab"
+  },
+  {
+    "question": "Who is known as the 'Father of the Nation' in India?",
+    "description": "This leader played a key role in India's independence and is widely known as the 'Father of the Nation.'",
+    "options": [
+      "Sardar Patel",
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Subhash Chandra Bose"
+    ],
+    "answer": "Mahatma Gandhi"
+  }
+]
