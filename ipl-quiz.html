@@ -3,7 +3,7 @@
 <head>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script src="analytics.js"></script>
-    <script defer id="jb-rewd-ad" src="https://mcm.justbaat.org/scripts/jb-rewarded-ad.min.js"></script>
+    <script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPL Quiz</title>
@@ -437,12 +437,14 @@ function loadQuiz() {
         }
 
         claimButton.onclick = () => {
+       
             coins += 500;
             coinsElement.textContent = coins;
             hidePopup();
             alert("Ad watched! 500 coins added!");
             currentQuiz++;
             loadQuiz();
+    
         };
 
         closeButton.onclick = () => {
