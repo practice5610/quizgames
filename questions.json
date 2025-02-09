@@ -2,12 +2,14 @@
   {
     "question": "What is the capital of India?",
     "options": ["Mumbai", "New Delhi", "Kolkata", "Bengaluru"],
-    "answer": "New Delhi"
+    "answer": "New Delhi",
+    "description": "New Delhi is the capital of India and is known for its historical significance and political importance. Established as the capital of British India in 1931, it was designed by the British architects Sir Edwin Lutyens and Sir Herbert Baker. The city is a hub of political activity, housing important government buildings such as the Rashtrapati Bhavan (the official residence of the President of India) and the Parliament House. New Delhi is also recognized for its rich cultural heritage, with numerous monuments, parks, and museums. The city attracts millions of tourists each year who come to explore its historical sites, including India Gate, Qutub Minar, and the Lotus Temple. The diverse population and vibrant culture of New Delhi reflect the country's unity in diversity, making it a melting pot of traditions and lifestyles."
   },
   {
     "question": "Which river is considered the holiest in India?",
     "options": ["Yamuna", "Brahmaputra", "Ganges", "Godavari"],
-    "answer": "Ganges"
+    "answer": "Ganges",
+    "description": "The Ganges River, known as Ganga in Hindi, is considered the holiest river in India. Flowing from the Himalayas to the Bay of Bengal, it is not only a crucial water source for millions of people but also a sacred river in Hinduism. Hindus believe that bathing in the Ganges can cleanse the soul and purify one from sins. The river is central to many religious rituals and festivals, including the Kumbh Mela, where millions of pilgrims gather to take a holy dip. The Ganges is also home to diverse flora and fauna, and efforts are ongoing to protect its ecosystem from pollution and environmental degradation. The river's cultural, spiritual, and ecological significance makes it an integral part of Indian heritage."
   },
   {
     "question": "Who was the first Prime Minister of India?",
@@ -17,22 +19,26 @@
       "Sardar Patel",
       "Indira Gandhi"
     ],
-    "answer": "Jawaharlal Nehru"
+    "answer": "Jawaharlal Nehru",
+    "description": "Jawaharlal Nehru was the first Prime Minister of India, serving from 1947 until his death in 1964. A prominent leader in the Indian independence movement, he was a close associate of Mahatma Gandhi and played a pivotal role in shaping modern India. Nehru is known for his vision of a secular and democratic nation, focusing on industrialization, education, and social reform. He implemented various policies aimed at improving the living standards of the people, fostering scientific advancement, and promoting cultural growth. Nehru's tenure was marked by significant events, including the establishment of the Indian Institutes of Technology and the Non-Aligned Movement. His legacy continues to influence Indian politics and society."
   },
   {
     "question": "Which festival is known as the Festival of Lights?",
     "options": ["Holi", "Diwali", "Eid", "Navratri"],
-    "answer": "Diwali"
+    "answer": "Diwali",
+    "description": "Diwali, also known as the Festival of Lights, is one of the most widely celebrated festivals in India. It symbolizes the victory of light over darkness and good over evil. The festival is celebrated over five days, with each day having its own significance. Families decorate their homes with oil lamps (diyas) and colorful rangoli designs, and they participate in prayers to Goddess Lakshmi for prosperity. Fireworks light up the night sky, and people exchange gifts and sweets. Diwali promotes values of togetherness and community, as people from different backgrounds join in the celebrations, transcending cultural and religious differences. The festival's rich traditions and vibrant celebrations make it a cherished occasion for millions."
   },
   {
     "question": "What is the national animal of India?",
     "options": ["Lion", "Elephant", "Tiger", "Leopard"],
-    "answer": "Tiger"
+    "answer": "Tiger",
+    "description": "The tiger is the national animal of India, symbolizing strength, power, and grace. Known for its beauty and ferocity, the tiger has been a part of Indian culture for centuries, appearing in mythology, art, and literature. The Indian government has implemented various conservation programs, such as Project Tiger, to protect this magnificent creature and its habitat from poaching and habitat loss. Tigers play a crucial role in maintaining the ecological balance, and India is home to approximately 70% of the world's wild tiger population. The preservation of tigers is essential for maintaining biodiversity, and they serve as an indicator of a healthy ecosystem."
   },
   {
     "question": "Which Indian state has the largest population?",
     "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
-    "answer": "Uttar Pradesh"
+    "answer": "Uttar Pradesh",
+    "description": "Uttar Pradesh is the most populous state in India, with a population exceeding 200 million. It plays a significant role in the country's political, economic, and cultural landscape. The state is known for its diverse demographic makeup, with a rich tapestry of cultures, languages, and traditions. Major cities like Lucknow, Kanpur, and Varanasi have historical significance and contribute to the state's economic activities. Uttar Pradesh is also home to several important religious sites, attracting pilgrims from across the country. Despite its challenges, such as poverty and infrastructure development, Uttar Pradesh is a vital part of India's growth story."
   },
   {
     "question": "Who wrote the Indian national anthem?",
@@ -42,141 +48,142 @@
       "Sarojini Naidu",
       "Subhas Chandra Bose"
     ],
-    "answer": "Rabindranath Tagore"
+    "answer": "Rabindranath Tagore",
+    "description": "Rabindranath Tagore was a renowned poet, philosopher, and artist who composed the Indian national anthem, 'Jana Gana Mana.' He was the first non-European to win the Nobel Prize in Literature in 1913, recognized for his contributions to literature and music. Tagore's works explore themes of humanity, nature, and the connection between individuals and the universe. 'Jana Gana Mana' reflects the spirit of unity and diversity of the Indian nation, celebrating its rich cultural heritage. Tagore's influence extends beyond literature; he also played a significant role in the cultural and educational landscape of India, establishing Visva-Bharati University and promoting a holistic approach to education."
   },
   {
     "question": "Which of these is an Indian classical dance form?",
     "options": ["Ballet", "Salsa", "Kathak", "Hip-hop"],
-    "answer": "Kathak"
+    "answer": "Kathak",
+    "description": "Kathak is one of the eight classical dance forms of India, characterized by its intricate footwork, expressive gestures, and storytelling through dance. Originating in northern India, Kathak was initially performed in temples to narrate religious stories, often depicting episodes from Hindu epics. Over time, it evolved under the influence of Mughal culture, incorporating elements of both classical Indian and Islamic dance. Kathak is known for its graceful movements, intricate spins, and rhythmic footwork, complemented by expressive facial expressions. Performances often convey narratives and emotions, making it a captivating art form. Today, Kathak is celebrated globally, showcasing India's rich cultural heritage."
   },
   {
-    "question": "Which city is known as the 'Silicon Valley of India'?",
-    "options": ["Hyderabad", "Chennai", "Bengaluru", "Pune"],
-    "answer": "Bengaluru"
+    "question": "What is the official language of India?",
+    "options": ["Hindi", "English", "Bengali", "Tamil"],
+    "answer": "Hindi",
+    "description": "Hindi is the official language of India and is spoken by a significant portion of the population. It belongs to the Indo-Aryan branch of the Indo-European language family and is written in the Devanagari script. Hindi has a rich literary tradition, encompassing poetry, novels, and essays, with famous writers such as Premchand and Harivansh Rai Bachchan contributing to its growth. Hindi serves as a unifying language in a country with diverse linguistic backgrounds, promoting communication among people from various regions. While Hindi is the most widely spoken language, India is home to a multitude of languages and dialects, reflecting its cultural diversity."
+  },
+  {
+    "question": "In which year did India gain independence from British rule?",
+    "options": ["1942", "1945", "1947", "1950"],
+    "answer": "1947",
+    "description": "India gained independence from British rule on August 15, 1947, after a long and arduous struggle for freedom. The independence movement was marked by various forms of resistance, including nonviolent protests led by figures like Mahatma Gandhi, who advocated for civil disobedience and peaceful resistance. The struggle for independence united people from diverse backgrounds and regions, culminating in the end of colonial rule. This historic moment led to the establishment of India as a sovereign nation, with a democratic framework enshrined in its Constitution, adopted on January 26, 1950. The day is celebrated annually as Independence Day, symbolizing the values of freedom, equality, and justice."
   },
   {
     "question": "What is the currency of India?",
-    "options": ["Rupee", "Taka", "Dinar", "Yen"],
-    "answer": "Rupee"
+    "options": ["Dollar", "Rupee", "Pound", "Yen"],
+    "answer": "Rupee",
+    "description": "The currency of India is the Indian Rupee, abbreviated as INR. The Rupee is further divided into 100 paise. It is issued and regulated by the Reserve Bank of India, the country's central banking institution. The symbol for the Rupee (₹) was officially adopted in 2010 and reflects India's economic growth and identity. The Rupee is widely used in various forms of transactions, from everyday purchases to international trade. Its value fluctuates against other currencies based on economic conditions, inflation rates, and market dynamics. The Indian Rupee plays a crucial role in India's economy, influencing monetary policy, trade, and investment."
   },
   {
-    "question": "Which Indian monument is one of the New Seven Wonders of the World?",
-    "options": ["Qutub Minar", "Taj Mahal", "India Gate", "Hawa Mahal"],
-    "answer": "Taj Mahal"
+    "question": "Which monument is a symbol of love in India?",
+    "options": ["Hawa Mahal", "Taj Mahal", "Gateway of India", "Red Fort"],
+    "answer": "Taj Mahal",
+    "description": "The Taj Mahal is an iconic symbol of love and one of the most famous monuments in India. Located in Agra, it was commissioned by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, who died during childbirth. The construction of the Taj Mahal began in 1632 and took over 20 years to complete, involving thousands of artisans and craftsmen. The monument is renowned for its stunning white marble architecture, intricate inlay work, and beautiful gardens. Designated as a UNESCO World Heritage Site, the Taj Mahal attracts millions of visitors annually, representing not only architectural brilliance but also the enduring power of love."
   },
   {
-    "question": "Who is known as the Father of the Nation in India?",
+    "question": "Which Indian festival celebrates the arrival of spring?",
+    "options": ["Holi", "Diwali", "Eid", "Navratri"],
+    "answer": "Holi",
+    "description": "Holi, known as the Festival of Colors, is a vibrant and joyous celebration that marks the arrival of spring in India. Typically celebrated in March, Holi signifies the victory of good over evil and the arrival of the harvest season. During the festivities, people throw colored powders and water at each other, dance, sing, and indulge in delicious sweets. Holi fosters unity and camaraderie as individuals from different backgrounds come together to celebrate, transcending social barriers. The festival has ancient roots, linked to Hindu mythology, particularly the legend of Prahlada and Holika. Holi is celebrated not only in India but also in various parts of the world, showcasing the spirit of love and joy."
+  },
+  {
+    "question": "What is the largest continent in the world?",
+    "options": ["Africa", "Asia", "Europe", "Antarctica"],
+    "answer": "Asia",
+    "description": "Asia is the largest continent in the world, both in terms of land area and population. Covering about 44.58 million square kilometers, it accounts for approximately 30% of the Earth's total land area. Asia is home to diverse cultures, languages, and ecosystems, ranging from the deserts of the Middle East to the tropical rainforests of Southeast Asia. The continent is known for its economic significance, housing some of the world's fastest-growing economies, such as China and India. Asia's rich history and cultural heritage contribute to its global influence, making it a vital player in international relations and trade."
+  },
+  {
+    "question": "Which is the longest river in India?",
+    "options": ["Ganga", "Yamuna", "Brahmaputra", "Godavari"],
+    "answer": "Brahmaputra",
+    "description": "The Brahmaputra River is the longest river in India, spanning approximately 3,848 kilometers. Originating in Tibet, it flows through India, entering in Arunachal Pradesh and traversing through Assam before emptying into the Bay of Bengal. The river is known for its powerful currents and unique ecosystem, supporting a diverse range of flora and fauna. The Brahmaputra plays a vital role in the livelihoods of millions, providing water for irrigation, fishing, and transportation. It holds cultural significance for many communities along its banks, with numerous festivals and traditions linked to its waters. The river is also a crucial part of the region's geography and biodiversity."
+  },
+  {
+    "question": "Which famous Indian leader is known for his role in the nonviolent struggle for independence?",
     "options": [
-      "Bhagat Singh",
       "Jawaharlal Nehru",
       "Mahatma Gandhi",
-      "Subhas Chandra Bose"
+      "Subhas Chandra Bose",
+      "Sardar Patel"
     ],
-    "answer": "Mahatma Gandhi"
+    "answer": "Mahatma Gandhi",
+    "description": "Mahatma Gandhi, also known as the 'Father of the Nation,' is celebrated for his pivotal role in India's nonviolent struggle for independence from British rule. He advocated for civil disobedience, non-cooperation, and peaceful protests, inspiring millions to join the freedom movement. Gandhi's philosophy of ahimsa (nonviolence) and satyagraha (truth force) resonated with people across the country, transcending class and caste barriers. His leadership during pivotal events such as the Salt March in 1930 showcased the power of nonviolent resistance. Gandhi's legacy continues to inspire movements for civil rights and social justice worldwide, emphasizing the importance of peace and harmony in achieving societal change."
   },
   {
-    "question": "Which state is famous for its tea gardens?",
-    "options": ["Assam", "Kerala", "Rajasthan", "Punjab"],
-    "answer": "Assam"
+    "question": "What is the main source of income for India?",
+    "options": ["Agriculture", "Tourism", "Manufacturing", "IT services"],
+    "answer": "Agriculture",
+    "description": "Agriculture is the main source of income for India, employing nearly half of the country's workforce and contributing significantly to the national economy. With a diverse range of crops, including rice, wheat, pulses, and sugarcane, Indian agriculture supports food security and rural livelihoods. The sector has a rich history, with traditional farming practices coexisting alongside modern techniques. Various government initiatives aim to improve productivity, provide support to farmers, and promote sustainable practices. Despite challenges such as climate change and resource depletion, agriculture remains a crucial pillar of India's economic development and social stability, playing a vital role in the country's growth story."
   },
   {
-    "question": "What is the national bird of India?",
-    "options": ["Peacock", "Eagle", "Parrot", "Sparrow"],
-    "answer": "Peacock"
+    "question": "Which is the smallest state in India?",
+    "options": ["Goa", "Sikkim", "Delhi", "Tripura"],
+    "answer": "Goa",
+    "description": "Goa is the smallest state in India by area, covering approximately 3,702 square kilometers. Located on the southwestern coast, it is known for its stunning beaches, vibrant nightlife, and rich cultural heritage. Goa was a Portuguese colony until 1961, and its colonial history is reflected in its architecture, cuisine, and traditions. The state attracts millions of tourists each year, offering a blend of relaxation, adventure, and cultural experiences. In addition to its natural beauty, Goa is famous for its festivals, such as Carnival and Shigmo, showcasing its diverse cultural tapestry. Despite its small size, Goa plays a significant role in India's tourism industry and economy."
   },
   {
-    "question": "Which Indian state has the longest coastline?",
-    "options": ["Maharashtra", "Tamil Nadu", "Gujarat", "Kerala"],
-    "answer": "Gujarat"
+    "question": "What is the primary religion practiced in India?",
+    "options": ["Hinduism", "Islam", "Christianity", "Buddhism"],
+    "answer": "Hinduism",
+    "description": "Hinduism is the primary religion practiced in India, with approximately 80% of the population identifying as Hindus. It is one of the oldest religions in the world, characterized by a diverse range of beliefs, practices, and rituals. Hinduism encompasses various philosophies, including monotheism, polytheism, and pantheism, allowing for a rich tapestry of traditions and interpretations. The religion is based on ancient texts, including the Vedas, Upanishads, and epics like the Ramayana and Mahabharata. Festivals such as Diwali, Holi, and Navratri reflect the vibrant cultural heritage of Hinduism. The coexistence of various beliefs and practices makes India a melting pot of religious diversity."
   },
   {
-    "question": "Which is the largest Indian state by area?",
-    "options": ["Maharashtra", "Madhya Pradesh", "Rajasthan", "Uttar Pradesh"],
-    "answer": "Rajasthan"
+    "question": "Which Indian city is known as the Silicon Valley of India?",
+    "options": ["Hyderabad", "Bengaluru", "Pune", "Chennai"],
+    "answer": "Bengaluru",
+    "description": "Bengaluru, also known as Bangalore, is often referred to as the Silicon Valley of India due to its status as a major hub for information technology (IT) and innovation. The city is home to numerous tech companies, startups, and research institutions, making it a focal point for entrepreneurship and technological advancements. With a favorable ecosystem for IT professionals, Bengaluru attracts talent from across the country and around the world. The city's vibrant culture, diverse cuisine, and pleasant climate contribute to its appeal. Bengaluru's growth in the tech sector has positioned it as a global player in the technology landscape, driving economic growth and innovation in India."
   },
   {
-    "question": "In which year did India gain independence?",
-    "options": ["1942", "1945", "1947", "1950"],
-    "answer": "1947"
-  },
-  {
-    "question": "Which of these is a famous Indian dish?",
-    "options": ["Sushi", "Tacos", "Biryani", "Pizza"],
-    "answer": "Biryani"
-  },
-  {
-    "question": "Who is known as the Missile Man of India?",
+    "question": "Which ancient civilization was located in India?",
     "options": [
-      "Vikram Sarabhai",
-      "Homi Bhabha",
-      "APJ Abdul Kalam",
-      "C.V. Raman"
+      "Indus Valley Civilization",
+      "Mesopotamian Civilization",
+      "Egyptian Civilization",
+      "Mayan Civilization"
     ],
-    "answer": "APJ Abdul Kalam"
+    "answer": "Indus Valley Civilization",
+    "description": "The Indus Valley Civilization, one of the world's earliest urban civilizations, thrived in the northwestern regions of South Asia around 3300–1300 BCE. It is characterized by advanced urban planning, sophisticated drainage systems, and well-structured cities like Mohenjo-Daro and Harappa. The civilization had a script that remains undeciphered, and its economy was based on agriculture, trade, and craft production. The people of the Indus Valley engaged in trade with neighboring regions, and archaeological discoveries suggest a rich cultural and social life. The decline of the Indus Valley Civilization around 1900 BCE remains a subject of research and speculation, but its legacy continues to influence the region's history and culture."
   },
   {
-    "question": "Which is the highest mountain peak in India?",
-    "options": ["K2", "Mount Everest", "Kangchenjunga", "Nanda Devi"],
-    "answer": "Kangchenjunga"
-  },
-  {
-    "question": "Which Indian state is known as the 'Land of Five Rivers'?",
-    "options": ["Haryana", "Punjab", "Uttarakhand", "Himachal Pradesh"],
-    "answer": "Punjab"
-  },
-  {
-    "question": "Which Mughal emperor built the Taj Mahal?",
-    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
-    "answer": "Shah Jahan"
-  },
-  {
-    "question": "Which Indian festival marks the arrival of spring?",
-    "options": ["Diwali", "Eid", "Holi", "Navratri"],
-    "answer": "Holi"
-  },
-  {
-    "question": "Which planetarium is the largest in India?",
+    "question": "What is the significance of the Ashoka Chakra?",
     "options": [
-      "Nehru Planetarium",
-      "Birla Planetarium",
-      "Indira Gandhi Planetarium",
-      "Jawaharlal Planetarium"
+      "Symbol of peace",
+      "Symbol of power",
+      "Symbol of unity",
+      "Symbol of truth"
     ],
-    "answer": "Birla Planetarium"
+    "answer": "Symbol of peace",
+    "description": "The Ashoka Chakra is a significant symbol in India, representing peace, dharma (righteousness), and justice. It features 24 spokes and is derived from the Lion Capital of Ashoka, which was built during the reign of Emperor Ashoka in the 3rd century BCE. The chakra is prominently displayed in the center of the Indian national flag and signifies the importance of righteousness in governance and society. The Ashoka Chakra emphasizes the values of non-violence, tolerance, and the pursuit of justice, reflecting India's commitment to peace and harmony. It serves as a reminder of the principles laid down by Emperor Ashoka, who renounced violence and promoted ethical governance."
   },
   {
-    "question": "Which Indian sportsperson is known as the 'God of Cricket'?",
-    "options": ["Virat Kohli", "MS Dhoni", "Sachin Tendulkar", "Kapil Dev"],
-    "answer": "Sachin Tendulkar"
+    "question": "Which language is predominantly spoken in India?",
+    "options": ["Hindi", "English", "Bengali", "Tamil"],
+    "answer": "Hindi",
+    "description": "Hindi is the most widely spoken language in India, serving as one of the official languages of the country. It is primarily spoken in the northern and central regions of India, with millions of speakers across various states. Hindi is written in the Devanagari script and has numerous dialects and variations. As a significant medium of communication, Hindi plays a vital role in education, media, and government. While India is a linguistically diverse nation with several languages spoken across its regions, Hindi's prominence in national discourse and cultural expressions reflects its importance in India's identity. The language serves as a unifying factor, fostering communication among people from different linguistic backgrounds."
   },
   {
-    "question": "Which dance form originates from Tamil Nadu?",
-    "options": ["Bharatanatyam", "Kathakali", "Odissi", "Manipuri"],
-    "answer": "Bharatanatyam"
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+    "answer": "Delhi",
+    "description": "Delhi is the capital of India and serves as a prominent political, cultural, and historical center of the country. The city has a rich heritage, combining ancient architecture with modern developments. It is home to significant landmarks such as the Red Fort, India Gate, and the Rashtrapati Bhavan, which reflects the country's history and governance. Delhi is also a major hub for education, commerce, and transportation, making it a vital part of India's economy. With a diverse population and vibrant culture, Delhi embodies the essence of India's pluralistic society, showcasing various traditions, languages, and cuisines."
   },
   {
-    "question": "Which city is famous for its diamond industry?",
-    "options": ["Mumbai", "Jaipur", "Surat", "Hyderabad"],
-    "answer": "Surat"
+    "question": "Which animal is considered sacred in Hinduism?",
+    "options": ["Elephant", "Cow", "Tiger", "Monkey"],
+    "answer": "Cow",
+    "description": "In Hinduism, the cow is considered a sacred animal and symbolizes purity, motherhood, and selfless giving. Revered as 'Gau Mata' (Mother Cow), the cow is associated with various deities and plays a significant role in Hindu rituals and traditions. Many Hindus abstain from consuming beef as a sign of respect for the cow, and its by-products, such as milk and ghee, are widely used in religious ceremonies and daily life. The reverence for cows reflects the broader ethos of non-violence and respect for all living beings in Hindu philosophy. The cow's sacred status is deeply ingrained in Indian culture and society, influencing agricultural practices and dietary choices."
   },
   {
-    "question": "Which state is famous for its backwaters?",
-    "options": ["Goa", "Kerala", "Andhra Pradesh", "West Bengal"],
-    "answer": "Kerala"
+    "question": "What is the national flower of India?",
+    "options": ["Lotus", "Rose", "Sunflower", "Marigold"],
+    "answer": "Lotus",
+    "description": "The lotus (Nelumbo nucifera) is the national flower of India and holds profound significance in Indian culture and spirituality. Revered in Hinduism and Buddhism, the lotus symbolizes purity, beauty, and spiritual awakening. It grows in muddy waters, yet emerges pristine and unblemished, representing the ability to rise above challenges and attain enlightenment. The lotus is often associated with various deities, such as Lakshmi, the goddess of wealth and prosperity, and Brahma, the creator god. Its presence in art, literature, and religious practices highlights the lotus's integral role in India's cultural heritage, making it a powerful symbol of resilience and hope."
   },
   {
-    "question": "Who was India's first President?",
-    "options": [
-      "Dr. Rajendra Prasad",
-      "Sarvepalli Radhakrishnan",
-      "Zakir Hussain",
-      "V.V. Giri"
-    ],
-    "answer": "Dr. Rajendra Prasad"
-  },
-  {
-    "question": "Which Indian IT city is known as 'Cyberabad'?",
-    "options": ["Mumbai", "Hyderabad", "Bengaluru", "Pune"],
-    "answer": "Hyderabad"
+    "question": "Which state is known as the 'Land of the Rising Sun' in India?",
+    "options": ["Arunachal Pradesh", "Assam", "Manipur", "Nagaland"],
+    "answer": "Arunachal Pradesh",
+    "description": "Arunachal Pradesh, located in northeastern India, is often referred to as the 'Land of the Rising Sun' due to its geographical position. It is the easternmost state of India, where the first rays of sunlight touch the land. Arunachal Pradesh is known for its breathtaking landscapes, rich biodiversity, and diverse cultures. The state is home to various indigenous tribes, each with unique traditions and lifestyles. With its stunning mountains, lush forests, and pristine rivers, Arunachal Pradesh offers immense potential for tourism and adventure activities. The state's natural beauty and cultural richness make it a significant part of India's heritage and contribute to its identity as a vibrant and diverse nation."
   }
 ]
