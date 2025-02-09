@@ -437,7 +437,7 @@
 
       async function loadQuestions() {
         try {
-          const response = await fetch("https://timespatrika.com/gkquiz.php");
+          const response = await fetch("./generalK.questions.json");
           quizzes = await response.json();
           selectedQuizzes = quizzes.sort(() => 0.5 - Math.random()).slice(0, 5);
           loadQuiz();
@@ -467,28 +467,31 @@
         if (timerInterval) clearInterval(timerInterval);
         if (currentQuiz < selectedQuizzes.length) {
           const quiz = selectedQuizzes[currentQuiz];
+          console.log("quiz", quiz);
+
           questionElement.textContent = quiz.question;
           optionsElement.innerHTML = "";
           descriptionElement.innerHTML = quiz.description;
           currentQuestionElement.textContent = currentQuiz + 1;
 
-          for (let i = 1; i <= 4; i++) {
+          for (let i = 0; i < 4; i++) {
+            // Loop from 0 to 3 (array index)
             const button = document.createElement("button");
-            button.textContent = quiz[`option${i}`];
+            button.textContent = quiz.options[i]; // Correctly access options array
             button.onclick = () =>
               checkAnswer(
-                i === Number(quiz.correct_option),
+                quiz.options[i] === quiz.answer,
                 button,
-                Number(quiz.correct_option) - 1
+                quiz.options.indexOf(quiz.answer)
               );
             optionsElement.appendChild(button);
           }
+
           startTimer();
         } else {
           showFinalScore();
         }
       }
-
       function checkAnswer(isCorrect, button, correctIndex) {
         if (timerInterval) clearInterval(timerInterval);
         if (isCorrect) {
