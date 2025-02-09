@@ -1,7 +1,7 @@
 (function () {
   const script = document.createElement("script");
   script.async = true;
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-M7G2W5XLDE";
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-08WXH14EN4";
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
 
@@ -9,7 +9,7 @@
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("config", "G-M7G2W5XLDE");
+  gtag("config", "G-08WXH14EN4");
 })();
 
 window.googletag = window.googletag || {
@@ -18,7 +18,7 @@ window.googletag = window.googletag || {
 googletag.cmd.push(function () {
   googletag
     .defineSlot(
-      "/22724716340/fluid_1",
+      "/22870505798/q_1",
       [[336, 280], [300, 250], "fluid"],
       "gpt-passback"
     )
@@ -50,7 +50,7 @@ let rewardedSlot;
 googletag.cmd.push(function () {
   rewardedSlot = googletag
     .defineOutOfPageSlot(
-      "/22724716340/reward_1",
+      "/22870505798/q_2",
       googletag.enums.OutOfPageFormat.REWARDED
     )
     .addService(googletag.pubads());

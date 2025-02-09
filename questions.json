@@ -1,0 +1,212 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Kolkata", "Bengaluru"],
+    "description": "This city serves as the administrative and political hub of the country. It houses important government institutions, including the Parliament, the Supreme Court, and the residence of the President. The city has a rich history dating back to ancient times and played a crucial role in India's independence movement. It is known for its architectural landmarks, cultural diversity, and vibrant economy. Being a cosmopolitan city, it attracts people from all over the nation for work and education.",
+    "answer": "New Delhi"
+  },
+  {
+    "question": "Which river is considered the holiest in India?",
+    "options": ["Yamuna", "Brahmaputra", "Ganges", "Godavari"],
+    "description": "This river holds immense spiritual significance in Indian culture and Hindu mythology. It is believed to cleanse the sins of those who bathe in its waters. Several major cities and pilgrimage sites are situated along its banks, drawing millions of devotees annually. The river supports agriculture and sustains livelihoods, making it an economic lifeline. It has also been a source of inspiration for poets, saints, and environmentalists. Efforts have been made to preserve and rejuvenate its waters, given its historical and ecological importance.",
+    "answer": "Ganges"
+  },
+  {
+    "question": "Who was the first Prime Minister of India?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "Indira Gandhi"
+    ],
+    "description": "This leader played a pivotal role in shaping modern India after gaining independence from British rule. Known for his vision of industrial and economic development, he laid the foundation for a democratic and secular nation. He introduced policies to promote scientific research, higher education, and international diplomacy. His tenure saw the creation of key institutions that still influence India's progress today. He was also an advocate for non-alignment during the Cold War, emphasizing India's sovereignty in global affairs.",
+    "answer": "Jawaharlal Nehru"
+  },
+  {
+    "question": "Which festival is known as the Festival of Lights?",
+    "options": ["Holi", "Diwali", "Eid", "Navratri"],
+    "description": "This festival symbolizes the victory of light over darkness and good over evil. It is celebrated with great enthusiasm across India and by Indian communities worldwide. People decorate their homes with lamps, candles, and colorful rangoli designs. The festival also involves exchanging sweets and gifts, as well as setting off fireworks. Traditionally, it marks the return of a revered deity to his kingdom after an exile of fourteen years, as per Hindu mythology.",
+    "answer": "Diwali"
+  },
+  {
+    "question": "What is the national animal of India?",
+    "options": ["Lion", "Elephant", "Tiger", "Leopard"],
+    "description": "This majestic animal is known for its strength, agility, and grace. It holds a prominent place in Indian culture, mythology, and folklore. Found in national parks and wildlife sanctuaries, it is a symbol of biodiversity and ecological balance. Despite conservation efforts, it remains an endangered species due to poaching and habitat loss. The government has initiated several programs to protect and increase its population.",
+    "answer": "Tiger"
+  },
+  {
+    "question": "Which Indian state has the largest population?",
+    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
+    "description": "This state is the most populous in the country, with a population exceeding that of several nations. It is known for its rich cultural heritage, ancient temples, and historical sites. Agriculture is the mainstay of its economy, with significant contributions from industries and tourism. It is home to many prominent political leaders and has played a crucial role in shaping national politics. The state has a diverse demographic structure with multiple languages, traditions, and festivals celebrated throughout the year.",
+    "answer": "Uttar Pradesh"
+  },
+  {
+    "question": "Who wrote the Indian national anthem?",
+    "options": [
+      "Bankim Chandra Chatterjee",
+      "Rabindranath Tagore",
+      "Sarojini Naidu",
+      "Subhas Chandra Bose"
+    ],
+    "description": "The author of this anthem was a renowned poet, writer, and philosopher who made significant contributions to Indian literature and culture. He was the first non-European to receive the Nobel Prize in Literature. His works often depicted themes of patriotism, spirituality, and humanism. The anthem he composed was originally written in Bengali and later adopted as the national anthem of India. His influence extends beyond literature, as he played an active role in the Indian independence movement and educational reforms.",
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "question": "Which of these is an Indian classical dance form?",
+    "options": ["Ballet", "Salsa", "Kathak", "Hip-hop"],
+    "description": "This dance form originated in ancient India and is deeply rooted in storytelling, rhythm, and expressions. It involves intricate footwork, graceful hand gestures, and emotive facial expressions. Traditionally performed in temples, it has evolved into a major cultural art form presented on global stages. It is characterized by fast spins, rhythmic beats, and expressive narratives, often depicting stories from Hindu epics. Today, it is practiced by dancers worldwide and continues to inspire contemporary performances.",
+    "answer": "Kathak"
+  },
+  {
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "options": ["Hyderabad", "Chennai", "Bengaluru", "Pune"],
+    "description": "This city is a major hub for information technology and innovation in India. It hosts the headquarters of several multinational technology companies and startups. The city attracts engineers, entrepreneurs, and investors from around the world due to its thriving tech ecosystem. It is also known for its educational institutions, research centers, and vibrant nightlife. Over the years, it has become synonymous with India's digital revolution and economic growth.",
+    "answer": "Bengaluru"
+  },
+  {
+    "question": "What is the currency of India?",
+    "options": ["Rupee", "Taka", "Dinar", "Yen"],
+    "description": "This currency is the official monetary unit of India and is widely used in daily transactions. It is issued and regulated by the Reserve Bank of India. The currency has a rich history, with its origins tracing back to ancient times. It is available in both coins and banknotes, with various denominations catering to different economic needs. The currency symbol is recognized globally and reflects India's economic identity.",
+    "answer": "Rupee"
+  },
+  {
+    "question": "Which Indian monument is one of the New Seven Wonders of the World?",
+    "options": ["Qutub Minar", "Taj Mahal", "India Gate", "Hawa Mahal"],
+    "description": "This monument is a UNESCO World Heritage Site and is renowned for its stunning architecture and historical significance. Built as a symbol of love, it attracts millions of visitors from around the world every year. The monument is made of white marble and features intricate carvings, inlay work, and symmetrical gardens. It is considered a masterpiece of Mughal architecture and is often referred to as the 'Jewel of India.'",
+    "answer": "Taj Mahal"
+  },
+  {
+    "question": "Who is known as the Father of the Nation in India?",
+    "options": [
+      "Bhagat Singh",
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose"
+    ],
+    "description": "This leader is revered for his role in India's struggle for independence through non-violent resistance and civil disobedience. His philosophy of truth and non-violence inspired movements for civil rights and freedom across the world. He led several campaigns against British rule, including the famous Salt March and Quit India Movement. His teachings and principles continue to influence Indian society and politics.",
+    "answer": "Mahatma Gandhi"
+  },
+  {
+    "question": "Which state is famous for its tea gardens?",
+    "options": ["Assam", "Kerala", "Rajasthan", "Punjab"],
+    "description": "This state is renowned for its vast tea plantations, producing some of the finest tea in the world. The region's climate and fertile soil make it ideal for tea cultivation. The tea from this state is known for its strong flavor and rich aroma, making it a favorite among tea enthusiasts globally. The state also boasts picturesque landscapes, with rolling hills covered in lush green tea gardens.",
+    "answer": "Assam"
+  },
+  {
+    "question": "What is the national bird of India?",
+    "options": ["Peacock", "Eagle", "Parrot", "Sparrow"],
+    "description": "This bird is celebrated for its vibrant plumage and graceful appearance. It holds a special place in Indian culture and mythology, often associated with beauty, grace, and pride. The bird is commonly found in forests, villages, and even urban areas across the country. Its elaborate courtship dance, especially during the monsoon season, is a sight to behold and has inspired numerous artistic and cultural expressions.",
+    "answer": "Peacock"
+  },
+  {
+    "question": "Which Indian state has the longest coastline?",
+    "options": ["Maharashtra", "Tamil Nadu", "Gujarat", "Kerala"],
+    "description": "This state boasts the longest coastline in India, stretching along the Arabian Sea. It is known for its diverse marine life, bustling ports, and beautiful beaches. The state's coastal region plays a vital role in its economy, supporting industries such as fishing, shipping, and tourism. The coastline is also home to several historical sites and cultural landmarks.",
+    "answer": "Gujarat"
+  },
+  {
+    "question": "Which is the largest Indian state by area?",
+    "options": ["Maharashtra", "Madhya Pradesh", "Rajasthan", "Uttar Pradesh"],
+    "description": "This state is the largest in terms of geographical area in India. It is known for its vast deserts, historical forts, and rich cultural heritage. The state's landscape includes arid regions, hills, and fertile plains. It is a popular tourist destination, offering a glimpse into India's royal past and vibrant traditions.",
+    "answer": "Rajasthan"
+  },
+  {
+    "question": "In which year did India gain independence?",
+    "options": ["1942", "1945", "1947", "1950"],
+    "description": "This year marks a significant milestone in Indian history, as it was the year India gained independence from British rule after a long and arduous struggle. The independence movement, led by various leaders and organizations, culminated in the end of colonial rule and the birth of a sovereign nation. The day is celebrated annually as Independence Day with great fervor and pride.",
+    "answer": "1947"
+  },
+  {
+    "question": "Which of these is a famous Indian dish?",
+    "options": ["Sushi", "Tacos", "Biryani", "Pizza"],
+    "description": "This dish is a flavorful and aromatic rice-based preparation that is popular across India. It is made with a blend of spices, meat, or vegetables, and is often served during special occasions and festivals. The dish has regional variations, each with its unique taste and cooking style. It is a staple in Indian cuisine and is enjoyed by people of all ages.",
+    "answer": "Biryani"
+  },
+  {
+    "question": "Who is known as the Missile Man of India?",
+    "options": [
+      "Vikram Sarabhai",
+      "Homi Bhabha",
+      "APJ Abdul Kalam",
+      "C.V. Raman"
+    ],
+    "description": "This scientist and statesman is celebrated for his contributions to India's space and missile programs. He played a key role in the development of ballistic missile technology and was instrumental in India's nuclear tests. His vision and leadership earned him the title of 'Missile Man.' He later served as the President of India, where he continued to inspire the youth with his wisdom and humility.",
+    "answer": "APJ Abdul Kalam"
+  },
+  {
+    "question": "Which is the highest mountain peak in India?",
+    "options": ["K2", "Mount Everest", "Kangchenjunga", "Nanda Devi"],
+    "description": "This mountain peak is the highest in India and the third highest in the world. Located in the Himalayas, it is known for its breathtaking beauty and challenging climbing routes. The peak is considered sacred by the local communities and is a popular destination for mountaineers and adventurers. It is part of a larger mountain range that spans multiple countries.",
+    "answer": "Kangchenjunga"
+  },
+  {
+    "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+    "options": ["Haryana", "Punjab", "Uttarakhand", "Himachal Pradesh"],
+    "description": "This state is named after the five rivers that flow through its territory, making it one of the most fertile regions in India. It is known for its agricultural productivity, vibrant culture, and rich history. The state is also famous for its festivals, music, and cuisine, which reflect the spirit and traditions of its people.",
+    "answer": "Punjab"
+  },
+  {
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
+    "description": "This Mughal emperor is remembered for his love of architecture and the arts. He commissioned the construction of several iconic monuments, including one of the most famous in the world, built in memory of his beloved wife. His reign is often referred to as the golden age of Mughal architecture, characterized by grand structures and intricate designs.",
+    "answer": "Shah Jahan"
+  },
+  {
+    "question": "Which Indian festival marks the arrival of spring?",
+    "options": ["Diwali", "Eid", "Holi", "Navratri"],
+    "description": "This festival is celebrated with great enthusiasm across India, marking the arrival of spring and the victory of good over evil. It is known for its vibrant colors, music, and dance. People throw colored powders and water at each other, symbolizing joy and unity. The festival also includes traditional sweets, festive foods, and community gatherings.",
+    "answer": "Holi"
+  },
+  {
+    "question": "Which planetarium is the largest in India?",
+    "options": [
+      "Nehru Planetarium",
+      "Birla Planetarium",
+      "Indira Gandhi Planetarium",
+      "Jawaharlal Planetarium"
+    ],
+    "description": "This planetarium is one of the largest and most well-known in India, offering a fascinating glimpse into the universe. It features state-of-the-art technology, including advanced projection systems and interactive exhibits. The planetarium hosts educational programs, workshops, and shows that cater to astronomy enthusiasts of all ages.",
+    "answer": "Birla Planetarium"
+  },
+  {
+    "question": "Which Indian sportsperson is known as the 'God of Cricket'?",
+    "options": ["Virat Kohli", "MS Dhoni", "Sachin Tendulkar", "Kapil Dev"],
+    "description": "This legendary cricketer is widely regarded as one of the greatest batsmen in the history of the sport. His career spanned over two decades, during which he broke numerous records and set new benchmarks. Known for his impeccable technique and consistency, he became a national icon and inspired millions of aspiring cricketers in India and around the world.",
+    "answer": "Sachin Tendulkar"
+  },
+  {
+    "question": "Which dance form originates from Tamil Nadu?",
+    "options": ["Bharatanatyam", "Kathakali", "Odissi", "Manipuri"],
+    "description": "This classical dance form has its roots in the temples of Tamil Nadu and is one of the oldest in India. It is characterized by its intricate footwork, expressive gestures, and elaborate costumes. The dance form is deeply spiritual and often depicts stories from Hindu mythology. It has gained international recognition and is performed on global stages.",
+    "answer": "Bharatanatyam"
+  },
+  {
+    "question": "Which city is famous for its diamond industry?",
+    "options": ["Mumbai", "Jaipur", "Surat", "Hyderabad"],
+    "description": "This city is renowned as a global hub for diamond cutting and polishing. It is home to thousands of diamond traders and artisans who contribute significantly to India's gem and jewelry industry. The city's expertise in diamond processing has earned it a reputation as one of the world's leading centers for diamond trade.",
+    "answer": "Surat"
+  },
+  {
+    "question": "Which state is famous for its backwaters?",
+    "options": ["Goa", "Kerala", "Andhra Pradesh", "West Bengal"],
+    "description": "This state is famous for its serene backwaters, a network of interconnected canals, rivers, and lakes. The backwaters are a major tourist attraction, offering houseboat cruises and picturesque views of lush greenery and tranquil waters. The state is also known for its rich cultural heritage, traditional art forms, and delicious cuisine.",
+    "answer": "Kerala"
+  },
+  {
+    "question": "Who was India's first President?",
+    "options": [
+      "Dr. Rajendra Prasad",
+      "Sarvepalli Radhakrishnan",
+      "Zakir Hussain",
+      "V.V. Giri"
+    ],
+    "description": "This leader was the first President of independent India and played a crucial role in shaping the nation's democratic framework. A scholar and freedom fighter, he was deeply respected for his wisdom and integrity. His contributions to the Indian Constitution and his efforts to promote education and social justice remain significant.",
+    "answer": "Dr. Rajendra Prasad"
+  },
+  {
+    "question": "Which Indian IT city is known as 'Cyberabad'?",
+    "options": ["Mumbai", "Hyderabad", "Bengaluru", "Pune"],
+    "description": "This city is a major center for information technology and business process outsourcing in India. It is home to numerous tech parks, multinational corporations, and startups. The city's infrastructure, skilled workforce, and favorable business environment have earned it the nickname 'Cyberabad.' It is also known for its rich history, culture, and cuisine.",
+    "answer": "Hyderabad"
+  }
+]

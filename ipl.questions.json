@@ -1,0 +1,187 @@
+[
+  {
+    "question": "Which team won the first-ever IPL title in 2008?",
+    "options": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Mumbai Indians"
+    ],
+    "answer": "Rajasthan Royals",
+    "description": "The Rajasthan Royals, led by Shane Warne, won the inaugural IPL season in 2008 by defeating Chennai Super Kings in the final."
+  },
+  {
+    "question": "Who has scored the most runs in IPL history?",
+    "options": ["Virat Kohli", "Rohit Sharma", "David Warner", "Suresh Raina"],
+    "answer": "Virat Kohli",
+    "description": "Virat Kohli holds the record for the most runs in IPL history, with multiple outstanding seasons, including a record-breaking 973 runs in 2016."
+  },
+  {
+    "question": "Which player has taken the most wickets in IPL history?",
+    "options": [
+      "Lasith Malinga",
+      "Dwayne Bravo",
+      "Yuzvendra Chahal",
+      "Amit Mishra"
+    ],
+    "answer": "Yuzvendra Chahal",
+    "description": "Yuzvendra Chahal surpassed Lasith Malinga to become the highest wicket-taker in IPL history with his consistent performances as a leg-spinner."
+  },
+  {
+    "question": "Which team has won the most IPL titles?",
+    "options": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "answer": "Mumbai Indians",
+    "description": "Mumbai Indians, led by Rohit Sharma, have won the most IPL titles, showcasing dominance in multiple seasons."
+  },
+  {
+    "question": "Who was the first player to score a century in the IPL?",
+    "options": [
+      "Brendon McCullum",
+      "Sachin Tendulkar",
+      "Chris Gayle",
+      "Virender Sehwag"
+    ],
+    "answer": "Brendon McCullum",
+    "description": "Brendon McCullum scored the first-ever IPL century (158* off 73 balls) in the opening match of the tournament in 2008 for Kolkata Knight Riders."
+  },
+  {
+    "question": "Which bowler has taken the most hat-tricks in IPL history?",
+    "options": [
+      "Amit Mishra",
+      "Yuvraj Singh",
+      "Lasith Malinga",
+      "Sunil Narine"
+    ],
+    "answer": "Amit Mishra",
+    "description": "Amit Mishra holds the record for the most hat-tricks in IPL history, with three hat-tricks to his name."
+  },
+  {
+    "question": "Which player has the highest individual score in an IPL match?",
+    "options": ["Chris Gayle", "Virat Kohli", "AB de Villiers", "David Warner"],
+    "answer": "Chris Gayle",
+    "description": "Chris Gayle smashed 175* off 66 balls for Royal Challengers Bangalore in 2013, the highest individual score in IPL history."
+  },
+  {
+    "question": "Who is the only Indian to take two IPL hat-tricks?",
+    "options": [
+      "Amit Mishra",
+      "Yuvraj Singh",
+      "Ravindra Jadeja",
+      "Harbhajan Singh"
+    ],
+    "answer": "Yuvraj Singh",
+    "description": "Yuvraj Singh is the only Indian player to take two hat-tricks in a single IPL season (2009)."
+  },
+  {
+    "question": "Which team won the IPL 2023 season?",
+    "options": [
+      "Mumbai Indians",
+      "Chennai Super Kings",
+      "Gujarat Titans",
+      "Rajasthan Royals"
+    ],
+    "answer": "Chennai Super Kings",
+    "description": "Chennai Super Kings won their 5th IPL title in 2023, led by MS Dhoni, defeating Gujarat Titans in the final."
+  },
+  {
+    "question": "Which team was banned from IPL for two years due to a betting scandal?",
+    "options": [
+      "Rajasthan Royals",
+      "Delhi Capitals",
+      "Chennai Super Kings",
+      "Both Rajasthan Royals & Chennai Super Kings"
+    ],
+    "answer": "Both Rajasthan Royals & Chennai Super Kings",
+    "description": "Both Rajasthan Royals and Chennai Super Kings were banned from IPL for two seasons (2016, 2017) due to a betting scandal involving team officials."
+  },
+  {
+    "question": "Which Indian player has won the most IPL titles as captain?",
+    "options": ["Rohit Sharma", "MS Dhoni", "Virat Kohli", "Gautam Gambhir"],
+    "answer": "Rohit Sharma",
+    "description": "Rohit Sharma has won the most IPL titles as a captain, leading Mumbai Indians to five championship wins."
+  },
+  {
+    "question": "Who won the Orange Cap in IPL 2023?",
+    "options": [
+      "Virat Kohli",
+      "Faf du Plessis",
+      "Shubman Gill",
+      "David Warner"
+    ],
+    "answer": "Shubman Gill",
+    "description": "Shubman Gill won the Orange Cap in IPL 2023 for scoring the most runs in the season while playing for Gujarat Titans."
+  },
+  {
+    "question": "Which bowler won the Purple Cap in IPL 2023?",
+    "options": [
+      "Mohammed Shami",
+      "Rashid Khan",
+      "Yuzvendra Chahal",
+      "Jofra Archer"
+    ],
+    "answer": "Mohammed Shami",
+    "description": "Mohammed Shami won the Purple Cap in IPL 2023, taking the most wickets in the season for Gujarat Titans."
+  },
+  {
+    "question": "Which IPL franchise is owned by Bollywood star Shah Rukh Khan?",
+    "options": [
+      "Mumbai Indians",
+      "Kolkata Knight Riders",
+      "Delhi Capitals",
+      "Rajasthan Royals"
+    ],
+    "answer": "Kolkata Knight Riders",
+    "description": "Shah Rukh Khan is the co-owner of Kolkata Knight Riders, one of the most popular IPL teams."
+  },
+  {
+    "question": "Who was the first Indian to hit a century in IPL?",
+    "options": ["Sachin Tendulkar", "Manish Pandey", "Virat Kohli", "MS Dhoni"],
+    "answer": "Manish Pandey",
+    "description": "Manish Pandey became the first Indian player to score an IPL century in 2009 while playing for Royal Challengers Bangalore."
+  },
+  {
+    "question": "Which player has hit the most sixes in IPL history?",
+    "options": ["Chris Gayle", "MS Dhoni", "Rohit Sharma", "AB de Villiers"],
+    "answer": "Chris Gayle",
+    "description": "Chris Gayle holds the record for the most sixes in IPL history, with his explosive batting style."
+  },
+  {
+    "question": "Which team has never won an IPL title?",
+    "options": [
+      "Delhi Capitals",
+      "Sunrisers Hyderabad",
+      "Rajasthan Royals",
+      "Chennai Super Kings"
+    ],
+    "answer": "Delhi Capitals",
+    "description": "Delhi Capitals is one of the few IPL teams that have never won the championship despite reaching the final in 2020."
+  },
+  {
+    "question": "Who is the first player to take a 5-wicket haul in IPL history?",
+    "options": ["Anil Kumble", "Sohail Tanvir", "Dale Steyn", "Sunil Narine"],
+    "answer": "Sohail Tanvir",
+    "description": "Sohail Tanvir was the first player to take a 5-wicket haul in IPL history, achieving this feat in the 2008 season."
+  },
+  {
+    "question": "Which team did Gujarat Titans defeat to win their first IPL title in 2022?",
+    "options": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "answer": "Rajasthan Royals",
+    "description": "Gujarat Titans won their first IPL title in 2022 by defeating Rajasthan Royals in the final under the leadership of Hardik Pandya."
+  },
+  {
+    "question": "Which captain has led his team in the most IPL matches?",
+    "options": ["MS Dhoni", "Virat Kohli", "Rohit Sharma", "Gautam Gambhir"],
+    "answer": "MS Dhoni",
+    "description": "MS Dhoni holds the record for captaining the most IPL matches, leading Chennai Super Kings and Rising Pune Supergiant."
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "question": "What is the chemical symbol for water?",
+    "options": ["H2O", "O2", "CO2", "H2O2"],
+    "answer": "H2O",
+    "description": "Water is composed of two hydrogen atoms and one oxygen atom, represented as H2O."
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars",
+    "description": "Mars is called the Red Planet due to its reddish appearance caused by iron oxide (rust) on its surface."
+  },
+  {
+    "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide",
+    "description": "Plants use carbon dioxide and sunlight to produce oxygen and glucose in the process of photosynthesis."
+  },
+  {
+    "question": "What is the speed of light in a vacuum?",
+    "options": [
+      "3 × 10^6 m/s",
+      "3 × 10^8 m/s",
+      "3 × 10^10 m/s",
+      "3 × 10^12 m/s"
+    ],
+    "answer": "3 × 10^8 m/s",
+    "description": "The speed of light in a vacuum is approximately 299,792,458 meters per second, often rounded to 3 × 10^8 m/s."
+  },
+  {
+    "question": "Which part of the human body produces insulin?",
+    "options": ["Liver", "Pancreas", "Kidneys", "Heart"],
+    "answer": "Pancreas",
+    "description": "The pancreas produces insulin, a hormone that helps regulate blood sugar levels."
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi Apparatus"],
+    "answer": "Mitochondria",
+    "description": "Mitochondria generate energy in the form of ATP, making them the powerhouse of the cell."
+  },
+  {
+    "question": "Which element is essential for respiration?",
+    "options": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon"],
+    "answer": "Oxygen",
+    "description": "Oxygen is required by cells to generate energy through the process of aerobic respiration."
+  },
+  {
+    "question": "Which force keeps planets in orbit around the Sun?",
+    "options": [
+      "Magnetic Force",
+      "Frictional Force",
+      "Gravitational Force",
+      "Nuclear Force"
+    ],
+    "answer": "Gravitational Force",
+    "description": "Gravity is the force that keeps planets in orbit around the Sun and governs the movement of celestial bodies."
+  },
+  {
+    "question": "What is the main component of Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+    "answer": "Nitrogen",
+    "description": "Nitrogen makes up about 78% of Earth's atmosphere, playing a crucial role in the nitrogen cycle."
+  },
+  {
+    "question": "Which gas is responsible for the greenhouse effect?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+    "answer": "Carbon Dioxide",
+    "description": "Carbon dioxide traps heat in Earth's atmosphere, contributing to global warming and climate change."
+  },
+  {
+    "question": "What vitamin is produced when skin is exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D",
+    "description": "Sunlight helps the body synthesize vitamin D, which is essential for bone health and immune function."
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Graphite"],
+    "answer": "Diamond",
+    "description": "Diamond is the hardest naturally occurring material, made entirely of carbon atoms arranged in a strong lattice structure."
+  },
+  {
+    "question": "Which part of the brain controls balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "answer": "Cerebellum",
+    "description": "The cerebellum is responsible for coordinating movement and maintaining balance in the body."
+  },
+  {
+    "question": "Which type of blood cells help fight infections?",
+    "options": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"],
+    "answer": "White Blood Cells",
+    "description": "White blood cells (WBCs) are part of the immune system and help defend the body against infections."
+  },
+  {
+    "question": "Which planet is the largest in the solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter",
+    "description": "Jupiter is the largest planet in our solar system, with a diameter of about 139,820 km."
+  },
+  {
+    "question": "What is the smallest unit of life?",
+    "options": ["Tissue", "Cell", "Organ", "Organism"],
+    "answer": "Cell",
+    "description": "The cell is the basic unit of life, capable of performing all the necessary functions of living organisms."
+  },
+  {
+    "question": "What type of energy is stored in food?",
+    "options": [
+      "Kinetic Energy",
+      "Thermal Energy",
+      "Chemical Energy",
+      "Nuclear Energy"
+    ],
+    "answer": "Chemical Energy",
+    "description": "Food contains chemical energy, which is released during digestion and used by the body for various functions."
+  },
+  {
+    "question": "Which scientist developed the theory of relativity?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "answer": "Albert Einstein",
+    "description": "Albert Einstein formulated the theory of relativity, including the famous equation E=mc²."
+  },
+  {
+    "question": "Which part of the plant conducts water?",
+    "options": ["Phloem", "Xylem", "Stomata", "Chloroplast"],
+    "answer": "Xylem",
+    "description": "Xylem transports water and minerals from the roots to other parts of the plant."
+  },
+  {
+    "question": "What is the process by which plants make their own food?",
+    "options": ["Respiration", "Photosynthesis", "Digestion", "Evaporation"],
+    "answer": "Photosynthesis",
+    "description": "Photosynthesis is the process in which plants use sunlight to convert carbon dioxide and water into glucose and oxygen."
+  }
+]
