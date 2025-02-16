@@ -119,7 +119,8 @@ window.googletag = window.googletag || {
   cmd: [],
 };
 // handle reward targeting
-if (Math.random() < 0.5) {
+if (Math.random() < 1.0) {
+  console.log("reeeeeewarding");
   let rewardedSlot;
   googletag.cmd.push(function () {
     rewardedSlot = googletag
