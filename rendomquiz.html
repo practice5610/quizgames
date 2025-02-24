@@ -380,7 +380,7 @@ footer .footer-links a:hover {
     <div class="popup" id="reward-popup">
         <h2>Earn Extra Rewards!</h2>
         <p>Watch an ad to earn 500 bonus coins and continue the quiz!</p>
-        <button class="claim" id="claim-button">Claim</button>
+        <!-- <button class="claim" id="claim-button">Claim</button> -->
         <button class="close" id="close-button">Close</button>
     </div>
 
@@ -480,6 +480,12 @@ function calculateTimeFraction(timeLeft) {
             if (timerInterval) clearInterval(timerInterval);
             if (isCorrect) {
                 button.classList.add('correct');
+                coins += 500;
+            coinsElement.textContent = coins;
+           
+            alert("Ad watched! 500 coins added!");
+            currentQuiz++;
+            loadQuiz();
             } else {
                 button.classList.add('wrong');
                 document.querySelectorAll('.options button')[correctIndex].classList.add('correct');

@@ -230,12 +230,12 @@ header p {
         const adHandler = new JbRewardedAdHandler();
         console.log("Dom loaded",adHandler);
         
-        const onAdGranted = (passbackConfig) => {
-            console.log("Ad was granted.", passbackConfig);
-            if (passbackConfig?.href) {
-                window.location.href = passbackConfig.href;
-            }
-        };
+        // const onAdGranted = (passbackConfig) => {
+        //     console.log("Ad was granted.", passbackConfig);
+        //     if (passbackConfig?.href) {
+        //         window.location.href = passbackConfig.href;
+        //     }
+        // };
 
         const onAdRejected = (passbackConfig) => {
             console.log("Ad was rejected.", passbackConfig);
