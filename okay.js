@@ -1,7 +1,7 @@
 (function () {
   const script = document.createElement("script");
   script.async = true;
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-08WXH14EN4";
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-1GVDBLHMMJ";
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
 
@@ -9,7 +9,7 @@
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("config", "G-08WXH14EN4");
+  gtag("config", "G-1GVDBLHMMJ");
 })();
 
 window.googletag = window.googletag || {
