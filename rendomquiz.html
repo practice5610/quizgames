@@ -380,7 +380,7 @@ footer .footer-links a:hover {
     <div class="popup" id="reward-popup">
         <h2>Earn Extra Rewards!</h2>
         <p>Watch an ad to earn 500 bonus coins and continue the quiz!</p>
-        <!-- <button class="claim" id="claim-button">Claim</button> -->
+       
         <button class="close" id="close-button">Close</button>
     </div>
 
@@ -558,12 +558,12 @@ function redirectToNextQuiz() {
     document.addEventListener("DOMContentLoaded", () => {
         const adHandler = new JbRewardedAdHandler();
 
-        const onAdGranted = (passbackConfig) => {
-            console.log("Ad was granted.", passbackConfig);
-            if (passbackConfig?.href) {
-                window.location.href = passbackConfig.href;
-            }
-        };
+        // const onAdGranted = (passbackConfig) => {
+        //     console.log("Ad was granted.", passbackConfig);
+        //     if (passbackConfig?.href) {
+        //         window.location.href = passbackConfig.href;
+        //     }
+        // };
 
         const onAdRejected = (passbackConfig) => {
             console.log("Ad was rejected.", passbackConfig);
