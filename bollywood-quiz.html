@@ -370,7 +370,7 @@ footer .footer-links a:hover {
     <div class="popup" id="reward-popup">
         <h2>Earn Extra Rewards!</h2>
         <p>Watch an ad to earn 500 bonus coins and continue the quiz!</p>
-        <button class="claim" id="claim-button">Claim</button>
+        <!-- <button class="claim" id="claim-button">Claim</button> -->
         <button class="close" id="close-button">Close</button>
     </div>
 
@@ -478,15 +478,20 @@ footer .footer-links a:hover {
             coinPopupElement.style.display = "block";
             coinPopupElement.style.animation = "fadeMove 1.5s forwards";
 
-            setTimeout(() => {
-                coinPopupElement.style.display = "none";
-                if (currentQuiz === 0 || (currentQuiz + 1) % 3 === 0) {
-                    showPopup();
-                } else {
-                    currentQuiz++;
-                    loadQuiz();
-                }
-            }, 1500);
+             coins += 500;
+            coinsElement.textContent = coins;
+            alert("Ad watched! 500 coins added!");
+            currentQuiz++;
+            loadQuiz();
+            // setTimeout(() => {
+            //     coinPopupElement.style.display = "none";
+            //     if (currentQuiz === 0 || (currentQuiz + 1) % 3 === 0) {
+            //         showPopup();
+            //     } else {
+            //         currentQuiz++;
+            //         loadQuiz();
+            //     }
+            // }, 1500);
         }
 
         function showPopup() {
@@ -532,19 +537,19 @@ footer .footer-links a:hover {
     document.addEventListener("DOMContentLoaded", () => {
         const adHandler = new JbRewardedAdHandler();
 
-        const onAdGranted = (passbackConfig) => {
-            console.log("Ad was granted.", passbackConfig);
-            if (passbackConfig?.href) {
-                window.location.href = passbackConfig.href;
-            }
-        };
+        // const onAdGranted = (passbackConfig) => {
+        //     console.log("Ad was granted.", passbackConfig);
+        //     if (passbackConfig?.href) {
+        //         window.location.href = passbackConfig.href;
+        //     }
+        // };
 
-        const onAdRejected = (passbackConfig) => {
-            console.log("Ad was rejected.", passbackConfig);
-        };
+        // const onAdRejected = (passbackConfig) => {
+        //     console.log("Ad was rejected.", passbackConfig);
+        // };
 
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
+        // adHandler.onAdGranted(onAdGranted);
+        // adHandler.onAdRejected(onAdRejected);
 
         const onClick = (evt) => {
             evt.preventDefault();
