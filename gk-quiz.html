@@ -384,8 +384,9 @@
                   class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO"
                   d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "
                 ></path>
-              </g></svg
-            ><span id="base-timer-label" class="timer_baseTimer__label__5CfV0"
+              </g>
+            </svg>
+            <span id="base-timer-label" class="timer_baseTimer__label__5CfV0"
               ><span class="timer_inner__ClpEy"></span
               ><span class="timer_seconds__2KixA" id="timer">30</span></span
             >
@@ -615,25 +616,8 @@
       loadQuestions();
     </script>
 
-    <script defer>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const adHandler = new JbRewardedAdHandler();
-        console.log("asdasdasdasd");
-
-        const onAdGranted = (passbackConfig) => {
-          console.log("Ad was granted.", passbackConfig);
-          if (passbackConfig?.href) {
-            window.location.href = passbackConfig.href;
-          }
-        };
-
-        const onAdRejected = (passbackConfig) => {
-          console.log("Ad was rejected.", passbackConfig);
-        };
-
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
-
         const onClick = (evt) => {
           evt.preventDefault();
           console.log("Ad click event triggered.", evt.target);

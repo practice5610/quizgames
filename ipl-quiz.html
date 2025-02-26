@@ -253,6 +253,56 @@
         transform: scale(1.1);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       }
+      .timer_baseTimer___57OS {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        background: #282d93;
+        top: -20px;
+      }
+      .timer_baseTimer__svg__kqz_Y {
+        transform: scaleX(-1);
+      }
+      .timer_baseTimer__circle__1YodV {
+        fill: none;
+        stroke: none;
+      }
+      .timer_baseTimer__circle__1YodV {
+        fill: none;
+        stroke: none;
+      }
+      .timer_baseTimer__pathRemaining__PkIN0.timer_red__lTN_G {
+        color: red;
+      }
+      .timer_baseTimer__label__5CfV0 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        top: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-align: center;
+        left: 6px;
+      }
+      .timer_inner__ClpEy {
+        border-radius: 50px;
+        background: #282d93;
+        border: 6px solid #090551;
+        width: 70px;
+        position: absolute;
+        height: 70px;
+      }
+      .timer_seconds__2KixA {
+        position: relative;
+        z-index: 1002;
+      }
     </style>
   </head>
   <body>
@@ -296,7 +346,6 @@
       <div class="quiz-container" id="quiz-container">
         <div class="coins">
           <span>💵 Coins: <span id="coins">0</span></span>
-          <span class="timer" id="timer">30</span>
         </div>
         <div class="progress">
           Question <span id="current-question">1</span> of
@@ -304,8 +353,49 @@
         </div>
         <div class="coin-popup" id="coin-popup"></div>
         <div class="question" id="question">Loading question...</div>
-        <div class="options" id="options">
-          <!-- Options will be loaded dynamically -->
+        <div
+          style="
+            position: relative;
+            background-color: #282d93;
+            border-radius: 12px;
+            min-height: 200px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 2rem;
+          "
+        >
+          <div class="options" id="options">
+            <!-- Options will be loaded dynamically -->
+          </div>
+
+          <div class="timer_baseTimer___57OS">
+            <svg
+              class="timer_baseTimer__svg__kqz_Y"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g class="timer_baseTimer__circle__1YodV">
+                <circle
+                  class="timer_baseTimer__pathElapsed__D6lCz"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                ></circle>
+                <path
+                  id="base-timer-path-remaining"
+                  stroke-dasharray="142 283"
+                  class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO"
+                  d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "
+                ></path>
+              </g>
+            </svg>
+            <span id="base-timer-label" class="timer_baseTimer__label__5CfV0"
+              ><span class="timer_inner__ClpEy"></span
+              ><span class="timer_seconds__2KixA" id="timer">30</span></span
+            >
+          </div>
         </div>
         <div class="description" id="description">
           <!-- Question description will always be shown here -->
@@ -471,6 +561,7 @@
 
       function showRewardedAdAndRedirect() {
         window.googletag = window.googletag || { cmd: [] };
+        console.log("it's me in ipl");
         googletag.cmd.push(function () {
           const rewardedSlot = googletag
             .defineOutOfPageSlot(
@@ -530,24 +621,8 @@
       loadQuestions();
     </script>
 
-    <script defer>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const adHandler = new JbRewardedAdHandler();
-
-        const onAdGranted = (passbackConfig) => {
-          console.log("Ad was granted.", passbackConfig);
-          if (passbackConfig?.href) {
-            window.location.href = passbackConfig.href;
-          }
-        };
-
-        const onAdRejected = (passbackConfig) => {
-          console.log("Ad was rejected.", passbackConfig);
-        };
-
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
-
         const onClick = (evt) => {
           evt.preventDefault();
           console.log("Ad click event triggered.", evt.target);

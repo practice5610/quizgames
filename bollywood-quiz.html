@@ -623,25 +623,8 @@
       loadQuestions();
     </script>
 
-    <script defer>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const adHandler = new JbRewardedAdHandler();
-        console.log("asdasdasdasd");
-
-        const onAdGranted = (passbackConfig) => {
-          console.log("Ad was granted.", passbackConfig);
-          if (passbackConfig?.href) {
-            window.location.href = passbackConfig.href;
-          }
-        };
-
-        const onAdRejected = (passbackConfig) => {
-          console.log("Ad was rejected.", passbackConfig);
-        };
-
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
-
         const onClick = (evt) => {
           evt.preventDefault();
           console.log("Ad click event triggered.", evt.target);
