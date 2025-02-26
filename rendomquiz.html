@@ -14,13 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz with Timer and Rewards</title>
     <style>
-  
-      
+
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            
+
             color: #fff;
             display: flex;
             justify-content: center;
@@ -30,7 +30,7 @@
             position: relative;
         }
         body::after {
-        
+
         background: url('img.jpg');
         content: "";
         position: absolute;
@@ -43,7 +43,7 @@
         min-height: 100vh;
       }
         .container {
-         
+
         width: 428px;
         min-height: 100vh;
         min-height: 100vh !important;
@@ -57,16 +57,13 @@
     background: linear-gradient(180deg, #282d93, #15136e);
     text-align: center;
     box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
-    padding: 10px 0px;
+
 }
 header p {
     margin: 0;
     color: white;
 }
-       
+
         .ads-container {
             background: rgba(240, 240, 240, 0.9);
             padding: 10px;
@@ -91,7 +88,7 @@ header p {
             margin-bottom: 15px;
             padding: 10px 20px;
             border-radius: 10px;
-          
+
             color: #fff;
             font-weight: bold;
             display: flex;
@@ -99,7 +96,7 @@ header p {
             align-items: center;
             max-width: 350px;
             margin: 0 auto 20px;
-           
+
         }
         .coins span {
             margin: 0 10px;
@@ -142,7 +139,7 @@ header p {
             margin-bottom: 20px;
         }
     .options {
-   
+
     padding: 1rem;
     width: 100%;
     display: grid;
@@ -182,7 +179,7 @@ header p {
             margin-top: 20px;
             padding: 15px;
             background: #282d93;
-            
+
             border-radius: 8px;
             font-size: 14px;
             color: #fff;
@@ -231,7 +228,7 @@ header p {
             text-align: center;
             padding: 10px;
             font-size: 12px;
-            
+
         }
       footer .footer-links {
     margin-bottom: 10px;
@@ -312,7 +309,7 @@ footer .footer-links a:hover {
     width: 70px;
     position: absolute;
     height: 70px;
-  
+
 }
 .timer_seconds__2KixA {
     position: relative;
@@ -354,13 +351,13 @@ footer .footer-links a:hover {
 
 </div>
 </p>
-    
- 
+
+
         </div>
         <div class="quiz-container" id="quiz-container">
             <div class="coins">
                 <span>💵 Coins: <span id="coins">0</span></span>
-               
+
             </div>
             <div class="progress">
                 Question <span id="current-question">1</span> of <span id="total-questions">5</span>
@@ -371,9 +368,9 @@ footer .footer-links a:hover {
 
                 <div class="options" id="options">
                     <!-- Options will be loaded dynamically -->
-                    
+
                 </div>
-                  
+
                   <div class="timer_baseTimer___57OS"><svg class="timer_baseTimer__svg__kqz_Y" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="timer_baseTimer__circle__1YodV"><circle class="timer_baseTimer__pathElapsed__D6lCz" cx="50" cy="50" r="45"></circle><path id="base-timer-path-remaining" stroke-dasharray="142 283" class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO" d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "></path></g></svg><span id="base-timer-label" class="timer_baseTimer__label__5CfV0"><span class="timer_inner__ClpEy"></span><span class="timer_seconds__2KixA" id="timer">30</span></span></div>
             </div>
             <div class="description" id="description">
@@ -399,7 +396,7 @@ footer .footer-links a:hover {
         <button class="close" id="close-button">Close</button>
     </div>
 
-   
+
     <script>
         let quizzes = [];
         let selectedQuizzes = [];
@@ -428,7 +425,7 @@ const TIME_LIMIT = 30; // Total time in seconds
                const response = await fetch('./questions.json');
                 quizzes = await response.json();
                 console.log("quizzes",quizzes);
-                
+
                 selectedQuizzes = [...quizzes] // Clone the array to avoid modifying the original
   .sort(() => Math.random() - 0.5) // Shuffle the array randomly
   .slice(0, 5); // Select first 5 elements
@@ -478,7 +475,7 @@ function calculateTimeFraction(timeLeft) {
             if (currentQuiz < selectedQuizzes.length) {
                 const quiz = selectedQuizzes[currentQuiz];
                 console.log("quiz",quiz);
-                
+
                 questionElement.textContent = quiz.question;
                 optionsElement.innerHTML = "";
                 descriptionElement.innerHTML = quiz.description;
@@ -504,7 +501,7 @@ function calculateTimeFraction(timeLeft) {
         });
             if (isCorrect) {
                 button.classList.add('correct');
-                
+
             } else {
                 button.classList.add('wrong');
                 document.querySelectorAll('.options button')[correctIndex].classList.add('correct');
@@ -525,7 +522,7 @@ function calculateTimeFraction(timeLeft) {
             setTimeout(() => {
                 coinPopupElement.style.display = "none";
                 currentQuiz++;
-                
+
                 loadQuiz();
             }, 1500);
         }
@@ -538,21 +535,21 @@ function calculateTimeFraction(timeLeft) {
         }
 
         claimButton.onclick = () => {
-       
+
             coins += 500;
             coinsElement.textContent = coins;
             hidePopup();
             alert("Ad watched! 500 coins added!");
-           
+
             loadQuiz();
-    
+
         };
 
         closeButton.onclick = () => {
             alert("You must watch the ad to proceed.");
         };
 
-        
+
       function showFinalScore() {
     // Save the final score to localStorage
     localStorage.setItem('finalScore', coins);
@@ -574,7 +571,7 @@ function redirectToNextQuiz() {
 
         loadQuestions();
     </script>
-   
-    
+
+
 </body>
 </html>
