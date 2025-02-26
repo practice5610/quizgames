@@ -18,7 +18,7 @@ window.googletag = window.googletag || {
 googletag.cmd.push(function () {
   googletag
     .defineSlot(
-      "/23282107112/f_1",
+      "/22870505798/jk_1",
       [[336, 280], [300, 250], "fluid"],
       "gpt-passback"
     )
@@ -38,7 +38,7 @@ if (Math.random() < 1.0) {
   googletag.cmd.push(function () {
     rewardedSlot = googletag
       .defineOutOfPageSlot(
-        "/23282107112/f_2",
+        "/22870505798/jk_2",
         googletag.enums.OutOfPageFormat.REWARDED
       )
       .addService(googletag.pubads());
