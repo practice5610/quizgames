@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script src="analytics.js"></script>
-    <script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      async
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-08WXH14EN4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-08WXH14EN4");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Quiz</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-           
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            overflow-x: hidden;
-            position: relative
-        }
-        body::after {
-        
-        background: url('img.jpg');
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+      }
+      body::after {
+        background: url("img.jpg");
         content: "";
         position: absolute;
         z-index: 0;
@@ -34,8 +47,7 @@
         opacity: 0.05;
         min-height: 100vh;
       }
-        .container {
-         
+      .container {
         width: 428px;
         min-height: 100vh;
         min-height: 100vh !important;
@@ -44,269 +56,257 @@
         background-color: #0e0a5f;
         z-index: 2;
         height: auto;
-        }
-       header {
-    background: linear-gradient(180deg, #282d93, #15136e);
-    text-align: center;
-    box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
-    padding: 10px 0px;
-}
-header p {
-    margin: 0;
-    color: white;
-}
-    
-        .ads-container {
-            background: rgba(240, 240, 240, 0.9);
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-        }
-        .ads-container::before {
-            content: "Advertisement";
-            display: block;
-            font-size: 12px;
-            color: #888;
-            margin-bottom: 5px;
-        }
-        .quiz-container {
-            padding: 20px;
-            text-align: center;
-        }
-        .coins {
-            font-size: 18px;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            border-radius: 10px;
-           
-            color: #fff;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 350px;
-            margin: 0 auto 20px;
-          
-        }
-        .coins span {
-            margin: 0 10px;
-        }
-        .timer {
-            font-size: 20px;
-            background: linear-gradient(45deg, #4facfe, #00c6ff);
-            padding: 5px 15px;
-            border-radius: 10px;
-            color: #fff;
-        }
-        .progress {
-            font-size: 16px;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-        .coin-popup {
-            font-size: 24px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-weight: bold;
-            display: none;
-            z-index: 1000;
-            text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            transition: all 0.5s ease;
-        }
-         .options {
-   
-    padding: 1rem;
-    width: 100%;
-    display: grid;
-    gap: 10px;
-     grid-template-columns: repeat(2, 1fr); /* Two columns */
-     position: relative;
-}
-       .options button {
-    width: 100%; /* Ensure buttons stretch to fill grid cells */
-    padding: 16px;
-    margin: 0; /* Adjust margin since grid gap handles spacing */
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+      }
+      header {
+        background: linear-gradient(180deg, #282d93, #15136e);
+        text-align: center;
+        box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%);
+        padding: 10px 0px;
+      }
+      header p {
+        margin: 0;
+        color: white;
+      }
 
-        .options button:hover {
-            background: linear-gradient(45deg, #0072ff, #00c6ff);
-            transform: scale(1.05);
-        }
-        .options button.correct {
-            background: #28a745 !important;
-            color: #fff !important;
-        }
-        .options button.wrong {
-            background: #dc3545 !important;
-            color: #fff !important;
-        }
-        .description {
-            margin-top: 20px;
-            padding: 15px;
-            background: #282d93;
-            border-radius: 8px;
-            font-size: 14px;
-            color: #fff;
-        }
-        .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            max-width: 350px;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            border-radius: 12px;
-            text-align: center;
-            display: none;
-            z-index: 1000;
-        }
-        .popup h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        .popup p {
-            font-size: 14px;
-            margin-bottom: 20px;
-            color: #555;
-        }
-        .popup button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .popup .claim {
-            background: #0072ff;
-            color: white;
-        }
-        .popup .close {
-            background: #dc3545;
-            color: white;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-           
-        }
+      .ads-container {
+        background: rgba(240, 240, 240, 0.9);
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+      .ads-container::before {
+        content: "Advertisement";
+        display: block;
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+      .quiz-container {
+        padding: 20px;
+        text-align: center;
+      }
+      .coins {
+        font-size: 18px;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        margin: 0 auto 20px;
+      }
+      .coins span {
+        margin: 0 10px;
+      }
+      .timer {
+        font-size: 20px;
+        background: linear-gradient(45deg, #4facfe, #00c6ff);
+        padding: 5px 15px;
+        border-radius: 10px;
+        color: #fff;
+      }
+      .progress {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #fff;
+      }
+      .coin-popup {
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        display: none;
+        z-index: 1000;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        transition: all 0.5s ease;
+      }
+      .options {
+        padding: 1rem;
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        position: relative;
+      }
+      .options button {
+        width: 100%; /* Ensure buttons stretch to fill grid cells */
+        padding: 16px;
+        margin: 0; /* Adjust margin since grid gap handles spacing */
+        background: linear-gradient(45deg, #00c6ff, #0072ff);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .options button:hover {
+        background: linear-gradient(45deg, #0072ff, #00c6ff);
+        transform: scale(1.05);
+      }
+      .options button.correct {
+        background: #28a745 !important;
+        color: #fff !important;
+      }
+      .options button.wrong {
+        background: #dc3545 !important;
+        color: #fff !important;
+      }
+      .description {
+        margin-top: 20px;
+        padding: 15px;
+        background: #282d93;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #fff;
+      }
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        text-align: center;
+        display: none;
+        z-index: 1000;
+      }
+      .popup h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .popup p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #555;
+      }
+      .popup button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .popup .claim {
+        background: #0072ff;
+        color: white;
+      }
+      .popup .close {
+        background: #dc3545;
+        color: white;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+      }
       footer .footer-links {
-    margin-bottom: 10px;
-}
-footer .footer-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-}
-footer .footer-links a:hover {
-    text-decoration: underline;
-}
+        margin-bottom: 10px;
+      }
+      footer .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+      }
+      footer .footer-links a:hover {
+        text-decoration: underline;
+      }
       .play-now {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 16px;
-    color: #fff;
-    background: linear-gradient(45deg, #28a745, #218838);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-.play-now:hover {
-    background: linear-gradient(45deg, #218838, #28a745);
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 16px;
+        color: #fff;
+        background: linear-gradient(45deg, #28a745, #218838);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .play-now:hover {
+        background: linear-gradient(45deg, #218838, #28a745);
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
 
-.timer_baseTimer___57OS {
-    position: absolute;
-    width: 86px;
-    height: 86px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
-    background: #282d93;
-    top: -20px;
-}
-.timer_baseTimer__svg__kqz_Y {
-    transform: scaleX(-1);
-}
-.timer_baseTimer__circle__1YodV {
-    fill: none;
-    stroke: none;
-}
-.timer_baseTimer__circle__1YodV {
-    fill: none;
-    stroke: none;
-}
-.timer_baseTimer__pathRemaining__PkIN0.timer_red__lTN_G {
-    color: red;
-}
-.timer_baseTimer__label__5CfV0 {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 6px;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    text-align: center;
-    left: 6px;
-}
-.timer_inner__ClpEy {
-    border-radius: 50px;
-    background: #282d93;
-    border: 6px solid #090551;
-    width: 70px;
-    position: absolute;
-    height: 70px;
-  
-}
-.timer_seconds__2KixA {
-    position: relative;
-    z-index: 1002;
-}
-
-
-
-
+      .timer_baseTimer___57OS {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        background: #282d93;
+        top: -20px;
+      }
+      .timer_baseTimer__svg__kqz_Y {
+        transform: scaleX(-1);
+      }
+      .timer_baseTimer__circle__1YodV {
+        fill: none;
+        stroke: none;
+      }
+      .timer_baseTimer__circle__1YodV {
+        fill: none;
+        stroke: none;
+      }
+      .timer_baseTimer__pathRemaining__PkIN0.timer_red__lTN_G {
+        color: red;
+      }
+      .timer_baseTimer__label__5CfV0 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        top: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-align: center;
+        left: 6px;
+      }
+      .timer_inner__ClpEy {
+        border-radius: 50px;
+        background: #282d93;
+        border: 6px solid #090551;
+        width: 70px;
+        position: absolute;
+        height: 70px;
+      }
+      .timer_seconds__2KixA {
+        position: relative;
+        z-index: 1002;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-       <header>
+      <header>
         <div
           style="
             display: flex;
@@ -323,261 +323,334 @@ footer .footer-links a:hover {
           <p style="font-weight: 700">QUIZZ BUDDY</p>
         </div>
       </header>
-        <div class="ads-container">
-            <p><div id="gpt-passback">
- <script src="./googleapis-css.js"></script>
-</div>
-</p>
+      <div class="ads-container">
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+        ></script>
+        <script src="./googleapis-css.js"></script>
+        <div id="gpt-passback">
+          <script>
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+              googletag
+                .defineSlot("/22847667724/ab_1", [300, 250], "gpt-passback")
+                .addService(googletag.pubads());
+              googletag.enableServices();
+              googletag.display("gpt-passback");
+            });
+          </script>
         </div>
-        <div class="quiz-container" id="quiz-container">
-            <div class="coins">
-                <span>💵 Coins: <span id="coins">0</span></span>
-               
-            </div>
-            <div class="progress">
-                Question <span id="current-question">1</span> of <span id="total-questions">5</span>
-            </div>
-            <div class="coin-popup" id="coin-popup"></div>
-            <div class="question" id="question">Loading question...</div>
-               <div style="position: relative; background-color: #282d93;  border-radius: 12px;min-height: 200px;height:220px;display: flex;justify-content: center;align-items: end;margin-top: 2rem;">
+      </div>
+      <div class="quiz-container" id="quiz-container">
+        <div class="coins">
+          <span>💵 Coins: <span id="coins">0</span></span>
+        </div>
+        <div class="progress">
+          Question <span id="current-question">1</span> of
+          <span id="total-questions">5</span>
+        </div>
+        <div class="coin-popup" id="coin-popup"></div>
+        <div class="question" id="question">Loading question...</div>
+        <div
+          style="
+            position: relative;
+            background-color: #282d93;
+            border-radius: 12px;
+            min-height: 200px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 2rem;
+          "
+        >
+          <div class="options" id="options">
+            <!-- Options will be loaded dynamically -->
+          </div>
 
-                <div class="options" id="options">
-                    <!-- Options will be loaded dynamically -->
-                    
-                </div>
-                  
-                  <div class="timer_baseTimer___57OS"><svg class="timer_baseTimer__svg__kqz_Y" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="timer_baseTimer__circle__1YodV"><circle class="timer_baseTimer__pathElapsed__D6lCz" cx="50" cy="50" r="45"></circle><path id="base-timer-path-remaining" stroke-dasharray="142 283" class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO" d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "></path></g></svg><span id="base-timer-label" class="timer_baseTimer__label__5CfV0"><span class="timer_inner__ClpEy"></span><span class="timer_seconds__2KixA" id="timer">30</span></span></div>
-            </div>
-            <div class="description" id="description">
-                <!-- Question description will always be shown here -->
-            </div>
+          <div class="timer_baseTimer___57OS">
+            <svg
+              class="timer_baseTimer__svg__kqz_Y"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g class="timer_baseTimer__circle__1YodV">
+                <circle
+                  class="timer_baseTimer__pathElapsed__D6lCz"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                ></circle>
+                <path
+                  id="base-timer-path-remaining"
+                  stroke-dasharray="142 283"
+                  class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO"
+                  d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "
+                ></path>
+              </g>
+            </svg>
+            <span id="base-timer-label" class="timer_baseTimer__label__5CfV0"
+              ><span class="timer_inner__ClpEy"></span
+              ><span class="timer_seconds__2KixA" id="timer">30</span></span
+            >
+          </div>
         </div>
-        <footer>
-            <div class="footer-links">
-                <a href="about-us.html">About Us</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-            </div>
-            <p>&copy; 2024 Quiz Game. All rights reserved.</p>
-        </footer>
+        <div class="description" id="description">
+          <!-- Question description will always be shown here -->
+        </div>
+      </div>
+      <footer>
+        <div class="footer-links">
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <p>&copy; 2024 Quiz Game. All rights reserved.</p>
+      </footer>
     </div>
 
     <div class="popup" id="reward-popup">
-        <h2>Earn Extra Rewards!</h2>
-        <p>Watch an ad to earn 500 bonus coins and continue the quiz!</p>
-        <button class="claim" id="claim-button">Claim</button>
-        <button class="close" id="close-button">Close</button>
+      <h2>Earn Extra Rewards!</h2>
+      <p>Watch an ad to earn 500 bonus coins and continue the quiz!</p>
+      <button class="claim" id="claim-button">Claim</button>
+      <button class="close" id="close-button">Close</button>
     </div>
 
-    
     <script>
-        const ENTRY_FEE = 20; // Entry fee for the Math Quiz
+      const ENTRY_FEE = 20; // Entry fee for the Math Quiz
 
-        // Retrieve final score from the category page
-        let coins = parseInt(localStorage.getItem('finalScore') || 0);
+      // Retrieve final score from the category page
+      let coins = parseInt(localStorage.getItem("finalScore") || 0);
 
-        // Check if the user has enough coins for the entry fee
-        if (coins < ENTRY_FEE) {
-            alert('Not enough coins to play this quiz. Redirecting to categories...');
-            window.location.href = "quiz-category.html"; // Redirect back to the categories page
+      // Check if the user has enough coins for the entry fee
+      if (coins < ENTRY_FEE) {
+        alert(
+          "Not enough coins to play this quiz. Redirecting to categories..."
+        );
+        window.location.href = "quiz-category.html"; // Redirect back to the categories page
+      } else {
+        // Deduct the entry fee and update the coin balance
+        coins -= ENTRY_FEE;
+        localStorage.setItem("finalScore", coins); // Update the new balance in localStorage
+        document.getElementById("coins").textContent = coins;
+      }
+
+      let quizzes = [];
+      let selectedQuizzes = [];
+      let currentQuiz = 0;
+      let timerInterval;
+
+      const questionElement = document.getElementById("question");
+      const optionsElement = document.getElementById("options");
+      const coinsElement = document.getElementById("coins");
+      const coinPopupElement = document.getElementById("coin-popup");
+      const descriptionElement = document.getElementById("description");
+      const timerElement = document.getElementById("timer");
+      const popup = document.getElementById("reward-popup");
+      const claimButton = document.getElementById("claim-button");
+      const closeButton = document.getElementById("close-button");
+      const currentQuestionElement =
+        document.getElementById("current-question");
+      const totalQuestionsElement = document.getElementById("total-questions");
+
+      totalQuestionsElement.textContent = 5;
+
+      async function loadQuestions() {
+        try {
+          const response = await fetch("./math.questions.json");
+          quizzes = await response.json();
+          selectedQuizzes = [...quizzes] // Clone the array to avoid modifying the original
+            .sort(() => Math.random() - 0.5) // Shuffle the array randomly
+            .slice(0, 5); // Select first 5 elements
+          loadQuiz();
+        } catch (error) {
+          console.error("Error fetching questions:", error);
+        }
+      }
+
+      function startTimer() {
+        let timeLeft = 30;
+        timerElement.textContent = timeLeft;
+
+        timerInterval = setInterval(() => {
+          timeLeft--;
+          timerElement.textContent = timeLeft;
+
+          if (timeLeft === 0) {
+            clearInterval(timerInterval);
+            alert("Time's up! Moving to the next question.");
+            currentQuiz++;
+            loadQuiz();
+          }
+        }, 1000);
+      }
+
+      function loadQuiz() {
+        if (timerInterval) clearInterval(timerInterval);
+        if (currentQuiz < selectedQuizzes.length) {
+          const quiz = selectedQuizzes[currentQuiz];
+          console.log("quiz", quiz);
+
+          questionElement.textContent = quiz.question;
+          optionsElement.innerHTML = "";
+          descriptionElement.innerHTML = quiz.description;
+          currentQuestionElement.textContent = currentQuiz + 1;
+
+          for (let i = 0; i < 4; i++) {
+            // Loop from 0 to 3 (array index)
+            const button = document.createElement("button");
+            button.textContent = quiz.options[i]; // Correctly access options array
+            button.onclick = () =>
+              checkAnswer(
+                quiz.options[i] === quiz.answer,
+                button,
+                quiz.options.indexOf(quiz.answer)
+              );
+            optionsElement.appendChild(button);
+          }
+
+          startTimer();
         } else {
-            // Deduct the entry fee and update the coin balance
-            coins -= ENTRY_FEE;
-            localStorage.setItem('finalScore', coins); // Update the new balance in localStorage
-            document.getElementById('coins').textContent = coins;
+          showFinalScore();
+        }
+      }
+      function checkAnswer(isCorrect, button, correctIndex) {
+        if (timerInterval) clearInterval(timerInterval);
+        document.querySelectorAll(".options button").forEach((btn) => {
+          btn.disabled = true;
+        });
+        if (isCorrect) {
+          button.classList.add("correct");
+        } else {
+          button.classList.add("wrong");
+          document
+            .querySelectorAll(".options button")
+            [correctIndex].classList.add("correct");
         }
 
-        let quizzes = [];
-        let selectedQuizzes = [];
-        let currentQuiz = 0;
-        let timerInterval;
+        let coinChange = isCorrect ? 100 : -50;
+        coins += coinChange;
+        coinsElement.textContent = coins;
 
-        const questionElement = document.getElementById('question');
-        const optionsElement = document.getElementById('options');
-        const coinsElement = document.getElementById('coins');
-        const coinPopupElement = document.getElementById('coin-popup');
-        const descriptionElement = document.getElementById('description');
-        const timerElement = document.getElementById('timer');
-        const popup = document.getElementById('reward-popup');
-        const claimButton = document.getElementById('claim-button');
-        const closeButton = document.getElementById('close-button');
-        const currentQuestionElement = document.getElementById('current-question');
-        const totalQuestionsElement = document.getElementById('total-questions');
-
-        totalQuestionsElement.textContent = 5;
-
-        async function loadQuestions() {
-            try {
-                const response = await fetch('./math.questions.json');
-                quizzes = await response.json();
-                selectedQuizzes = [...quizzes] // Clone the array to avoid modifying the original
-  .sort(() => Math.random() - 0.5) // Shuffle the array randomly
-  .slice(0, 5); // Select first 5 elements
-                loadQuiz();
-            } catch (error) {
-                console.error('Error fetching questions:', error);
-            }
+        coinPopupElement.textContent = `${
+          coinChange > 0 ? " +" : ""
+        }${coinChange}`;
+        coinPopupElement.style.color = coinChange > 0 ? "limegreen" : "red";
+        coinPopupElement.style.display = "block";
+        coinPopupElement.style.animation = "fadeMove 1.5s forwards";
+        if (currentQuiz + 1 === 4) {
+          showPopup();
         }
+        setTimeout(() => {
+          coinPopupElement.style.display = "none";
+          currentQuiz++;
+          loadQuiz();
+        }, 1500);
+      }
 
-        function startTimer() {
-            let timeLeft = 30;
-            timerElement.textContent = timeLeft;
+      function showPopup() {
+        popup.style.display = "block";
+      }
 
-            timerInterval = setInterval(() => {
-                timeLeft--;
-                timerElement.textContent = timeLeft;
+      function hidePopup() {
+        popup.style.display = "none";
+      }
+      function showRewardedAdAndRedirect() {
+        window.googletag = window.googletag || { cmd: [] };
+        googletag.cmd.push(function () {
+          const rewardedSlot = googletag
+            .defineOutOfPageSlot(
+              "//22847667724/ab_2",
+              googletag.enums.OutOfPageFormat.REWARDED
+            )
+            .addService(googletag.pubads());
 
-                if (timeLeft === 0) {
-                    clearInterval(timerInterval);
-                    alert("Time's up! Moving to the next question.");
-                    currentQuiz++;
-                    loadQuiz();
-                }
-            }, 1000);
-        }
+          googletag.enableServices();
+          googletag.display(rewardedSlot);
 
-     function loadQuiz() {
-            if (timerInterval) clearInterval(timerInterval);
-            if (currentQuiz < selectedQuizzes.length) {
-                const quiz = selectedQuizzes[currentQuiz];
-                console.log("quiz",quiz);
-                
-                questionElement.textContent = quiz.question;
-                optionsElement.innerHTML = "";
-                descriptionElement.innerHTML = quiz.description;
-                currentQuestionElement.textContent = currentQuiz + 1;
+          // Show the ad when its ready
+          googletag
+            .pubads()
+            .addEventListener("rewardedSlotReady", function (evt) {
+              evt.makeRewardedVisible();
+            });
 
-               for (let i = 0; i < 4; i++) {  // Loop from 0 to 3 (array index)
-    const button = document.createElement('button');
-    button.textContent = quiz.options[i]; // Correctly access options array
-    button.onclick = () => checkAnswer(quiz.options[i] === quiz.answer, button, quiz.options.indexOf(quiz.answer));
-    optionsElement.appendChild(button);
-}
+          // Redirect to the quiz page after the ad is closed
+          googletag
+            .pubads()
+            .addEventListener("rewardedSlotClosed", function () {
+              googletag.destroySlots([rewardedSlot]);
+              //   window.location.href = "rendomquiz.html"; // Redirect to quiz page
+            });
+        });
+      }
 
-                startTimer();
-            } else {
-                showFinalScore();
-            }
-        }
-        function checkAnswer(isCorrect, button, correctIndex) {
-            if (timerInterval) clearInterval(timerInterval);
-            if (isCorrect) {
-                button.classList.add('correct');
-                 
-            } else {
-                button.classList.add('wrong');
-                document.querySelectorAll('.options button')[correctIndex].classList.add('correct');
-            }
+      claimButton.onclick = () => {
+        coins += 500;
+        coinsElement.textContent = coins;
+        hidePopup();
+        alert("Ad watched! 500 coins added!");
+        showRewardedAdAndRedirect();
+        loadQuiz();
+      };
 
-            let coinChange = isCorrect ? 100 : -50;
-            coins += coinChange;
-            coinsElement.textContent = coins;
-            
-            coinPopupElement.textContent = `${coinChange > 0 ? " +" : ""}${coinChange}`;
-            coinPopupElement.style.color = coinChange > 0 ? "limegreen" : "red";
-            coinPopupElement.style.display = "block";
-            coinPopupElement.style.animation = "fadeMove 1.5s forwards";
-     if (currentQuiz + 1 === 4) {
-    showPopup();
-}
-            setTimeout(() => {
-                coinPopupElement.style.display = "none";
-                currentQuiz++;
-            loadQuiz();
-            }, 1500);
-        }
+      closeButton.onclick = () => {
+        alert("You must watch the ad to proceed.");
+      };
 
-        function showPopup() {
-            popup.style.display = "block";
-        }
-
-        function hidePopup() {
-            popup.style.display = "none";
-        }
-
-        claimButton.onclick = () => {
-         
-            coins += 500;
-            coinsElement.textContent = coins;
-            hidePopup();
-            alert("Ad watched! 500 coins added!");
-            loadQuiz();
-        };
-
-        closeButton.onclick = () => {
-            alert("You must watch the ad to proceed.");
-        };
-
-        function showFinalScore() {
-            document.getElementById('quiz-container').innerHTML = `
+      function showFinalScore() {
+        document.getElementById("quiz-container").innerHTML = `
                 <div class="final-score">
                     <h2>Quiz Completed!</h2>
                     <p>Your Final Score: 💵 ${coins}</p>
                     <button class="play-now" onclick="redirectToNextQuiz()">Play Now</button>
                 </div>
             `;
-            localStorage.setItem('finalScore', coins); // Save final score
-        }
+        localStorage.setItem("finalScore", coins); // Save final score
+      }
 
-        function redirectToNextQuiz() {
-            window.location.href = "quiz-category.html"; // Redirect to the category page
-        }
+      function redirectToNextQuiz() {
+        window.location.href = "quiz-category.html"; // Redirect to the category page
+      }
 
-        loadQuestions();
+      loadQuestions();
     </script>
-    <script defer>
-    document.addEventListener("DOMContentLoaded", () => {
-        const adHandler = new JbRewardedAdHandler();
-
-        const onAdGranted = (passbackConfig) => {
-            console.log("Ad was granted.", passbackConfig);
-            if (passbackConfig?.href) {
-                window.location.href = passbackConfig.href;
-            }
-        };
-
-        const onAdRejected = (passbackConfig) => {
-            console.log("Ad was rejected.", passbackConfig);
-        };
-
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
-
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
         const onClick = (evt) => {
-            evt.preventDefault();
-            console.log("Ad click event triggered.", evt.target);
-            adHandler.renderAd({
-                href: evt.target.href,
-            });
+          evt.preventDefault();
+          console.log("Ad click event triggered.", evt.target);
+          showRewardedAdAndRedirect();
         };
 
         const setupEventListeners = () => {
-            const btns = document.getElementsByClassName("claim");
+          const btns = document.getElementsByClassName("claim");
 
-            Array.from(btns).forEach((btn) => {
-                btn.addEventListener("click", onClick);
+          Array.from(btns).forEach((btn) => {
+            btn.addEventListener("click", () => {
+              alert(":click");
+              showRewardedAdAndRedirect();
             });
+          });
         };
 
         const removeEventListeners = () => {
-            const btns = document.getElementsByClassName("claim");
+          const btns = document.getElementsByClassName("claim");
 
-            Array.from(btns).forEach((btn) => {
-                btn.removeEventListener("click", onClick);
-            });
+          Array.from(btns).forEach((btn) => {
+            btn.removeEventListener("click", onClick);
+          });
         };
 
         adHandler.onReady(() => {
-            console.log("Rewarded Ad Handler is ready.");
-            setupEventListeners();
+          console.log("Rewarded Ad Handler is ready.");
+          setupEventListeners();
         });
 
         window.addEventListener("unload", removeEventListeners);
-    });
-</script>
-    
-    
-</body>
-
+      });
+    </script>
+  </body>
 </html>
