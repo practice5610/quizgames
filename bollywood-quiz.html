@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script src="analytics.js"></script>
-    <script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
+    <!-- <script src="analytics.js"></script> -->
+    <!-- <script defer id="jb-rewd-ad" src="./justbaat2.js"></script> -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -328,7 +328,6 @@ footer .footer-links a:hover {
         <div class="ads-container">
             <p><div id="gpt-passback">
  <script src="./googleapis-css.js"></script>
-<script defer src="okay.js"></script>
 </div>
 </p>
 
@@ -533,56 +532,7 @@ footer .footer-links a:hover {
         loadQuestions();
     </script>
     
-<script defer>
-    document.addEventListener("DOMContentLoaded", () => {
-        const adHandler = new JbRewardedAdHandler();
 
-        const onAdGranted = (passbackConfig) => {
-            console.log("Ad was granted.", passbackConfig);
-            if (passbackConfig?.href) {
-                window.location.href = passbackConfig.href;
-            }
-        };
-
-        const onAdRejected = (passbackConfig) => {
-            console.log("Ad was rejected.", passbackConfig);
-        };
-
-        adHandler.onAdGranted(onAdGranted);
-        adHandler.onAdRejected(onAdRejected);
-
-        const onClick = (evt) => {
-            evt.preventDefault();
-            console.log("Ad click event triggered.", evt.target);
-            adHandler.renderAd({
-                href: evt.target.href,
-            });
-        };
-
-        const setupEventListeners = () => {
-            const btns = document.getElementsByClassName("claim");
-
-            Array.from(btns).forEach((btn) => {
-                btn.addEventListener("click", onClick);
-            });
-        };
-
-        const removeEventListeners = () => {
-            const btns = document.getElementsByClassName("claim");
-
-            Array.from(btns).forEach((btn) => {
-                btn.removeEventListener("click", onClick);
-            });
-        };
-
-        adHandler.onReady(() => {
-            console.log("Rewarded Ad Handler is ready.");
-            setupEventListeners();
-        });
-
-        window.addEventListener("unload", removeEventListeners);
-    });
-</script>
     
     
     
