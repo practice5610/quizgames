@@ -25,6 +25,14 @@ googletag.cmd.push(function () {
   googletag.enableServices();
 });
 
-googletag.cmd.push(function () {
-  googletag.display("gpt-passback");
-});
+// Remove the automatic display call
+
+// Function to show ad when triggered manually
+function showAd() {
+  googletag.cmd.push(function () {
+    googletag.display("gpt-passback");
+  });
+}
+
+// Expose showAd function to be called when needed
+window.showAd = showAd;
