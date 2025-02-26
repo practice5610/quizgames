@@ -429,7 +429,10 @@ const TIME_LIMIT = 30; // Total time in seconds
                 quizzes = await response.json();
                 console.log("quizzes",quizzes);
                 
-                selectedQuizzes = quizzes.sort(() => 0.5 - Math.random()).slice(0, 5);
+                selectedQuizzes = [...quizzes] // Clone the array to avoid modifying the original
+  .sort(() => Math.random() - 0.5) // Shuffle the array randomly
+  .slice(0, 5); // Select first 5 elements
+
                 loadQuiz();
             } catch (error) {
                 console.error('Error fetching questions:', error);
@@ -498,7 +501,7 @@ function calculateTimeFraction(timeLeft) {
             if (timerInterval) clearInterval(timerInterval);
             if (isCorrect) {
                 button.classList.add('correct');
-                currentQuiz++;
+                
             } else {
                 button.classList.add('wrong');
                 document.querySelectorAll('.options button')[correctIndex].classList.add('correct');
@@ -513,12 +516,38 @@ function calculateTimeFraction(timeLeft) {
             coinPopupElement.style.display = "block";
             coinPopupElement.style.animation = "fadeMove 1.5s forwards";
 
+            if (currentQuiz + 1 === 4) {
+    showPopup();
+}
             setTimeout(() => {
                 coinPopupElement.style.display = "none";
                 currentQuiz++;
+                
                 loadQuiz();
             }, 1500);
         }
+         function showPopup() {
+            popup.style.display = "block";
+        }
+
+        function hidePopup() {
+            popup.style.display = "none";
+        }
+
+        claimButton.onclick = () => {
+       
+            coins += 500;
+            coinsElement.textContent = coins;
+            hidePopup();
+            alert("Ad watched! 500 coins added!");
+           
+            loadQuiz();
+    
+        };
+
+        closeButton.onclick = () => {
+            alert("You must watch the ad to proceed.");
+        };
 
         
       function showFinalScore() {

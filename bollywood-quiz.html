@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <!-- <script src="analytics.js"></script> -->
-    <!-- <script defer id="jb-rewd-ad" src="./justbaat2.js"></script> -->
+    <script src="analytics.js"></script>
+    <script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -415,7 +415,9 @@ footer .footer-links a:hover {
             try {
               const response = await fetch('./bollywood.questions.json');
                 quizzes = await response.json();
-                selectedQuizzes = quizzes.sort(() => 0.5 - Math.random()).slice(0, 5);
+               selectedQuizzes = [...quizzes] // Clone the array to avoid modifying the original
+  .sort(() => Math.random() - 0.5) // Shuffle the array randomly
+  .slice(0, 5); // Select first 5 elements
                 loadQuiz();
             } catch (error) {
                 console.error('Error fetching questions:', error);
@@ -480,14 +482,13 @@ footer .footer-links a:hover {
             coinPopupElement.style.display = "block";
             coinPopupElement.style.animation = "fadeMove 1.5s forwards";
 
+             if (currentQuiz + 1 === 4) {
+    showPopup();
+}
             setTimeout(() => {
                 coinPopupElement.style.display = "none";
-                if (currentQuiz === 0 || (currentQuiz + 1) % 3 === 0) {
-                    showPopup();
-                } else {
-                    currentQuiz++;
-                    loadQuiz();
-                }
+                currentQuiz++;
+            loadQuiz();
             }, 1500);
         }
 
@@ -505,7 +506,7 @@ footer .footer-links a:hover {
             coinsElement.textContent = coins;
             hidePopup();
             alert("Ad watched! 500 coins added!");
-            currentQuiz++;
+           
             loadQuiz();
             
         };
