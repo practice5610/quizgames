@@ -224,12 +224,11 @@
     <script>
       // Function to display the rewarded ad, then redirect to the quiz page
       function showRewardedAdAndRedirect(age) {
-        // Store the selected age in localStorage (optional)
         localStorage.setItem("userAge", age);
 
         window.googletag = window.googletag || { cmd: [] };
         googletag.cmd.push(function () {
-          const rewardedSlot = googletag
+          let rewardedSlot = googletag
             .defineOutOfPageSlot(
               "/23280037943/av_2",
               googletag.enums.OutOfPageFormat.REWARDED
@@ -237,26 +236,24 @@
             .addService(googletag.pubads());
 
           googletag.enableServices();
+
           googletag.display(rewardedSlot);
 
-          // Show the ad when its ready
           googletag
             .pubads()
             .addEventListener("rewardedSlotReady", function (evt) {
               evt.makeRewardedVisible();
             });
 
-          // Redirect to the quiz page after the ad is closed
           googletag
             .pubads()
             .addEventListener("rewardedSlotClosed", function () {
               googletag.destroySlots([rewardedSlot]);
-              window.location.href = "rendomquiz.html"; // Redirect to quiz page
+              window.location.href = "rendomquiz.html"; // Redirect after ad
             });
         });
       }
 
-      // Add click event listener to elements with class 'age-option'
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".age-option").forEach(function (element) {
           element.addEventListener("click", function () {

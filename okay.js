@@ -12,55 +12,19 @@
   gtag("config", "G-1GVDBLHMMJ");
 })();
 
-window.googletag = window.googletag || {
-  cmd: [],
-};
+window.googletag = window.googletag || { cmd: [] };
+
 googletag.cmd.push(function () {
   googletag
     .defineSlot(
-      "/23280037943/av_1",
+      "/22847667724/ab_1",
       [[336, 280], [300, 250], "fluid"],
       "gpt-passback"
     )
     .addService(googletag.pubads());
   googletag.enableServices();
-  _();
 });
+
 googletag.cmd.push(function () {
   googletag.display("gpt-passback");
 });
-window.googletag = window.googletag || {
-  cmd: [],
-};
-if (Math.random() < 1.0) {
-  console.log("------>>>>>11", "");
-  let rewardedSlot;
-  googletag.cmd.push(function () {
-    rewardedSlot = googletag
-      .defineOutOfPageSlot(
-        "/23280037943/av_2",
-        googletag.enums.OutOfPageFormat.REWARDED
-      )
-      .addService(googletag.pubads());
-
-    googletag.enableServices();
-    _();
-  });
-
-  googletag.cmd.push(function () {
-    googletag.display(rewardedSlot);
-
-    googletag.pubads().addEventListener("rewardedSlotReady", function (evt) {
-      evt.makeRewardedVisible();
-    });
-
-    googletag.pubads().addEventListener("rewardedSlotGranted", function () {
-      console.log("Reward granted to user");
-    });
-
-    googletag.pubads().addEventListener("rewardedSlotClosed", function () {
-      googletag.destroySlots([rewardedSlot]);
-      console.log("Rewarded slot closed and destroyed");
-    });
-  });
-}
