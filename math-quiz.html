@@ -3,7 +3,7 @@
 <head>
   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script src="analytics.js"></script>
-    <script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Quiz</title>
@@ -12,7 +12,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-           
+
             color: #fff;
             display: flex;
             justify-content: center;
@@ -22,7 +22,7 @@
             position: relative
         }
         body::after {
-        
+
         background: url('img.jpg');
         content: "";
         position: absolute;
@@ -35,7 +35,7 @@
         min-height: 100vh;
       }
         .container {
-         
+
         width: 428px;
         min-height: 100vh;
         min-height: 100vh !important;
@@ -49,16 +49,14 @@
     background: linear-gradient(180deg, #282d93, #15136e);
     text-align: center;
     box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
+
     padding: 10px 0px;
 }
 header p {
     margin: 0;
     color: white;
 }
-    
+
         .ads-container {
             background: rgba(240, 240, 240, 0.9);
             padding: 10px;
@@ -83,7 +81,7 @@ header p {
             margin-bottom: 15px;
             padding: 10px 20px;
             border-radius: 10px;
-           
+
             color: #fff;
             font-weight: bold;
             display: flex;
@@ -91,7 +89,7 @@ header p {
             align-items: center;
             max-width: 350px;
             margin: 0 auto 20px;
-          
+
         }
         .coins span {
             margin: 0 10px;
@@ -125,7 +123,7 @@ header p {
             transition: all 0.5s ease;
         }
          .options {
-   
+
     padding: 1rem;
     width: 100%;
     display: grid;
@@ -211,7 +209,7 @@ header p {
             text-align: center;
             padding: 10px;
             font-size: 12px;
-           
+
         }
       footer .footer-links {
     margin-bottom: 10px;
@@ -292,7 +290,7 @@ footer .footer-links a:hover {
     width: 70px;
     position: absolute;
     height: 70px;
-  
+
 }
 .timer_seconds__2KixA {
     position: relative;
@@ -333,7 +331,7 @@ footer .footer-links a:hover {
         <div class="quiz-container" id="quiz-container">
             <div class="coins">
                 <span>💵 Coins: <span id="coins">0</span></span>
-               
+
             </div>
             <div class="progress">
                 Question <span id="current-question">1</span> of <span id="total-questions">5</span>
@@ -344,9 +342,9 @@ footer .footer-links a:hover {
 
                 <div class="options" id="options">
                     <!-- Options will be loaded dynamically -->
-                    
+
                 </div>
-                  
+
                   <div class="timer_baseTimer___57OS"><svg class="timer_baseTimer__svg__kqz_Y" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="timer_baseTimer__circle__1YodV"><circle class="timer_baseTimer__pathElapsed__D6lCz" cx="50" cy="50" r="45"></circle><path id="base-timer-path-remaining" stroke-dasharray="142 283" class="timer_baseTimer__pathRemaining__PkIN0 timer_green__SVzgO" d=" M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0 "></path></g></svg><span id="base-timer-label" class="timer_baseTimer__label__5CfV0"><span class="timer_inner__ClpEy"></span><span class="timer_seconds__2KixA" id="timer">30</span></span></div>
             </div>
             <div class="description" id="description">
@@ -371,7 +369,7 @@ footer .footer-links a:hover {
         <button class="close" id="close-button">Close</button>
     </div>
 
-    
+
     <script>
         const ENTRY_FEE = 20; // Entry fee for the Math Quiz
 
@@ -441,7 +439,7 @@ footer .footer-links a:hover {
             if (currentQuiz < selectedQuizzes.length) {
                 const quiz = selectedQuizzes[currentQuiz];
                 console.log("quiz",quiz);
-                
+
                 questionElement.textContent = quiz.question;
                 optionsElement.innerHTML = "";
                 descriptionElement.innerHTML = quiz.description;
@@ -497,14 +495,14 @@ footer .footer-links a:hover {
         }
 
         claimButton.onclick = () => {
-         
+
             coins += 500;
             coinsElement.textContent = coins;
             hidePopup();
             alert("Ad watched! 500 coins added!");
             currentQuiz++;
             loadQuiz();
-         
+
         };
 
         closeButton.onclick = () => {
@@ -578,8 +576,8 @@ footer .footer-links a:hover {
         window.addEventListener("unload", removeEventListeners);
     });
 </script>
-    
-    
+
+
 </body>
 
 </html>

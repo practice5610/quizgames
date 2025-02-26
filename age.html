@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <script src="analytics.js"></script>
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script defer id="jb-rewd-ad" src="./justbaat2.js"></script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-          
+
             color: #fff;
             display: flex;
             justify-content: center;
@@ -22,10 +22,10 @@
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
-            
+
         }
         body::after {
-        
+
         background: url('img.jpg');
         content: "";
         position: absolute;
@@ -38,7 +38,7 @@
         min-height: 100vh;
       }
         .container {
-           
+
         width: 428px;
         min-height: 100vh;
         min-height: 100vh !important;
@@ -52,9 +52,7 @@
     background: linear-gradient(180deg, #282d93, #15136e);
     text-align: center;
     box-shadow: 0 1px 1px 0 hsla(0, 0%, 100%, );
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
+
     padding: 10px 0px;
 }
 header p {
@@ -114,7 +112,7 @@ header p {
         }
         .article-section {
             padding: 20px;
-           
+
             border-top: 1px solid #ddd;
             border-radius: 0 0 10px 10px;
             font-size: 14px;
@@ -132,7 +130,7 @@ header p {
             text-align: center;
             padding: 10px;
             font-size: 12px;
-           
+
         }
         footer .footer-links a {
             margin: 0 10px;
@@ -225,12 +223,12 @@ header p {
         // Fetch and display articles on page load
         fetchArticles();
     </script>
-    
+
     <script defer>
     document.addEventListener("DOMContentLoaded", () => {
         const adHandler = new JbRewardedAdHandler();
         console.log("Dom loaded",adHandler);
-        
+
         const onAdGranted = (passbackConfig) => {
             console.log("Ad was granted.", passbackConfig);
             if (passbackConfig?.href) {
@@ -242,8 +240,8 @@ header p {
             console.log("Ad was rejected.", passbackConfig);
         };
         console.log("onAdGranted",onAdGranted);
-        
-       
+
+
 
         adHandler.onAdGranted(onAdGranted);
         adHandler.onAdRejected(onAdRejected);
@@ -280,6 +278,6 @@ header p {
         window.addEventListener("unload", removeEventListeners);
     });
 </script>
-    
+
 </body>
 </html>
