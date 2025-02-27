@@ -17,9 +17,6 @@
 
 // Function to show rewarded ad and redirect
 function showRewardedAdAndRedirect(age) {
-  if (age) {
-    localStorage.setItem("userAge", age);
-  }
   window.googletag = window.googletag || { cmd: [] };
   googletag.cmd.push(function () {
     const rewardedSlot = googletag
@@ -53,6 +50,17 @@ function showRewardedAdAndRedirect(age) {
       });
 
       // window.location.href = "randomquiz.html"; // Uncomment to redirect
+      // Store age in localStorage
+      console.log(age, redirectUrl);
+
+      if (age) {
+        localStorage.setItem("userAge", age);
+      }
+
+      // Redirect if a URL is provided
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      }
     });
   });
 }
