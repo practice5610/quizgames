@@ -5,6 +5,7 @@
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
+    <script src="adManager.js"></script>
     <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-08WXH14EN4"
@@ -223,42 +224,42 @@
     </script>
     <script>
       // Function to display the rewarded ad, then redirect to the quiz page
-      function showRewardedAdAndRedirect(age) {
-        localStorage.setItem("userAge", age);
+      // function showRewardedAdAndRedirect(age) {
+      //   localStorage.setItem("userAge", age);
 
-        window.googletag = window.googletag || { cmd: [] };
-        googletag.cmd.push(function () {
-          let rewardedSlot = googletag
-            .defineOutOfPageSlot(
-              "/23280037943/av_2",
-              googletag.enums.OutOfPageFormat.REWARDED
-            )
-            .addService(googletag.pubads());
+      //   window.googletag = window.googletag || { cmd: [] };
+      //   googletag.cmd.push(function () {
+      //     let rewardedSlot = googletag
+      //       .defineOutOfPageSlot(
+      //         "/23280037943/av_2",
+      //         googletag.enums.OutOfPageFormat.REWARDED
+      //       )
+      //       .addService(googletag.pubads());
 
-          googletag.enableServices();
+      //     googletag.enableServices();
 
-          googletag.display(rewardedSlot);
+      //     googletag.display(rewardedSlot);
 
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotReady", function (evt) {
-              evt.makeRewardedVisible();
-            });
+      //     googletag
+      //       .pubads()
+      //       .addEventListener("rewardedSlotReady", function (evt) {
+      //         evt.makeRewardedVisible();
+      //       });
 
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotClosed", function () {
-              googletag.destroySlots([rewardedSlot]);
-              window.location.href = "rendomquiz.html"; // Redirect after ad
-            });
-        });
-      }
+      //     googletag
+      //       .pubads()
+      //       .addEventListener("rewardedSlotClosed", function () {
+      //         googletag.destroySlots([rewardedSlot]);
+      //         window.location.href = "rendomquiz.html"; // Redirect after ad
+      //       });
+      //   });
+      // }
 
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".age-option").forEach(function (element) {
           element.addEventListener("click", function () {
             const age = element.getAttribute("data-age"); // Get the selected age
-            showRewardedAdAndRedirect(age);
+            window.showRewardedAdAndRedirect(age);
           });
         });
       });
