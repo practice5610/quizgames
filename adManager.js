@@ -1,30 +1,3 @@
-// (function () {
-//   if (!window.googletag) {
-//     const script = document.createElement("script");
-//     script.async = true;
-//     script.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
-//     document.head.appendChild(script);
-
-//     script.onload = function () {
-//       console.log("✅ GPT script loaded successfully!");
-//       initAdManager(); // Initialize ads after loading GPT
-//     };
-//   } else {
-//     initAdManager(); // If already loaded, just initialize ads
-//   }
-// })();
-
-// function initAdManager() {
-//   console.log("🔄 Initializing Ad Manager...");
-
-//   window.googletag = window.googletag || { cmd: [] };
-//   googletag.cmd.push(function () {
-//     googletag.pubads().disableInitialLoad(); // Prevent auto-loading of ads
-//     googletag.enableServices();
-//     console.log("✅ Ad Manager initialized.");
-//   });
-// }
-
 // Google Analytics Setup
 (function () {
   const script = document.createElement("script");
@@ -42,69 +15,23 @@
   gtag("config", "G-FKGJDDN31P");
 })();
 
+// Function to show rewarded ad and redirect
 function showRewardedAdAndRedirect(age, redirectUrl) {
-  console.log("🎯 showRewardedAdAndRedirect called with:", {
-    age,
-    redirectUrl,
-  });
-
-  if (!window.googletag || !googletag.apiReady) {
-    console.warn("⚠️ GPT is not ready yet! Retrying in 500ms...");
-    setTimeout(() => showRewardedAdAndRedirect(age, redirectUrl), 500);
-    return;
-  }
-
+  window.googletag = window.googletag || { cmd: [] };
   googletag.cmd.push(function () {
-    console.log("🔄 Creating rewarded ad slot...");
+    const rewardedSlot = googletag
+      .defineOutOfPageSlot(
+        "/23280037943/av_2",
+        googletag.enums.OutOfPageFormat.REWARDED
+      )
+      .addService(googletag.pubads());
 
-    // Debugging: Check if REWARDED format exists
-    if (!googletag.enums || !googletag.enums.OutOfPageFormat) {
-      console.error("❌ googletag.enums.OutOfPageFormat is undefined!");
-      return;
-    }
-    console.log(
-      "✅ googletag.enums.OutOfPageFormat:",
-      googletag.enums.OutOfPageFormat
-    );
-
-    // Try to define the rewarded ad slot
-    const rewardedSlot = googletag.defineOutOfPageSlot(
-      "/23280037943/av_2",
-      googletag.enums.OutOfPageFormat.REWARDED
-    );
-
-    if (!rewardedSlot) {
-      console.error(
-        "❌ Failed to create rewardedSlot! Check Ad Manager settings."
-      );
-      return;
-    }
-
-    rewardedSlot.addService(googletag.pubads());
+    googletag.enableServices();
     googletag.display(rewardedSlot);
-
-    // Debug: Check if slot is displayed
-    console.log("✅ Rewarded slot created and displayed:", rewardedSlot);
-    googletag.pubads().addEventListener("slotOnload", function (event) {
-      console.log("🎯 Ad slot loaded:", event.slot.getSlotElementId());
-    });
-
-    googletag.pubads().addEventListener("slotRenderEnded", function (event) {
-      console.log(
-        "📺 Ad Render Ended. Status:",
-        event.isEmpty ? "No Ad Available" : "Ad Displayed"
-      );
-    });
 
     // Show the ad when it's ready
     googletag.pubads().addEventListener("rewardedSlotReady", function (evt) {
-      console.log("✅ Rewarded Ad is ready! Making it visible...");
-      try {
-        evt.makeRewardedVisible(); // Show the ad
-      } catch (error) {
-        console.error("❌ Error displaying rewarded ad:", error);
-      }
-
+      evt.makeRewardedVisible();
       // Send event to Google Analytics
       gtag("event", "rewarded_ad_ready", {
         event_category: "Ads",
@@ -112,27 +39,31 @@ function showRewardedAdAndRedirect(age, redirectUrl) {
       });
     });
 
-    // Redirect after ad is closed
+    // Redirect to the quiz page after the ad is closed
     googletag.pubads().addEventListener("rewardedSlotClosed", function () {
-      console.log("🔴 Rewarded Ad Closed. Redirecting...");
       googletag.destroySlots([rewardedSlot]);
 
+      // Send event to Google Analytics
       gtag("event", "rewarded_ad_closed", {
         event_category: "Ads",
         event_label: "User Closed Rewarded Ad",
       });
 
+      // window.location.href = "randomquiz.html"; // Uncomment to redirect
+      // Store age in localStorage
+      console.log(age, redirectUrl);
+
       if (age) {
         localStorage.setItem("userAge", age);
       }
 
+      // Redirect if a URL is provided
       if (redirectUrl) {
-        console.log("🔀 Redirecting to:", redirectUrl);
         window.location.href = redirectUrl;
       }
     });
   });
 }
 
-// Expose function globally
+// Expose function globally so it can be used in other files
 window.showRewardedAdAndRedirect = showRewardedAdAndRedirect;
