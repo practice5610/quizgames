@@ -259,8 +259,7 @@
         document.querySelectorAll(".age-option").forEach(function (element) {
           element.addEventListener("click", function () {
             const age = element.getAttribute("data-age"); // Get the selected age
-            window.showRewardedAdAndRedirect(age);
-            localStorage.setItem("userAge", age);
+            window.showRewardedAdAndRedirect(age, "rendomquiz.html");
           });
         });
       });
