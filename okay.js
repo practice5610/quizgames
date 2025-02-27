@@ -25,8 +25,6 @@ googletag.cmd.push(function () {
   googletag.enableServices();
 });
 
-// Remove the automatic display call
-
 // Function to show ad when triggered manually
 function showAd() {
   googletag.cmd.push(function () {

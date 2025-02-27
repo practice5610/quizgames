@@ -5,6 +5,7 @@
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
+    <script src="./okay.js"></script>
     <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FKGJDDN31P"
@@ -339,7 +340,7 @@
           src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
         ></script>
         <script src="./googleapis-css.js"></script>
-        <script src="./okay.js"></script>
+        <!-- <script src="./okay.js"></script> -->
       </div>
       <div class="quiz-container" id="quiz-container">
         <div class="coins">
@@ -600,7 +601,7 @@
         coinsElement.textContent = coins;
         hidePopup();
         alert("Ad watched! 500 coins added!");
-        showRewardedAdAndRedirect();
+        showAd();
         loadQuiz();
       };
       closeButton.onclick = () => {
