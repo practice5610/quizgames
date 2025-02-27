@@ -5,7 +5,11 @@
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
-    <script src="adManager.js?v=5"></script>
+    <script>
+      var script = document.createElement("script");
+      script.src = "adManager.js?v=" + new Date().getTime(); // Unique version every load
+      document.head.appendChild(script);
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

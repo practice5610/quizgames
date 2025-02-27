@@ -85,11 +85,25 @@ function showRewardedAdAndRedirect(age, redirectUrl) {
 
     // Debug: Check if slot is displayed
     console.log("✅ Rewarded slot created and displayed:", rewardedSlot);
+    googletag.pubads().addEventListener("slotOnload", function (event) {
+      console.log("🎯 Ad slot loaded:", event.slot.getSlotElementId());
+    });
+
+    googletag.pubads().addEventListener("slotRenderEnded", function (event) {
+      console.log(
+        "📺 Ad Render Ended. Status:",
+        event.isEmpty ? "No Ad Available" : "Ad Displayed"
+      );
+    });
 
     // Show the ad when it's ready
     googletag.pubads().addEventListener("rewardedSlotReady", function (evt) {
-      console.log("✅ Rewarded Ad is ready! Showing ad...");
-      evt.makeRewardedVisible();
+      console.log("✅ Rewarded Ad is ready! Making it visible...");
+      try {
+        evt.makeRewardedVisible(); // Show the ad
+      } catch (error) {
+        console.error("❌ Error displaying rewarded ad:", error);
+      }
 
       // Send event to Google Analytics
       gtag("event", "rewarded_ad_ready", {
