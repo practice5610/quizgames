@@ -5,19 +5,8 @@
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-08WXH14EN4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-08WXH14EN4");
-    </script>
+    <script src="adManager.js?v=2"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPL Quiz</title>
@@ -330,18 +319,6 @@
           src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
         ></script>
         <script src="./googleapis-css.js"></script>
-        <div id="gpt-passback">
-          <script>
-            window.googletag = window.googletag || { cmd: [] };
-            googletag.cmd.push(function () {
-              googletag
-                .defineSlot("/23280037943/av_1", [300, 250], "gpt-passback")
-                .addService(googletag.pubads());
-              googletag.enableServices();
-              googletag.display("gpt-passback");
-            });
-          </script>
-        </div>
       </div>
       <div class="quiz-container" id="quiz-container">
         <div class="coins">
@@ -559,43 +536,12 @@
         popup.style.display = "none";
       }
 
-      function showRewardedAdAndRedirect() {
-        window.googletag = window.googletag || { cmd: [] };
-        console.log("it's me in ipl");
-        googletag.cmd.push(function () {
-          const rewardedSlot = googletag
-            .defineOutOfPageSlot(
-              "/23280037943/av_2",
-              googletag.enums.OutOfPageFormat.REWARDED
-            )
-            .addService(googletag.pubads());
-
-          googletag.enableServices();
-          googletag.display(rewardedSlot);
-
-          // Show the ad when its ready
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotReady", function (evt) {
-              evt.makeRewardedVisible();
-            });
-
-          // Redirect to the quiz page after the ad is closed
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotClosed", function () {
-              googletag.destroySlots([rewardedSlot]);
-              //   window.location.href = "rendomquiz.html"; // Redirect to quiz page
-            });
-        });
-      }
-
       claimButton.onclick = () => {
         coins += 500;
         coinsElement.textContent = coins;
         hidePopup();
         alert("Ad watched! 500 coins added!");
-        showRewardedAdAndRedirect();
+        window.showRewardedAdAndRedirect();
         loadQuiz();
       };
 
