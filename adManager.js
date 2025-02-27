@@ -16,7 +16,9 @@
 })();
 
 // Function to show rewarded ad and redirect
-function showRewardedAdAndRedirect(age) {
+function showRewardedAdAndRedirect(age, redirectUrl) {
+  console.log("Asdasdasdasd");
+
   window.googletag = window.googletag || { cmd: [] };
   googletag.cmd.push(function () {
     const rewardedSlot = googletag
