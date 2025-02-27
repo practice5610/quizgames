@@ -5,7 +5,7 @@
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
-    <script src="./okay.js"></script>
+    <script src="adManager.js"></script>
     <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FKGJDDN31P"
@@ -566,42 +566,12 @@
         popup.style.display = "none";
       }
 
-      function showRewardedAdAndRedirect() {
-        window.googletag = window.googletag || { cmd: [] };
-        googletag.cmd.push(function () {
-          const rewardedSlot = googletag
-            .defineOutOfPageSlot(
-              "/23280037943/av_2",
-              googletag.enums.OutOfPageFormat.REWARDED
-            )
-            .addService(googletag.pubads());
-
-          googletag.enableServices();
-          googletag.display(rewardedSlot);
-
-          // Show the ad when its ready
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotReady", function (evt) {
-              evt.makeRewardedVisible();
-            });
-
-          // Redirect to the quiz page after the ad is closed
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotClosed", function () {
-              googletag.destroySlots([rewardedSlot]);
-              //   window.location.href = "rendomquiz.html"; // Redirect to quiz page
-            });
-        });
-      }
-
       claimButton.onclick = () => {
         coins += 500;
         coinsElement.textContent = coins;
         hidePopup();
         alert("Ad watched! 500 coins added!");
-        window.showAd();
+        window.showRewardedAdAndRedirect(); // Call the function from adManager.js
         loadQuiz();
       };
       closeButton.onclick = () => {
