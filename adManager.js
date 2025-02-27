@@ -1,29 +1,29 @@
-(function () {
-  if (!window.googletag) {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
-    document.head.appendChild(script);
+// (function () {
+//   if (!window.googletag) {
+//     const script = document.createElement("script");
+//     script.async = true;
+//     script.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
+//     document.head.appendChild(script);
 
-    script.onload = function () {
-      console.log("✅ GPT script loaded successfully!");
-      initAdManager(); // Initialize ads after loading GPT
-    };
-  } else {
-    initAdManager(); // If already loaded, just initialize ads
-  }
-})();
+//     script.onload = function () {
+//       console.log("✅ GPT script loaded successfully!");
+//       initAdManager(); // Initialize ads after loading GPT
+//     };
+//   } else {
+//     initAdManager(); // If already loaded, just initialize ads
+//   }
+// })();
 
-function initAdManager() {
-  console.log("🔄 Initializing Ad Manager...");
+// function initAdManager() {
+//   console.log("🔄 Initializing Ad Manager...");
 
-  window.googletag = window.googletag || { cmd: [] };
-  googletag.cmd.push(function () {
-    googletag.pubads().disableInitialLoad(); // Prevent auto-loading of ads
-    googletag.enableServices();
-    console.log("✅ Ad Manager initialized.");
-  });
-}
+//   window.googletag = window.googletag || { cmd: [] };
+//   googletag.cmd.push(function () {
+//     googletag.pubads().disableInitialLoad(); // Prevent auto-loading of ads
+//     googletag.enableServices();
+//     console.log("✅ Ad Manager initialized.");
+//   });
+// }
 
 // Google Analytics Setup
 (function () {
