@@ -24,21 +24,7 @@ googletag.cmd.push(function () {
     )
     .addService(googletag.pubads());
   googletag.enableServices();
-  if (Math.random() < 0.5) {
-    const GEO_TARGETS = [
-      "California, US",
-      "New York, US",
-      "Melbourne, AU",
-      "Victoria, AU",
-      "Toronto, CA",
-      "Ottawa, CA",
-      "Wellington, NZ",
-    ];
-    const geoTarget =
-      GEO_TARGETS[Math.floor(Math.random() * GEO_TARGETS.length)];
-    console.log("GEO", geoTarget);
-    googletag.pubads().setLocation(geoTarget);
-  }
+
 });
 googletag.cmd.push(function () {
   googletag.display("gpt-passback");
@@ -56,21 +42,7 @@ googletag.cmd.push(function () {
     .addService(googletag.pubads());
 
   googletag.enableServices();
-  if (Math.random() < 0.5) {
-    const GEO_TARGETS = [
-      "California, US",
-      "New York, US",
-      "Melbourne, AU",
-      "Victoria, AU",
-      "Toronto, CA",
-      "Ottawa, CA",
-      "Wellington, NZ",
-    ];
-    const geoTarget =
-      GEO_TARGETS[Math.floor(Math.random() * GEO_TARGETS.length)];
-    console.log("GEO Target:", geoTarget);
-    googletag.pubads().setLocation(geoTarget);
-  }
+  
 });
 
 googletag.cmd.push(function () {
