@@ -18,13 +18,27 @@ window.googletag = window.googletag || {
 googletag.cmd.push(function () {
   googletag
     .defineSlot(
-      "/22870505798/jk_1",
+      "/23089659153/ss_1",
       [[336, 280], [300, 250], "fluid"],
       "gpt-passback"
     )
     .addService(googletag.pubads());
   googletag.enableServices();
-  _();
+  if (Math.random() < 0.5) {
+    const GEO_TARGETS = [
+        'California, US',
+        'New York, US',
+        'Melbourne, AU',
+        'Victoria, AU',
+        'Toronto, CA',
+        'Ottawa, CA',
+        'Wellington, NZ',
+    ];
+    const geoTarget =
+        GEO_TARGETS[Math.floor(Math.random() * GEO_TARGETS.length)];
+    console.log('GEO', geoTarget);
+    googletag.pubads().setLocation(geoTarget);
+}
 });
 googletag.cmd.push(function () {
   googletag.display("gpt-passback");
@@ -38,13 +52,27 @@ if (Math.random() < 1.0) {
   googletag.cmd.push(function () {
     rewardedSlot = googletag
       .defineOutOfPageSlot(
-        "/22870505798/jk_2",
+        "/23089659153/ss_2",
         googletag.enums.OutOfPageFormat.REWARDED
       )
       .addService(googletag.pubads());
 
     googletag.enableServices();
-    _();
+    if (Math.random() < 0.5) {
+      const GEO_TARGETS = [
+          'California, US',
+          'New York, US',
+          'Melbourne, AU',
+          'Victoria, AU',
+          'Toronto, CA',
+          'Ottawa, CA',
+          'Wellington, NZ',
+      ];
+      const geoTarget =
+          GEO_TARGETS[Math.floor(Math.random() * GEO_TARGETS.length)];
+      console.log('GEO', geoTarget);
+      googletag.pubads().setLocation(geoTarget);
+  }
   });
 
   googletag.cmd.push(function () {
