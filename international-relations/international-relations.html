@@ -1,0 +1,566 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Quiz Site - Test Your Knowledge Across Various Categories</title>
+    <meta name="title" content="Quiz Site - The Ultimate Quiz Platform" />
+    <meta
+      name="description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <!-- Social Meta Tags -->
+    <meta
+      property="og:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      name="twitter:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <link rel="stylesheet" href="/css/stylese67d.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/inline_styles.css" />
+
+    <style>
+      a {
+        text-decoration: none !important;
+        color: #fff !important;
+      }
+
+      .result-button {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .iz-branding {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body style="overflow-x: hidden; background-color: #fff5e1">
+    <div class="container-fluid p-0" style="overflow-x: hidden">
+      <div class="row justify-content-center">
+        <div class="col" style="max-width: 385px">
+          <div class="row justify-content-center">
+            <div class="col-12" style="background-color: #00c9a7">
+              <a href="/">
+                <center>
+                  <img
+                    src="../quizadmin/images/logo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </center>
+              </a>
+            </div>
+            <div class="googleads">
+              <!-- Ads Here-->
+              <script
+                async
+                src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                crossorigin="anonymous"
+              ></script>
+              <script>
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                  googletag
+                    .defineSlot(
+                      "/23284951307/BF01",
+                      [336, 280],
+                      "div-gpt-ad-1752410932708-0"
+                    )
+                    .addService(googletag.pubads());
+                  googletag.enableServices();
+                });
+              </script>
+
+              <!-- /23284951307/BF01 -->
+              <div
+                id="div-gpt-ad-1752410932708-0"
+                style="min-width: 336px; min-height: 280px"
+              >
+                <script>
+                  googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1752410932708-0");
+                  });
+                </script>
+              </div>
+            </div>
+            <div style="background-color: #ffc371">
+              <div class="col-12 my-3" style="height: auto"></div>
+              <div class="quiz-container" style="background-color: #ffc371">
+                <h1>International Relations quiz</h1>
+                <center>
+                  <img
+                    src="../assets/img/international_relations.jpeg"
+                    alt=""
+                    id="flage"
+                  />
+                </center>
+                <div id="question-container">
+                  <h4 id="question-No"></h4>
+                  <p id="question-text"></p>
+                  <div id="answer-buttons"></div>
+                </div>
+                <div id="controls-container">
+                  <button
+                    id="start-button"
+                    style="margin-bottom: 10px; background-color: #ff5f6d"
+                    onclick="hideImage()"
+                  >
+                    Start Quiz
+                  </button>
+
+                  <div id="timer-container">
+                    <span id="timer-text"
+                      >Time Left: <span id="timer">0</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="googleads">
+            <!-- Ads Here-->
+            <script
+              async
+              src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+              crossorigin="anonymous"
+            ></script>
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                googletag
+                  .defineSlot(
+                    "/23284951307/BF02",
+                    [300, 250],
+                    "div-gpt-ad-1752410928619-0"
+                  )
+                  .addService(googletag.pubads());
+                googletag.enableServices();
+              });
+            </script>
+
+            <!-- /23284951307/BF02 -->
+            <div
+              id="div-gpt-ad-1752410928619-0"
+              style="min-width: 300px; min-height: 250px"
+            >
+              <script>
+                googletag.cmd.push(function () {
+                  googletag.display("div-gpt-ad-1752410928619-0");
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function hideImage() {
+        console.log("hide");
+        document.getElementById("flage").style.display = "none";
+      }
+      const quizQuestions = [
+        {
+          question_no: "1 / 20",
+          question: "What is the primary purpose of the United Nations (UN)?",
+          options: [
+            "To promote international trade",
+            "To maintain international peace and security",
+            "To enforce global laws",
+            "To control the global economy",
+          ],
+          correctAnswer: "To maintain international peace and security",
+        },
+        {
+          question_no: "2 / 20",
+          question:
+            "Which country is a permanent member of the United Nations Security Council (UNSC)?",
+          options: ["Germany", "India", "Russia", "Brazil"],
+          correctAnswer: "Russia",
+        },
+        {
+          question_no: "3 / 20",
+          question:
+            "What is the main function of the North Atlantic Treaty Organization (NATO)?",
+          options: [
+            "To promote economic cooperation among member countries",
+            "To provide humanitarian aid to developing countries",
+            "To defend member countries from military threats",
+            "To regulate international trade",
+          ],
+          correctAnswer: "To defend member countries from military threats",
+        },
+        {
+          question_no: "4 / 20",
+          question:
+            "Which organization is responsible for coordinating international efforts to combat climate change?",
+          options: [
+            "United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+            "International Monetary Fund (IMF)",
+            "World Health Organization (WHO)",
+            "United Nations Framework Convention on Climate Change (UNFCCC)",
+          ],
+          correctAnswer:
+            "United Nations Framework Convention on Climate Change (UNFCCC)",
+        },
+        {
+          question_no: "5 / 20",
+          question: "What is the purpose of the European Union (EU)?",
+          options: [
+            "To establish a common currency for member countries",
+            "To promote free trade among member countries",
+            "To coordinate foreign policy among member countries",
+            "All of the above",
+          ],
+          correctAnswer: "All of the above",
+        },
+        {
+          question_no: "6 / 20",
+          question:
+            "Which country is known for its policy of non-alignment during the Cold War?",
+          options: ["United States", "Soviet Union", "India", "United Kingdom"],
+          correctAnswer: "India",
+        },
+        {
+          question_no: "7 / 20",
+          question:
+            "What is the main function of the International Monetary Fund (IMF)?",
+          options: [
+            "To provide loans and financial assistance to developing countries",
+            "To promote international trade agreements",
+            "To regulate global financial markets",
+            "To address public health issues",
+          ],
+          correctAnswer:
+            "To provide loans and financial assistance to developing countries",
+        },
+        {
+          question_no: "8 / 20",
+          question:
+            "Which treaty led to the establishment of the European Union (EU)?",
+          options: [
+            "Treaty of Versailles",
+            "Treaty of Lisbon",
+            "Treaty of Rome",
+            "Treaty of Westphalia",
+          ],
+          correctAnswer: "Treaty of Rome",
+        },
+        {
+          question_no: "9 / 20",
+          question:
+            "What is the main goal of the World Trade Organization (WTO)?",
+          options: [
+            "To promote fair and free trade among member countries",
+            "To regulate immigration policies",
+            "To provide humanitarian aid to developing countries",
+            "To combat terrorism",
+          ],
+          correctAnswer:
+            "To promote fair and free trade among member countries",
+        },
+        {
+          question_no: "10 / 20",
+          question:
+            "Which international agreement aims to prevent the proliferation of nuclear weapons?",
+          options: [
+            "Kyoto Protocol",
+            "Nuclear Non-Proliferation Treaty (NPT)",
+            "Paris Agreement",
+            "Comprehensive Nuclear-Test-Ban Treaty (CTBT)",
+          ],
+          correctAnswer: "Nuclear Non-Proliferation Treaty (NPT)",
+        },
+        {
+          question_no: "11 / 20",
+          question:
+            "Which organization is responsible for providing humanitarian assistance to refugees worldwide?",
+          options: [
+            "International Red Cross",
+            "United Nations Security Council",
+            "International Criminal Court",
+            "Amnesty International",
+          ],
+          correctAnswer: "International Red Cross",
+        },
+        {
+          question_no: "12 / 20",
+          question: "What is the primary purpose of diplomatic immunity?",
+          options: [
+            "To restrict the movement of diplomats within host countries",
+            "To prevent diplomats from engaging in criminal activities",
+            "To protect diplomats from prosecution in host countries",
+            "To promote diplomatic relations between countries",
+          ],
+          correctAnswer:
+            "To protect diplomats from prosecution in host countries",
+        },
+        {
+          question_no: "13 / 20",
+          question: "What is the purpose of the Geneva Conventions?",
+          options: [
+            "To regulate international trade",
+            "To establish rules for the conduct of war and protection of civilians and prisoners of war",
+            "To promote cultural exchange among nations",
+            "To address climate change",
+          ],
+          correctAnswer:
+            "To establish rules for the conduct of war and protection of civilians and prisoners of war",
+        },
+        {
+          question_no: "14 / 20",
+          question:
+            "Which international organization is responsible for overseeing the global aviation industry?",
+          options: [
+            "International Civil Aviation Organization (ICAO)",
+            "World Health Organization (WHO)",
+            "United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+            "Organization for Security and Co-operation in Europe (OSCE)",
+          ],
+          correctAnswer: "International Civil Aviation Organization (ICAO)",
+        },
+        {
+          question_no: "15 / 20",
+          question:
+            "What is the purpose of the United Nations Children's Fund(UNICEF)?",
+          options: [
+            "To provide education and healthcare to children in developing countries",
+            "To promote children's rights and protection",
+            "To prevent child labor and exploitation",
+            "All of the above",
+          ],
+          correctAnswer: "All of the above",
+        },
+        {
+          question_no: "16 / 20",
+          question:
+            "What is the main objective of economic sanctions imposed by countries or international organisations?",
+          options: [
+            "To promote economic growth in targeted countries",
+            "To restrict trade and financial transactions to pressure governments to change their policies",
+            "To encourage foreign investment",
+            "To facilitate international trade agreements",
+          ],
+          correctAnswer:
+            "To restrict trade and financial transactions to pressure governments to change their policies",
+        },
+        {
+          question_no: "17 / 20",
+          question:
+            "Which international agreement established the principles of sovereignty, equality, and non-interference in the affairs of other states?",
+          options: [
+            "Treaty of Versailles",
+            "Treaty of Westphalia",
+            "Treaty of Lisbon",
+            "Treaty of Rome",
+          ],
+          correctAnswer: "Treaty of Westphalia",
+        },
+        {
+          question_no: "18 / 20",
+          question:
+            "What is the purpose of the International Criminal Court (ICC)?",
+          options: [
+            "To prosecute individuals for crimes against humanity, war crimes, and genocide",
+            "To regulate international trade disputes",
+            "To address climate change",
+            "To promote cultural exchange among nations",
+          ],
+          correctAnswer:
+            "To prosecute individuals for crimes against humanity, war crimes, and genocide",
+        },
+        {
+          question_no: "19 / 20",
+          question:
+            "Which international organization is responsible for promoting global public health?",
+          options: [
+            "International Monetary Fund (IMF)",
+            "World Health Organization (WHO)",
+            "United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+            "International Criminal Court (ICC)",
+          ],
+          correctAnswer: "World Health Organization (WHO)",
+        },
+        {
+          question_no: "20 / 20",
+          question:
+            "What is the purpose of the United Nations Human Rights Council (UNHRC)?",
+          options: [
+            "To promote and protect human rights around the world",
+            "To regulate international trade agreements",
+            "To provide humanitarian aid to refugees",
+            "To address environmental issues",
+          ],
+          correctAnswer: "To promote and protect human rights around the world",
+        },
+      ];
+
+      // Variables to track quiz state
+      let currentQuestionIndex = 0;
+      let score = 0;
+      let timeLeft = 140;
+      let timerInterval;
+
+      // Function to start the quiz
+      function startQuiz() {
+        // Hide the start button and display the first question
+        document.getElementById("start-button").style.display = "none";
+        displayQuestion();
+        startTimer();
+      }
+
+      // Function to display a question and its options
+      function displayQuestion() {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+        const questionNo = document.getElementById("question-No");
+        const questionText = document.getElementById("question-text");
+        const answerButtons = document.getElementById("answer-buttons");
+
+        // Clear previous question and answer options
+        questionNo.innerHTML = "";
+        questionText.innerHTML = "";
+        answerButtons.innerHTML = "";
+
+        // Display the current question
+        questionNo.innerHTML = currentQuestion.question_no;
+        questionText.innerHTML = currentQuestion.question;
+
+        // Create answer buttons for each option
+        currentQuestion.options.forEach((option) => {
+          const button = document.createElement("button");
+          button.innerText = option;
+          button.classList.add("answer-button");
+          button.style.backgroundColor = "#FF5F6D";
+          answerButtons.appendChild(button);
+
+          // Add click event listener to check the answer
+          button.addEventListener("click", function () {
+            checkAnswer(option);
+          });
+        });
+      }
+
+      // Function to check the selected answer
+      function checkAnswer(selectedOption) {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+
+        // Check if the selected answer is correct
+        if (selectedOption === currentQuestion.correctAnswer) {
+          score++;
+        }
+
+        // Move to the next question or end the quiz if all questions are answered
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < quizQuestions.length) {
+          displayQuestion();
+        } else {
+          endQuiz();
+        }
+      }
+
+      // Function to start the timer
+      function startTimer() {
+        timerInterval = setInterval(function () {
+          timeLeft--;
+
+          // Update the timer text
+          document.getElementById("timer").textContent = timeLeft;
+
+          // End the quiz if time runs out
+          if (timeLeft <= 0) {
+            endQuiz();
+          }
+        }, 1000);
+      }
+
+      // Function to end the quiz
+      function endQuiz() {
+        // Stop the timer
+        clearInterval(timerInterval);
+
+        // Calculate the score percentage
+        const scorePercentage = (score / quizQuestions.length) * 100;
+
+        // Display the final score
+        const questionContainer = document.getElementById("question-container");
+        questionContainer.innerHTML = `
+<h2>Quiz Completed!</h2>
+<p>Your Score: ${score} out of ${quizQuestions.length}</p>
+<p>Score Percentage: ${scorePercentage}%</p>
+<center class="result-button">
+    <a href="/">
+        <button id="home-button" style="background-color:#FF5F6D">Play Other quiz</button>
+    </a>
+    <a href="">
+        <button id="home-button" style="background-color:#FF5F6D">Play Again</button>
+    </a>
+</center>
+`;
+      }
+
+      // Add event listener to start the quiz when the start button is clicked
+      document
+        .getElementById("start-button")
+        .addEventListener("click", startQuiz);
+    </script>
+    <footer>
+      <div class="sticky_ad_beta" id="sticky_ad_beta">
+        <span class="close_sticky_ad_beta" id="close_sticky_ad_beta"> × </span>
+
+        <!-- Ads Here -->
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          crossorigin="anonymous"
+        ></script>
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+            googletag
+              .defineSlot(
+                "/23284951307/BF03",
+                [
+                  [728, 90],
+                  [320, 50],
+                ],
+                "div-gpt-ad-1752410923655-0"
+              )
+              .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+
+        <!-- /23284951307/BF03 -->
+        <div
+          id="div-gpt-ad-1752410923655-0"
+          style="min-width: 320px; min-height: 50px"
+        >
+          <script>
+            googletag.cmd.push(function () {
+              googletag.display("div-gpt-ad-1752410923655-0");
+            });
+          </script>
+        </div>
+      </div>
+    </footer>
+    <script src="js/inline_scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Quiz Site - Test Your Knowledge Across Various Categories</title>
+    <meta name="title" content="Quiz Site - The Ultimate Quiz Platform" />
+    <meta
+      name="description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <!-- Social Meta Tags -->
+    <meta
+      property="og:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      name="twitter:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <link rel="stylesheet" href="/css/stylese67d.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/inline_styles.css" />
+
+    <style>
+      a {
+        text-decoration: none !important;
+        color: #fff !important;
+      }
+
+      .result-button {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .iz-branding {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body style="overflow-x: hidden; background-color: #fff5e1">
+    <div class="container-fluid p-0" style="overflow-x: hidden">
+      <div class="row justify-content-center">
+        <div class="col" style="max-width: 385px">
+          <div class="row justify-content-center">
+            <div class="col-12" style="background-color: #00c9a7">
+              <a href="/">
+                <center>
+                  <img
+                    src="../quizadmin/images/logo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </center>
+              </a>
+            </div>
+            <div class="googleads">
+              <!-- Ads Here-->
+              <script
+                async
+                src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                crossorigin="anonymous"
+              ></script>
+              <script>
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                  googletag
+                    .defineSlot(
+                      "/23284951307/BF01",
+                      [336, 280],
+                      "div-gpt-ad-1752410932708-0"
+                    )
+                    .addService(googletag.pubads());
+                  googletag.enableServices();
+                });
+              </script>
+
+              <!-- /23284951307/BF01 -->
+              <div
+                id="div-gpt-ad-1752410932708-0"
+                style="min-width: 336px; min-height: 280px"
+              >
+                <script>
+                  googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1752410932708-0");
+                  });
+                </script>
+              </div>
+            </div>
+            <div style="background-color: #ffc371">
+              <div class="col-12 my-3" style="height: auto"></div>
+              <div class="quiz-container" style="background-color: #ffc371">
+                <h1>Cricket quiz</h1>
+
+                <center>
+                  <img src="../assets/img/cricket.jpeg" alt="" id="flage" />
+                </center>
+                <div id="question-container">
+                  <h4 id="question-No"></h4>
+
+                  <p id="question-text"></p>
+                  <div id="answer-buttons"></div>
+                </div>
+                <div id="controls-container">
+                  <button
+                    id="start-button"
+                    style="margin-bottom: 10px; background-color: #ff5f6d"
+                    onclick="hideImage()"
+                  >
+                    Start Quiz
+                  </button>
+                  <div id="timer-container">
+                    <span id="timer-text"
+                      >Time Left: <span id="timer">0</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="googleads">
+            <!-- Ads Here-->
+            <script
+              async
+              src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+              crossorigin="anonymous"
+            ></script>
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                googletag
+                  .defineSlot(
+                    "/23284951307/BF02",
+                    [300, 250],
+                    "div-gpt-ad-1752410928619-0"
+                  )
+                  .addService(googletag.pubads());
+                googletag.enableServices();
+              });
+            </script>
+
+            <!-- /23284951307/BF02 -->
+            <div
+              id="div-gpt-ad-1752410928619-0"
+              style="min-width: 300px; min-height: 250px"
+            >
+              <script>
+                googletag.cmd.push(function () {
+                  googletag.display("div-gpt-ad-1752410928619-0");
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function hideImage() {
+        console.log("hide");
+        document.getElementById("flage").style.display = "none";
+      }
+      const quizQuestions = [
+        {
+          question_no: "1 / 20",
+          question:
+            "Who holds the record for the highest individual score in Test cricket?",
+          options: [
+            "Sachin Tendulkar",
+            "Ricky Ponting",
+            "Brian Lara",
+            "Don Bradman",
+          ],
+          correctAnswer: "Don Bradman",
+        },
+        {
+          question_no: "2 / 20",
+          question: "In cricket, what does LBW stand for?",
+          options: [
+            "Leg Before Wicket",
+            "Let's Bowl Wickets",
+            "Leg Break Wicket",
+            "Let's Bat Well",
+          ],
+          correctAnswer: "Leg Before Wicket",
+        },
+        {
+          question_no: "3 / 20",
+          question:
+            "What is the name of the trophy awarded to the winner of the ICC Cricket World Cup?",
+          options: [
+            "Ashes Trophy",
+            "Border-Gavaskar Trophy",
+            "Champions Trophy",
+            "ICC Cricket World Cup Trophy",
+          ],
+          correctAnswer: "ICC Cricket World Cup Trophy",
+        },
+        {
+          question_no: "4 / 20",
+          question:
+            "Who is the current captain of the Indian cricket team in Test matches?",
+          options: [
+            "Virat Kohli",
+            "Rohit Sharma",
+            "Ajinkya Rahane",
+            "MS Dhoni",
+          ],
+          correctAnswer: "Ajinkya Rahane",
+        },
+        {
+          question_no: "5 / 20",
+          question:
+            "What is the highest individual score by a batsman in a One Day International (ODI) cricket match?",
+          options: ["200", "250", "264", "400"],
+          correctAnswer: "264",
+        },
+        {
+          question_no: "6 / 20",
+          question: "Which country won the ICC Cricket World Cup in 2019?",
+          options: ["India", "Australia", "England", "South Africa"],
+          correctAnswer: "England",
+        },
+        {
+          question_no: "7 / 20",
+          question: 'Who is known as the "God of Cricket"?',
+          options: [
+            "Sachin Tendulkar",
+            "Brian Lara",
+            "Ricky Ponting",
+            "Jacques Kallis",
+          ],
+          correctAnswer: "Sachin Tendulkar",
+        },
+        {
+          question_no: "8 / 20",
+          question:
+            "What is the name of the cricket tournament contested between Australia and England?",
+          options: [
+            "Asia Cup",
+            "ICC Champions Trophy",
+            "Ashes",
+            "Border-Gavaskar Trophy",
+          ],
+          correctAnswer: "Ashes",
+        },
+        {
+          question_no: "9 / 20",
+          question:
+            "What is the term for a batsman being dismissed without scoring any runs?",
+          options: ["Duck", "Goose", "Eagle", "Turkey"],
+          correctAnswer: "Duck",
+        },
+        {
+          question_no: "10 / 20",
+          question:
+            "Who is the current captain of the Australian cricket team in Test matches?",
+          options: ["Steve Smith", "Aaron Finch", "Tim Paine", "David Warner"],
+          correctAnswer: "Tim Paine",
+        },
+        {
+          question_no: "11 / 20",
+          question: 'What does the term "hat-trick" refer to in cricket?',
+          options: [
+            "Scoring three centuries in a row",
+            "Taking three wickets in three consecutive deliveries",
+            "Winning three consecutive matches",
+            "Scoring three sixes in a row",
+          ],
+          correctAnswer: "Taking three wickets in three consecutive deliveries",
+        },
+        {
+          question_no: "12 / 20",
+          question: "Which country won the ICC Women's T20 World Cup in 2020?",
+          options: ["Australia", "England", "India", "South Africa"],
+          correctAnswer: "Australia",
+        },
+        {
+          question_no: "13 / 20",
+          question:
+            "What is the term for the cricket pitch in the center of the field?",
+          options: ["Square", "Wicket", "Crease", "Pitch"],
+          correctAnswer: "Wicket",
+        },
+        {
+          question_no: "14 / 20",
+          question: "Who is the highest run-scorer in Test cricket?",
+          options: [
+            "Sachin Tendulkar",
+            "Ricky Ponting",
+            "Alastair Cook",
+            "Jacques Kallis",
+          ],
+          correctAnswer: "Sachin Tendulkar",
+        },
+        {
+          question_no: "15 / 20",
+          question:
+            "What is the term for a bowler taking five wickets in a single innings?",
+          options: ["Hat-trick", "Century", "Five-for", "Yorker"],
+          correctAnswer: "Five-for",
+        },
+        {
+          question_no: "16 / 20",
+          question:
+            "Who holds the record for the fastest century in One Day International (ODI) cricket?",
+          options: [
+            "AB de Villiers",
+            "Chris Gayle",
+            "Shahid Afridi",
+            "Virender Sehwag",
+          ],
+          correctAnswer: "AB de Villiers",
+        },
+        {
+          question_no: "17 / 20",
+          question:
+            "Which cricket ground is known as the Lord's Cricket Ground?",
+          options: [
+            "Wankhede Stadium",
+            "MCG (Melbourne Cricket Ground)",
+            "Eden Gardens",
+            "Lord's Cricket Ground",
+          ],
+          correctAnswer: "Lord's Cricket Ground",
+        },
+        {
+          question_no: "18 / 20",
+          question:
+            "What is the term for a delivery bowled by a spinner that spins sharply from leg to off, especially when the ball pitches outside the off stump?",
+          options: ["Yorker", "Googly", "Doosra", "Off-break"],
+          correctAnswer: "Doosra",
+        },
+        {
+          question_no: "19 / 20",
+          question: 'Which cricketer is known as the "White Lightning"?',
+          options: [
+            "Brett Lee",
+            "Glenn McGrath",
+            "Shane Warne",
+            "James Anderson",
+          ],
+          correctAnswer: "Brett Lee",
+        },
+        {
+          question_no: "20 / 20",
+          question:
+            "Who is the highest wicket-taker in One Day International (ODI) cricket?",
+          options: [
+            "Wasim Akram",
+            "Glenn McGrath",
+            "Muttiah Muralitharan",
+            "Shane Warne",
+          ],
+          correctAnswer: "Muttiah Muralitharan",
+        },
+      ];
+
+      // Variables to track quiz state
+      let currentQuestionIndex = 0;
+      let score = 0;
+      let timeLeft = 140;
+      let timerInterval;
+
+      // Function to start the quiz
+      function startQuiz() {
+        // Hide the start button and display the first question
+        document.getElementById("start-button").style.display = "none";
+        displayQuestion();
+        startTimer();
+      }
+
+      // Function to display a question and its options
+      function displayQuestion() {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+        const questionNo = document.getElementById("question-No");
+        const questionText = document.getElementById("question-text");
+        const answerButtons = document.getElementById("answer-buttons");
+
+        // Clear previous question and answer options
+        questionNo.innerHTML = "";
+        questionText.innerHTML = "";
+        answerButtons.innerHTML = "";
+
+        // Display the current question
+        questionNo.innerHTML = currentQuestion.question_no;
+        questionText.innerHTML = currentQuestion.question;
+
+        // Create answer buttons for each option
+        currentQuestion.options.forEach((option) => {
+          const button = document.createElement("button");
+          button.innerText = option;
+          button.classList.add("answer-button");
+          button.style.backgroundColor = "#FF5F6D ";
+          answerButtons.appendChild(button);
+
+          // Add click event listener to check the answer
+          button.addEventListener("click", function () {
+            checkAnswer(option);
+          });
+        });
+      }
+
+      // Function to check the selected answer
+      function checkAnswer(selectedOption) {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+
+        // Check if the selected answer is correct
+        if (selectedOption === currentQuestion.correctAnswer) {
+          score++;
+        }
+
+        // Move to the next question or end the quiz if all questions are answered
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < quizQuestions.length) {
+          displayQuestion();
+        } else {
+          endQuiz();
+        }
+      }
+
+      // Function to start the timer
+      function startTimer() {
+        timerInterval = setInterval(function () {
+          timeLeft--;
+
+          // Update the timer text
+          document.getElementById("timer").textContent = timeLeft;
+
+          // End the quiz if time runs out
+          if (timeLeft <= 0) {
+            endQuiz();
+          }
+        }, 1000);
+      }
+
+      // Function to end the quiz
+      function endQuiz() {
+        // Stop the timer
+        clearInterval(timerInterval);
+
+        // Calculate the score percentage
+        const scorePercentage = (score / quizQuestions.length) * 100;
+
+        // Display the final score
+        const questionContainer = document.getElementById("question-container");
+        questionContainer.innerHTML = `
+<h2>Quiz Completed!</h2>
+<p>Your Score: ${score} out of ${quizQuestions.length}</p>
+<p>Score Percentage: ${scorePercentage}%</p>
+<center class="result-button">
+    <a href="/">
+        <button id="home-button" style="background-color:#FF5F6D">Play Other quiz</button>
+    </a>
+    <a href="">
+        <button id="home-button" style="background-color:#FF5F6D">Play Again</button>
+    </a>
+</center>
+`;
+      }
+
+      // Add event listener to start the quiz when the start button is clicked
+      document
+        .getElementById("start-button")
+        .addEventListener("click", startQuiz);
+    </script>
+    <footer>
+      <div class="sticky_ad_beta" id="sticky_ad_beta">
+        <span class="close_sticky_ad_beta" id="close_sticky_ad_beta"> × </span>
+
+        <!-- Ads Here -->
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          crossorigin="anonymous"
+        ></script>
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+            googletag
+              .defineSlot(
+                "/23284951307/BF03",
+                [
+                  [728, 90],
+                  [320, 50],
+                ],
+                "div-gpt-ad-1752410923655-0"
+              )
+              .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+
+        <!-- /23284951307/BF03 -->
+        <div
+          id="div-gpt-ad-1752410923655-0"
+          style="min-width: 320px; min-height: 50px"
+        >
+          <script>
+            googletag.cmd.push(function () {
+              googletag.display("div-gpt-ad-1752410923655-0");
+            });
+          </script>
+        </div>
+      </div>
+    </footer>
+    <script src="js/inline_scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,540 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Quiz Site - Test Your Knowledge Across Various Categories</title>
+    <meta name="title" content="Quiz Site - The Ultimate Quiz Platform" />
+    <meta
+      name="description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <!-- Social Meta Tags -->
+    <meta
+      property="og:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Quiz Site - The Ultimate Quiz Platform"
+    />
+    <meta
+      name="twitter:description"
+      content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!"
+    />
+    <link rel="stylesheet" href="/css/stylese67d.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/inline_styles.css" />
+
+    <style>
+      a {
+        text-decoration: none !important;
+        color: #fff !important;
+      }
+
+      .result-button {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .iz-branding {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body style="overflow-x: hidden; background-color: #FFF5E1 ">
+    <div class="container-fluid p-0" style="overflow-x: hidden">
+      <div class="row justify-content-center">
+        <div class="col" style="max-width: 385px">
+          <div class="row justify-content-center">
+            <div class="col-12" style="background-color: #00c9a7">
+              <a href="/">
+                <center>
+                  <img
+                    src="../quizadmin/images/logo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </center>
+              </a>
+            </div>
+            <div class="googleads">
+              <!-- Ads Here-->
+              <script
+                async
+                src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                crossorigin="anonymous"
+              ></script>
+              <script>
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                  googletag
+                    .defineSlot(
+                      "/23284951307/BF01",
+                      [336, 280],
+                      "div-gpt-ad-1752410932708-0"
+                    )
+                    .addService(googletag.pubads());
+                  googletag.enableServices();
+                });
+              </script>
+
+              <!-- /23284951307/BF01 -->
+              <div
+                id="div-gpt-ad-1752410932708-0"
+                style="min-width: 336px; min-height: 280px"
+              >
+                <script>
+                  googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1752410932708-0");
+                  });
+                </script>
+              </div>
+            </div>
+            <div style="background-color: #ffc371">
+              <div class="col-12 my-3" style="height: auto"></div>
+              <div class="quiz-container" style="background-color: #ffc371">
+                <h1>Literature quiz</h1>
+                <center>
+                  <img src="../assets/img/literature.jpeg" alt="" id="flage" />
+                </center>
+                <div id="question-container">
+                  <h4 id="question-No"></h4>
+                  <p id="question-text"></p>
+                  <div id="answer-buttons"></div>
+                </div>
+                <div id="controls-container">
+                  <button
+                    id="start-button"
+                    style="margin-bottom: 10px; background-color: #ff5f6d"
+                    onclick="hideImage()"
+                  >
+                    Start Quiz
+                  </button>
+
+                  <div id="timer-container">
+                    <span id="timer-text"
+                      >Time Left: <span id="timer">0</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="googleads">
+            <!-- Ads Here-->
+            <script
+              async
+              src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+              crossorigin="anonymous"
+            ></script>
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                googletag
+                  .defineSlot(
+                    "/23284951307/BF02",
+                    [300, 250],
+                    "div-gpt-ad-1752410928619-0"
+                  )
+                  .addService(googletag.pubads());
+                googletag.enableServices();
+              });
+            </script>
+
+            <!-- /23284951307/BF02 -->
+            <div
+              id="div-gpt-ad-1752410928619-0"
+              style="min-width: 300px; min-height: 250px"
+            >
+              <script>
+                googletag.cmd.push(function () {
+                  googletag.display("div-gpt-ad-1752410928619-0");
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function hideImage() {
+        console.log("hide");
+        document.getElementById("flage").style.display = "none";
+      }
+      const quizQuestions = [
+        {
+          question_no: "1 / 20",
+          question: 'Who wrote the famous play "Romeo and Juliet"?',
+          options: [
+            "William Shakespeare",
+            "Charles Dickens",
+            "Jane Austen",
+            "Mark Twain",
+          ],
+          correctAnswer: "William Shakespeare",
+        },
+        {
+          question_no: "2 / 20",
+          question:
+            "Which literary movement is characterized by its focus on the individual's emotions and experiences?",
+          options: ["Realism", "Romanticism", "Modernism", "Naturalism"],
+          correctAnswer: "Romanticism",
+        },
+        {
+          question_no: "3 / 20",
+          question: "Which of the following is NOT a work by Jane Austen?",
+          options: [
+            "Pride and Prejudice",
+            "Wuthering Heights",
+            "Sense and Sensibility",
+            "Emma",
+          ],
+          correctAnswer: "Wuthering Heights",
+        },
+        {
+          question_no: "4 / 20",
+          question: 'Who wrote the novel "To Kill a Mockingbird"?',
+          options: [
+            "Harper Lee",
+            "J.K. Rowling",
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald",
+          ],
+          correctAnswer: "Harper Lee",
+        },
+        {
+          question_no: "5 / 20",
+          question:
+            "Which literary device is used to give human qualities to animals or objects?",
+          options: ["Simile", "Metaphor", "Personification", "Hyperbole"],
+          correctAnswer: "Personification",
+        },
+        {
+          question_no: "6 / 20",
+          question:
+            "In which epic poem does the hero Odysseus try to return home after the Trojan War?",
+          options: [
+            "The Iliad",
+            "The Aeneid",
+            "The Odyssey",
+            "The Divine Comedy",
+          ],
+          correctAnswer: "The Odyssey",
+        },
+        {
+          question_no: "7 / 20",
+          question: 'Who wrote the novel "1984"?',
+          options: [
+            "George Orwell",
+            "Aldous Huxley",
+            "J.R.R. Tolkien",
+            "H.G. Wells",
+          ],
+          correctAnswer: "George Orwell",
+        },
+        {
+          question_no: "8 / 20",
+          question:
+            "Which of the following is NOT a tragedy by William Shakespeare?",
+          options: ["Macbeth", "Hamlet", "Othello", "Pride and Prejudice"],
+          correctAnswer: "Pride and Prejudice",
+        },
+        {
+          question_no: "9 / 20",
+          question:
+            "Which literary work is often considered the first modern novel?",
+          options: [
+            "Don Quixote",
+            "Robinson Crusoe",
+            "Gulliver's Travels",
+            "The Canterbury Tales",
+          ],
+          correctAnswer: "Don Quixote",
+        },
+        {
+          question_no: "10 / 20",
+          question: 'Who wrote the poem "The Raven"?',
+          options: [
+            "Edgar Allan Poe",
+            "Emily Dickinson",
+            "Walt Whitman",
+            "Robert Frost",
+          ],
+          correctAnswer: "Edgar Allan Poe",
+        },
+        {
+          question_no: "11 / 20",
+          question:
+            "In which play by Arthur Miller does the character Willy Loman appear?",
+          options: [
+            "Death of a Salesman",
+            "The Crucible",
+            "A View from the Bridg",
+            "All My Sons",
+          ],
+          correctAnswer: "Death of a Salesman",
+        },
+        {
+          question_no: "12 / 20",
+          question:
+            "Which of the following novels is NOT written by Charles Dickens?",
+          options: [
+            "Great Expectations",
+            "Moby-Dick",
+            "Oliver Twist",
+            "A Tale of Two Cities",
+          ],
+          correctAnswer: "Moby-Dick",
+        },
+        {
+          question_no: "13 / 20",
+          question: 'Who wrote the novel "Pride and Prejudice"?',
+          options: [
+            "Jane Austen",
+            "Charlotte Bronte",
+            "Emily Bronte",
+            "Louisa May Alcott",
+          ],
+          correctAnswer: "Jane Austen",
+        },
+        {
+          question_no: "14 / 20",
+          question:
+            "Which literary work features the characters Tom Sawyer and Huckleberry Finn?",
+          options: [
+            "The Adventures of Tom Sawyer",
+            "The Adventures of Sherlock Holmes",
+            "The Catcher in the Rye",
+            "Little Women",
+          ],
+          correctAnswer: "The Adventures of Tom Sawyer",
+        },
+        {
+          question_no: "15 / 20",
+          question: "Who is the author of the Harry Potter series?",
+          options: [
+            "J.K. Rowling",
+            "Stephenie Meyer",
+            "Suzanne Collins",
+            "George R.R. Martin",
+          ],
+          correctAnswer: "J.K. Rowling",
+        },
+        {
+          question_no: "16 / 20",
+          question:
+            "Which of the following novels is NOT written by F. Scott Fitzgerald?",
+          options: [
+            "The Great Gatsby",
+            "The Catcher in the Rye",
+            "Tender Is the Night",
+            "This Side of Paradise",
+          ],
+          correctAnswer: "The Catcher in the Rye",
+        },
+        {
+          question_no: "17 / 20",
+          question: 'Who wrote the novel "The Catcher in the Rye"',
+          options: [
+            "J.D. Salinger",
+            "Ernest Hemingway",
+            "John Steinbeck",
+            "Kurt Vonnegut",
+          ],
+          correctAnswer: "J.D. Salinger",
+        },
+        {
+          question_no: "18 / 20",
+          question:
+            'What is the famous opening line of Charles Dickens "A Tale of Two Cities"?',
+          options: [
+            "Call me Ishmael",
+            "It was the best of times, it was the worst of times.",
+            "In a hole in the ground there lived a hobbit.",
+            "All happy families are alike; each unhappy family is unhappy in its own way",
+          ],
+          correctAnswer: "It was the best of times, it was the worst of times.",
+        },
+        {
+          question_no: "19 / 20",
+          question: 'Who wrote the novel "The Grapes of Wrath"?',
+          options: [
+            "John Steinbeck",
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald",
+            "William Faulkner",
+          ],
+          correctAnswer: "John Steinbeck",
+        },
+        {
+          question_no: "20 / 20",
+          question:
+            "In which Shakespearean play does the character Lady Macbeth appear?",
+          options: ["Romeo and Juliet", "Hamlet", "Othello", "Macbeth"],
+          correctAnswer: "Macbeth",
+        },
+      ];
+
+      // Variables to track quiz state
+      let currentQuestionIndex = 0;
+      let score = 0;
+      let timeLeft = 140;
+      let timerInterval;
+
+      // Function to start the quiz
+      function startQuiz() {
+        // Hide the start button and display the first question
+        document.getElementById("start-button").style.display = "none";
+        displayQuestion();
+        startTimer();
+      }
+
+      // Function to display a question and its options
+      function displayQuestion() {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+        const questionNo = document.getElementById("question-No");
+        const questionText = document.getElementById("question-text");
+        const answerButtons = document.getElementById("answer-buttons");
+
+        // Clear previous question and answer options
+        questionNo.innerHTML = "";
+        questionText.innerHTML = "";
+        answerButtons.innerHTML = "";
+
+        // Display the current question
+        questionNo.innerHTML = currentQuestion.question_no;
+        questionText.innerHTML = currentQuestion.question;
+
+        // Create answer buttons for each option
+        currentQuestion.options.forEach((option) => {
+          const button = document.createElement("button");
+          button.innerText = option;
+          button.classList.add("answer-button");
+          button.style.backgroundColor = "#FF5F6D";
+          answerButtons.appendChild(button);
+
+          // Add click event listener to check the answer
+          button.addEventListener("click", function () {
+            checkAnswer(option);
+          });
+        });
+      }
+
+      // Function to check the selected answer
+      function checkAnswer(selectedOption) {
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+
+        // Check if the selected answer is correct
+        if (selectedOption === currentQuestion.correctAnswer) {
+          score++;
+        }
+
+        // Move to the next question or end the quiz if all questions are answered
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < quizQuestions.length) {
+          displayQuestion();
+        } else {
+          endQuiz();
+        }
+      }
+
+      // Function to start the timer
+      function startTimer() {
+        timerInterval = setInterval(function () {
+          timeLeft--;
+
+          // Update the timer text
+          document.getElementById("timer").textContent = timeLeft;
+
+          // End the quiz if time runs out
+          if (timeLeft <= 0) {
+            endQuiz();
+          }
+        }, 1000);
+      }
+
+      // Function to end the quiz
+      function endQuiz() {
+        // Stop the timer
+        clearInterval(timerInterval);
+
+        // Calculate the score percentage
+        const scorePercentage = (score / quizQuestions.length) * 100;
+
+        // Display the final score
+        const questionContainer = document.getElementById("question-container");
+        questionContainer.innerHTML = `
+<h2>Quiz Completed!</h2>
+<p>Your Score: ${score} out of ${quizQuestions.length}</p>
+<p>Score Percentage: ${scorePercentage}%</p>
+<center class="result-button">
+    <a href="/">
+        <button id="home-button" style="background-color:#FF5F6D">Play Other quiz</button>
+    </a>
+    <a href="">
+        <button id="home-button" style="background-color:#FF5F6D">Play Again</button>
+    </a>
+</center>
+`;
+      }
+
+      // Add event listener to start the quiz when the start button is clicked
+      document
+        .getElementById("start-button")
+        .addEventListener("click", startQuiz);
+    </script>
+    <footer>
+      <div class="sticky_ad_beta" id="sticky_ad_beta">
+        <span class="close_sticky_ad_beta" id="close_sticky_ad_beta"> × </span>
+
+        <!-- Ads Here -->
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          crossorigin="anonymous"
+        ></script>
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+            googletag
+              .defineSlot(
+                "/23284951307/BF03",
+                [
+                  [728, 90],
+                  [320, 50],
+                ],
+                "div-gpt-ad-1752410923655-0"
+              )
+              .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+
+        <!-- /23284951307/BF03 -->
+        <div
+          id="div-gpt-ad-1752410923655-0"
+          style="min-width: 320px; min-height: 50px"
+        >
+          <script>
+            googletag.cmd.push(function () {
+              googletag.display("div-gpt-ad-1752410923655-0");
+            });
+          </script>
+        </div>
+      </div>
+    </footer>
+    <script src="js/inline_scripts.js"></script>
+  </body>
+</html>
