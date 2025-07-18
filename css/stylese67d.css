@@ -1,167 +1,110 @@
 body {
-	background-color: #f2f2f2;
-	font-family: Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	/* align-items: center; */
-	height: 100vh;
-	margin: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  margin: 0;
 }
 
 .quiz-container {
-/*	max-width: 500px; */
-	background-color: #f1f1f1;
-	border-radius: 0;
-	padding: 10px;
-/*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-/*	width: 20%; */
-	min-height: calc(100vh - 76px);
+  /*	max-width: 500px; */
+  background-color: #f1f1f1;
+  border-radius: 0;
+  padding: 10px;
+  /*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /*	width: 20%; */
+  min-height: calc(100vh - 76px);
 }
-#question-No{
-	text-align: center;
+#question-No {
+  text-align: center;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
 }
 
 #question-container {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #question-text {
-	font-size: 18px;
-	margin-bottom: 10px;
-	text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f8f8ff;
 }
 
 #answer-buttons {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  grid-gap: 10px;
 }
 
-button, .button {
-	height: auto;
-	min-height: 40px;
-	font-size: 16px;
-	background-color: #758AAB;
-	color: #fff;
-	border: none;
-	border-radius: 5px !important;
-	cursor: pointer;
-	align-items: center;
-	padding: 14px 25px;
+button,
+.button {
+  height: auto;
+  min-height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 8px !important;
+  cursor: pointer;
+  align-items: center;
+  padding: 14px 25px;
 }
 .button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #home-button {
-	border-radius: 5px !important;
-	height: auto;
-	font-size: 16px;
-	background-color: #758AAB;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	align-items: center;
-	padding-left: 25px;
-	padding-right: 25px;
-	color: #fff;
+  border-radius: 5px !important;
+  height: auto;
+  font-size: 16px;
+  background-color: #758aab;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 button:hover {
-	background-color: #758AAB;
-	color: #fff;	
+  background-color: rgba(206, 206, 206, 0.2);
+  color: #fff;
 }
 
 #controls-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #timer-container {
-	display: flex;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 #timer-text {
-	font-size: 17px;
-	text-align: center;
-	width: 100%;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
 }
 
 #timer {
-	font-weight: bold;
-	margin-left: 5px;
-}
-
-
-.contentList_contentList__XvCWH h2 {
-    font-size: 22px;
-    font-weight: 700;
-    /* margin-bottom: 32px; */
-    position: relative;
-    text-align: center;
-}
-.funFact_funFact__9qqdA {
-    margin-top: 16px;
-    padding: 16px 8px;
-    border-radius: 16px;
-    background: #3737371a;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    min-height: 93px;
-}
-.funFact_funFact__9qqdA p {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-}
-.contentList_contentList__XvCWH ul li {
-    /* line-height: 1.4; */
-    /* padding-bottom: 24px; */
-    /* padding-left: 40px; */
-    position: relative;
-    font-size: 15px;
-    font-weight: 400;
-    color: #969696;
-}
-.playNow_playNow__HQEAM {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* color: #fff; */
-    position: relative;
-    border-radius: 16px;
-    background: #3737371a;
-    margin-top: 0;
-    padding: 16px 30px 8px;
-    min-height: 200px;
-    margin-bottom: 16px;
-}
-.playNow_playNow__HQEAM h1 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-top: 10px;
-}
-.playNow_playNow__HQEAM p {
-    text-align: center;
-    margin-bottom: 12px;
-    margin-top: 2px;
-    font-size: 15px;
-    color: #3a3a3a;
-    line-height: 22px;
+  font-weight: bold;
+  margin-left: 5px;
 }

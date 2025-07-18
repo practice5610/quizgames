@@ -1,191 +1,108 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="analytics.js"></script>
 
-<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      body {
+        background-color: #1c1c3c;
 
+        width: 100%;
+        height: 100%;
 
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Quiz Site - Test Your Knowledge Across Various Categories</title>
-  <meta name="title" content="Quiz Site - The Ultimate Quiz Platform">
-  <meta name="description"
-    content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!">
-  <!-- Social Meta Tags -->
-  <meta property="og:title" content="Quiz Site - The Ultimate Quiz Platform">
-  <meta property="og:description"
-    content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!">
-  <meta property="og:locale" content="en">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Quiz Site - The Ultimate Quiz Platform">
-  <meta name="twitter:description"
-    content="Welcome to Quiz Site, the ultimate platform to test your knowledge across various categories like AI, Sports, Technology, Science, Literature, and more. Challenge yourself and your friends!">
-  <link rel="stylesheet" href="/css/stylese67d.css">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/custom.css">
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="/css/inline_styles.css">
-
-  <style>
-    a {
-      text-decoration: none !important;
-      color: #fff !important;
-    }
-
-    .result-button {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .iz-branding {
-      display: none !important;
-    }
-  </style>
-</head>
-
-<body style="overflow-x: hidden; background-color: #FFF5E1 ;">
-  <div class="container-fluid p-0" style="overflow-x: hidden;">
-    <div class="row justify-content-center">
-      <div class="col" style="max-width: 385px;">
-        <div class="row justify-content-center">
-          <div class="col-12" style="background-color: #00C9A7 ;">
-            <a href="/">
-              <center>
-                <img src="/quizadmin/images/logo.png" alt="logo" class="img-fluid">
-              </center>
-            </a>
-          </div>
-          <div class="googleads">
-            <!-- Ads Here-->
-            <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-            <!-- <script>
-              window.googletag = window.googletag || { cmd: [] };
-              googletag.cmd.push(function () {
-                googletag.defineSlot('/23284951307/BF01', [336, 280], 'div-gpt-ad-1752410932708-0').addService(googletag.pubads());
-                googletag.enableServices();
-              });
-            </script> -->
-  <script>
-    window.googletag = window.googletag || {cmd: []};
-    googletag.cmd.push(function() {
-    googletag.defineSlot('/23309319647/a_1', [300, 250], 'div-gpt-ad-1752410932708-0').addService(googletag.pubads());
-    googletag.enableServices();
-    });
-  </script>
-
-            <!-- /23284951307/BF01 -->
-            <div id='div-gpt-ad-1752410932708-0' style='min-width: 336px; min-height: 280px;'>
-              <script>
-                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1752410932708-0'); });
-              </script>
-            </div>
-          </div>
-          <div style="background-color: #FFC371  ;">
-            <div class="quiz-container" style="background-color: #FFC371  ;">
-              <h1>Quick Start!</h1>
-
-              <div id="question-container">
-                <div class="qustion-click">
-                  <h4 id="question-No">1 / 2</h4>
-
-                  <p id="question-text">Who wrote the book The Algebra of Infinite Justice?</p>
-                  <div id="answer-buttons">
-                    <button class="answer-button" style="background-color: #FF5F6D  ;">Virama Seth</button>
-                    <button class="answer-button" style="background-color: #FF5F6D  ;">Rohinton Mistry</button>
-                    <button class="answer-button" style="background-color: #FF5F6D  ;">Anurag Mathur</button>
-                    <button class="answer-button" style="background-color: #FF5F6D  ;">Arundhati Roy</button>
-                  </div>
-                </div>
-                <div class="qustion-click-show" style="display: none;">
-                  <h4 id="question-No">2 / 2</h4>
-
-                  <p id="question-text">Which of the following is NOT a subfield of artificial intelligence?</p>
-                  <div id="answer-buttons"> <a href="/quiz-play.html" class="answer-button button" style="background-color: #FF5F6D  ;">Machine Learning</a>
-                    <a href="/quiz-play.html" class="answer-button button"  style="background-color: #FF5F6D  ;">Robotics</a>
-                    <a href="/quiz-play.html" class="answer-button button"  style="background-color: #FF5F6D  ;">Cyber Security</a>
-                    <a href="/quiz-play.html" class="answer-button button"  style="background-color: #FF5F6D  ;">Natural Language Processing</a>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="contentList_contentList__XvCWH mt-4">
-                <h2>Play Quiz and Win Coins!</h2>
-
-                <ul class="ps-4">
-                  <ul >
-                    <li style="color: #000;">Get coins on the completion of each quiz.</li>
-                    <li style="color: #000;">Upgrade your skills with our top quizzes.</li>
-                    <li style="color: #000;">We have many top trending categories like Cricket, World, India, Business, loan, insurance &amp;
-                      many more!</li>
-                    <li style="color: #000;">Millions of quiz admirer like you showed trust on us.</li>
-                    <li style="color: #000;">Challenge lakhs of players from across the world!</li>
-                  </ul>
-                </ul>
-              </div>
-
-
-              <div class="googleads">
-                <!-- Ads Here-->
-                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-                  crossorigin="anonymous"></script>
-                <script>
-                  window.googletag = window.googletag || { cmd: [] };
-                  googletag.cmd.push(function () {
-                    googletag.defineSlot('/23284951307/BF02', [300, 250], 'div-gpt-ad-1752410928619-0').addService(googletag.pubads());
-                    googletag.enableServices();
-                  });
-                </script>
-
-                <!-- /23284951307/BF02 -->
-                <div id='div-gpt-ad-1752410928619-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1752410928619-0'); });
-                  </script>
-                </div>
-              </div>
-
-
-
-              <div class="funFact_funFact__9qqdA">
-                <h4>#Fun Fact</h4>
-                <p class="mb-0">
-                <p>Crypto trading in 2025 is booming&mdash;but tax reporting is complex. Use crypto tax software like
-                  Koinly, CoinLedger, or TokenTax to calculate gains, file reports, and avoid IRS penalties. These tools
-                  connect with exchanges, track transactions, and create country-specific tax forms in minutes. Whether
-                  you&rsquo;re holding, staking, or trading daily, stay compliant with ease. Protect profits and file
-                  stress-free with a trusted crypto tax solution.</p>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        min-height: 100vh;
+      }
+      .intro-container {
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          transform: scale(0.9);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      .intro-logo {
+        max-width: 150px;
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .intro-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0072ff;
+        margin-bottom: 20px;
+      }
+      .loading-bar {
+        position: relative;
+        width: 200px;
+        height: 10px;
+        background: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .loading-bar::before {
+        background: url("img.jpg");
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #4facfe, #0e0a5f);
+        animation: loading 2s linear forwards;
+      }
+      @keyframes loading {
+        to {
+          width: 100%;
+        }
+      }
+      .loading-text {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro-container">
+      <img src="logo.svg" alt="Logo" class="intro-logo" />
+      <p class="intro-message">Welcome to Quizz ikiwiv!</p>
+      <div class="loading-bar"></div>
+      <p class="loading-text">Loading...</p>
     </div>
-  </div>
-  <footer>
-    <div class="sticky_ad_beta" id="sticky_ad_beta"> <span class="close_sticky_ad_beta" id="close_sticky_ad_beta"> ×
-      </span>
-
-      <!-- Ads Here -->
-      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-      <script>
-        window.googletag = window.googletag || { cmd: [] };
-        googletag.cmd.push(function () {
-          googletag.defineSlot('/23284951307/BF03', [[728, 90], [320, 50]], 'div-gpt-ad-1752410923655-0').addService(googletag.pubads());
-          googletag.enableServices();
-        });
-      </script>
-
-      <!-- /23284951307/BF03 -->
-      <div id='div-gpt-ad-1752410923655-0' style='min-width: 320px; min-height: 50px;'>
-        <script>
-          googletag.cmd.push(function () { googletag.display('div-gpt-ad-1752410923655-0'); });
-        </script>
-      </div>
-    </div>
-  </footer>
-  <script src="js/inline_scripts.js"></script>
-</body>
-
+    <script>
+      // Redirect to age.html after 2 seconds
+      setTimeout(() => {
+        window.location.href = "/quick-start.html";
+      }, 2000);
+    </script>
+  </body>
 </html>

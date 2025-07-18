@@ -1,23 +1,25 @@
 body {
-    height: 100% !important;
+  height: 100% !important;
 }
-button, .button {
-    height: auto;
-    min-height: 36px;
+button,
+.button {
+  height: auto;
+  min-height: 36px;
 }
-.btn-check:focus+.btn, .btn:focus{
-    box-shadow: none;
-}
-
-.rounded-6{
-    border-radius: 6px;
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
 }
 
-.btn-cs-primary{
-    background: #1D357D;
+.rounded-6 {
+  border-radius: 6px;
+}
+
+.btn-cs-primary {
+  background: #1d357d;
 }
 
 .ADSresponsive-280 {
-    width: 100%;
-    height: 280px;
+  width: 100%;
+  height: 280px;
 }

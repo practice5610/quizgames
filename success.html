@@ -9,6 +9,7 @@
     />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="csrf-token" value="mOpRHlkMVEnynGXWHbUuu5jxgD7Qoe6NAPSsnJEd" />
 
     <script type="text/javascript">
       window.adsbygoogle = window.adsbygoogle || [];
@@ -17,11 +18,15 @@
       });
     </script>
 
-    <!-- <link
+    <link
       rel="shortcut icon"
       href="https://fetocdn.qureka.com/assets/newui_assets/images/favicon.png"
-    /> -->
+    />
     <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fetocdn.qureka.com/assets/newui_assets/newcss/minified.css?version=1.3"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -36,10 +41,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
-    <link rel="stylesheet" href="minified.css" />
     <!--  <link rel="stylesheet" href="https://fetocdn.qureka.com/assets/newui_assets/newcss/font.css?version=1.3"> -->
-    <title>Quiz ikiwi</title>
+    <title>Qureka Lite</title>
 
     <script
       async
@@ -73,21 +76,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://fetocdn.qureka.com/assets/newui_assets/js/minified.js?version=1.3&2025071817"></script> -->
+    <script src="https://fetocdn.qureka.com/assets/newui_assets/js/minified.js?version=1.3&2025071817"></script>
   </head>
   <body>
     <main class="app-wrapper-container intro-question-screen-bg">
-      <div class="col-12">
-        <a href="/">
-          <center>
-            <img
-              src="/quizadmin/images/logo.png"
-              alt="logo"
-              class="img-fluid"
-            />
-          </center>
-        </a>
+      <div
+        class="modal fade welcomemodal-modal service-modal"
+        id="serviceNotAvailable"
+        tabindex="-1"
+        aria-labelledby="serviceNotAvailableLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+              <img
+                src="https://fetocdn.qureka.com/assets/newui_assets/images/dashboard-popup.png"
+                alt=""
+                class="w-100 service-not-avail"
+              />
+              <h4>
+                Qureka Lite registration service is currently not available in
+                your region.
+              </h4>
+              <p>
+                However, you can continue keep playing as a guest to improve
+                your knowledge across our quiz categories.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <section class="intro-success position-relative">
         <div class="container">
           <div class="ads mt-0 mb-3">
@@ -137,7 +165,7 @@
                   <h6 class="score_cointitle"></h6>
                 </div>
                 <div class="loginbtn-parent shimmer-parent row">
-                  <a class="loginbtn" href="/quiz.html" id="letsstart">
+                  <a class="loginbtn" href="/" id="letsstart">
                     <span class="shimmer">Let's Start</span>
                   </a>
                 </div>
@@ -165,6 +193,64 @@
         </div>
       </section>
     </main>
+
+    <script>
+      let usermode = "regular";
+      if (usermode == "block" && location.pathname != "/block") {
+        location.href = "/block";
+      }
+    </script>
+    <script>
+      var countryName;
+      var blocked =
+        "[&quot;AT&quot;,&quot;BE&quot;,&quot;BG&quot;,&quot;HR&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DK&quot;,&quot;EE&quot;,&quot;FI&quot;,&quot;FR&quot;,&quot;DE&quot;,&quot;GR&quot;,&quot;HU&quot;,&quot;IE&quot;,&quot;IT&quot;,&quot;LV&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;MT&quot;,&quot;NL&quot;,&quot;PL&quot;,&quot;PT&quot;,&quot;RO&quot;,&quot;SK&quot;,&quot;SI&quot;,&quot;ES&quot;,&quot;SE&quot;,&quot;IS&quot;,&quot;LI&quot;,&quot;NO&quot;,&quot;DZ&quot;,&quot;BH&quot;,&quot;EG&quot;,&quot;IR&quot;,&quot;IQ&quot;,&quot;IL&quot;,&quot;JO&quot;,&quot;KW&quot;,&quot;LB&quot;,&quot;LY&quot;,&quot;MA&quot;,&quot;OM&quot;,&quot;PS&quot;,&quot;QA&quot;,&quot;SA&quot;,&quot;SY&quot;,&quot;TN&quot;,&quot;AE&quot;,&quot;YE&quot;,&quot;GB&quot;,&quot;CH&quot;]";
+      var decodeCountry = decodeHTMLEntities(blocked);
+      var removeArrayBracket = decodeCountry.replace(/[\[\]']+/g, "");
+      var removeDoubleQuotes = removeArrayBracket.replace(
+        /"([^"]+(?="))"/g,
+        "$1"
+      );
+      var convertInArray = removeDoubleQuotes.split(",");
+      $(function () {
+        var uzone =
+          "{&quot;ip&quot;:&quot;77.111.247.57&quot;,&quot;country&quot;:&quot;NL&quot;}";
+        var userZone = decodeHTMLEntities(uzone);
+
+        // India flag show/hide script
+        if (userZone) {
+          userZone = JSON.parse(userZone);
+          countryName = userZone.country;
+          if (userZone.country != "IN") {
+            // console.log('cond is true');
+            $(".isIndia").css("display", "none");
+          }
+        }
+
+        // Signup button block for blocked countries
+        var blockedListArray = convertInArray;
+        var arraycontainsturtles = blockedListArray.indexOf(countryName) > -1;
+        if (arraycontainsturtles) {
+          console.log("Blocked Country Match");
+          $(document).on("click", ".blocked-countries-btn", function (e) {
+            e.stopPropagation();
+            $("#serviceNotAvailable").modal("show");
+            return false;
+          });
+        }
+
+        // Do not sell my info button hide
+        var optout = "";
+        if (optout != "true") {
+          $(".do-not-sell-myinfo-text").css("display", "block");
+        }
+        if (optout == "true") {
+          $(".do-not-sell-myinfo-text").hide();
+        }
+      });
+
+      $(document).on("click", ".fc-cta-do-not-consent", handleDoNotConsent);
+      $(document).on("click", ".fc-cta-consent", handleConsent);
+    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

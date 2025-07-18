@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="/css/custom.css" />
     <script src="/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/inline_styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <link rel="stylesheet" href="minified.css" />
 
     <style>
       a {
@@ -54,22 +57,270 @@
     </style>
   </head>
 
-  <body style="overflow-x: hidden; background-color: #fff5e1">
-    <main>
-      <div class="contianer" style="overflow-x: hidden">
-        <div class="row justify-content-center">
-          <div class="col" style="max-width: 385px">
-            <div class="row justify-content-center">
-              <div class="col-12" style="background-color: #00c9a7">
-                <a href="/">
-                  <center>
+  <body style="overflow-x: hidden; background-color: #1c1c3c">
+    <div class="container-fluid p-0" style="overflow-x: hidden">
+      <div class="row justify-content-center">
+        <div class="col" style="max-width: 385px">
+          <div
+            class="app-wrapper-container intro-question-screen-bg row justify-content-center"
+          >
+            <div class="col-12">
+              <a href="/">
+                <center>
+                  <img
+                    src="/quizadmin/images/logo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </center>
+              </a>
+            </div>
+            <div class="googleads">
+              <!-- Ads Here-->
+              <script
+                async
+                src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                crossorigin="anonymous"
+              ></script>
+              <script>
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                  googletag
+                    .defineSlot(
+                      "/23284951307/BF01",
+                      [336, 280],
+                      "div-gpt-ad-1752410932708-0"
+                    )
+                    .addService(googletag.pubads());
+                  googletag.enableServices();
+                });
+              </script>
+
+              <!-- /23284951307/BF01 -->
+              <div
+                id="div-gpt-ad-1752410932708-0"
+                style="min-width: 336px; min-height: 280px"
+              >
+                <script>
+                  googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1752410932708-0");
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                class="earninghead mt-3"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img class="coinstack" src="/assets/coinstack.png" alt="" />
+                <span id="availableBalance" style="color: #fff">100</span>
+              </div>
+              <div class="shimmer2 text-center" style="margin-top: 10px">
+                <div class="text-center">
+                  <a
+                    class="earningtext earningtext1"
+                    href="javascript:void(0);"
+                    onclick="rewared_ad()"
+                  >
                     <img
-                      src="/quizadmin/images/logo.png"
-                      alt="logo"
-                      class="img-fluid"
+                      style="width: 130px; height: 35px"
+                      src="/assets/qlite-gif-opt.gif"
+                      alt=""
                     />
-                  </center>
-                </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 0rem 1rem; padding-bottom: 3rem">
+              <div class="col-12 mt-2"></div>
+              <div class="col-12"></div>
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/finance.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Finance</h5>
+                      <h3>
+                        Win 10000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 10000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>5</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/finance/finance.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/ai.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>AI</h5>
+                      <h3>
+                        Win 5000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 5000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>Free</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/artificial_intelligence/artificial_intelligence.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/cricket.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Cricket</h5>
+                      <h3>
+                        Win 5000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 5000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>5</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/cricket/cricket.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/football.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Football</h5>
+                      <h3>
+                        Win 5000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 5000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>Free</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/football/football.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="googleads">
                 <!-- Ads Here-->
@@ -83,331 +334,594 @@
                   googletag.cmd.push(function () {
                     googletag
                       .defineSlot(
-                        "/23284951307/BF01",
-                        [336, 280],
-                        "div-gpt-ad-1752410932708-0"
+                        "/23284951307/BF02",
+                        [300, 250],
+                        "div-gpt-ad-1752410928619-0"
                       )
                       .addService(googletag.pubads());
                     googletag.enableServices();
                   });
                 </script>
 
-                <!-- /23284951307/BF01 -->
+                <!-- /23284951307/BF02 -->
                 <div
-                  id="div-gpt-ad-1752410932708-0"
-                  style="min-width: 336px; min-height: 280px"
+                  id="div-gpt-ad-1752410928619-0"
+                  style="min-width: 300px; min-height: 250px"
                 >
                   <script>
                     googletag.cmd.push(function () {
-                      googletag.display("div-gpt-ad-1752410932708-0");
+                      googletag.display("div-gpt-ad-1752410928619-0");
                     });
                   </script>
                 </div>
               </div>
-              <div
-                style="
-                  background-color: #ffc371;
-                  padding: 0rem 1rem;
-                  padding-bottom: 3rem;
-                "
-              >
-                <div class="col-12 mt-2"></div>
-                <div class="col-12"></div>
-                <div class="row mt-2 gap-4 p-3">
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/finance.jpeg"
-                        alt="India"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Finance</h5>
 
-                    <a href="/finance/finance.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/team sports.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Team Sports</h5>
+                      <h3>
+                        Win 10000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 10000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
                   </div>
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
                       <img
-                        src="/assets/img/ai.jpeg"
-                        alt="Australia"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
                       />
-                    </center>
-                    <h5 class="text-center mt-2">AI</h5>
+                      <span>Free</span>
+                    </div>
 
-                    <a
-                      href="/artificial_intelligence/artificial_intelligence.html"
-                    >
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
+                    <div class="playbtn">
+                      <a
+                        href="/teamsports/teamsports.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
                       >
-                        Play
-                      </button>
-                    </a>
+                    </div>
                   </div>
                 </div>
-                <div class="row mt-0 pt-2 gap-4 p-3">
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/cricket.jpeg"
-                        alt="Japan"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Cricket</h5>
+              </div>
 
-                    <a href="/cricket/cricket.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/cyber_security.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Cyber Security</h5>
+                      <h3>
+                        Win 10000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 10000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
                   </div>
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
                       <img
-                        src="/assets/img/football.jpeg"
-                        alt="Football"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
                       />
-                    </center>
-                    <h5 class="text-center mt-2">Football</h5>
+                      <span>Free</span>
+                    </div>
 
-                    <a href="/football/football.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
+                    <div class="playbtn">
+                      <a
+                        href="/cyber-security/cyber-security.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
                       >
-                        Play
-                      </button>
-                    </a>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="googleads">
-                  <!-- Ads Here-->
-                  <script
-                    async
-                    src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-                    crossorigin="anonymous"
-                  ></script>
-                  <script>
-                    window.googletag = window.googletag || { cmd: [] };
-                    googletag.cmd.push(function () {
-                      googletag
-                        .defineSlot(
-                          "/23284951307/BF02",
-                          [300, 250],
-                          "div-gpt-ad-1752410928619-0"
-                        )
-                        .addService(googletag.pubads());
-                      googletag.enableServices();
-                    });
-                  </script>
-
-                  <!-- /23284951307/BF02 -->
-                  <div
-                    id="div-gpt-ad-1752410928619-0"
-                    style="min-width: 300px; min-height: 250px"
-                  >
-                    <script>
-                      googletag.cmd.push(function () {
-                        googletag.display("div-gpt-ad-1752410928619-0");
-                      });
-                    </script>
-                  </div>
-                </div>
-
-                <div class="row mt-0 pt-2 gap-4 p-3">
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/team sports.jpeg"
-                        alt="Team Sports"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Team Sports</h5>
-
-                    <a href="/teamsports/teamsports.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
-                  </div>
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/mobile_technology.jpeg"
-                        alt="Mobile Technology"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Mobile Technology</h5>
-
-                    <a href="/mobile-technology/mobile-technology.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="row mt-0 pt-2 gap-4 p-3">
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/cyber_security.jpeg"
-                        alt="Cyber Security"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Cyber Security</h5>
-
-                    <a href="/cyber-security/cyber-security.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
-                  </div>
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
                       <img
                         src="/assets/img/international_relations.jpeg"
-                        alt="International Relations"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
+                        alt=""
                       />
-                    </center>
-                    <h5 class="text-center mt-2">International Relations</h5>
-
-                    <a
-                      href="/international-relations/international-relations.html"
-                    >
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
+                    </div>
+                    <div class="content">
+                      <h5>International Relations</h5>
+                      <h3>
+                        Win 5000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 5000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-                <div class="row mt-0 pt-2 gap-4 p-3">
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
                       <img
-                        src="/assets/img/science.jpeg"
-                        alt="Science"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
                       />
-                    </center>
-                    <h5 class="text-center mt-2">Science</h5>
+                      <span>5</span>
+                    </div>
 
-                    <a href="/science/science.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
+                    <div class="playbtn">
+                      <a
+                        href="/international-relations/international-relations.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
                       >
-                        Play
-                      </button>
-                    </a>
-                  </div>
-                  <div
-                    class="col p-2"
-                    style="border-radius: 12px; border: 1px solid #ff5f6d"
-                  >
-                    <center>
-                      <img
-                        src="/assets/img/literature.jpeg"
-                        alt="Literature"
-                        class="img-fluid"
-                        style="border-radius: 6px; height: 80px; width: 100%"
-                      />
-                    </center>
-                    <h5 class="text-center mt-2">Literature</h5>
-
-                    <a href="/literature/literature.html">
-                      <button
-                        type="button"
-                        class="btn py-1 px-4 w-100"
-                        style="background-color: #ff5f6d; color: #fff"
-                      >
-                        Play
-                      </button>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/mobile_technology.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Mobile Technology</h5>
+                      <h3>
+                        Win 10000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 10000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>5</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/mobile-technology/mobile-technology.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/science.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Science</h5>
+                      <h3>
+                        Win 10000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 10000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>5</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/science/science.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gap-4 p-2">
+                <div class="repeater">
+                  <!-- <div class="userplaying text-right w-100"><span class="active-sign"></span><small>39</small>  users playing</div> -->
+                  <div class="quiz-info position-relative w-100 mt-1">
+                    <div class="icon">
+                      <img src="/assets/img/literature.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h5>Literature</h5>
+                      <h3>
+                        Win 5000 coins
+                        <img
+                          src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                          alt=""
+                        /><span> 5000</span>
+                      </h3>
+                      <h6>
+                        Winner announcement:
+                        <span id="quizcontest_31251">02:44:27</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="w-100 entry-fees-and-playbtn">
+                    <div class="live-btn">
+                      <span class="active-sign"></span>Live
+                    </div>
+                    <div class="entry-fees">
+                      Entry :
+                      <img
+                        src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                        alt=""
+                      />
+                      <span>5</span>
+                    </div>
+
+                    <div class="playbtn">
+                      <a
+                        href="/literature/literature.html"
+                        id="quizcontest_play_31251"
+                        >Play Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row mt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    border: 1px solid #ccc;
+                    margin: 0 auto 10px;
+                    background: #fff;
+                  "
+                >
+                  <center>
+                    <img
+                      src="/assets/img/finance.jpeg"
+                      alt="India"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Finance
+                  </h5>
+
+                  <a href="/finance/finance.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
+              <!-- <div class="row mt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/ai.jpeg"
+                      alt="Australia"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">AI</h5>
+
+                  <a
+                    href="/artificial_intelligence/artificial_intelligence.html"
+                  >
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
+              <!-- <div class="row mt-0 pt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/cricket.jpeg"
+                      alt="Japan"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Cricket
+                  </h5>
+
+                  <a href="/cricket/cricket.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/football.jpeg"
+                      alt="Football"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Football
+                  </h5>
+
+                  <a href="/football/football.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
+
+              <!-- <div class="row mt-0 pt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/team sports.jpeg"
+                      alt="Team Sports"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Team Sports
+                  </h5>
+
+                  <a href="/teamsports/teamsports.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/mobile_technology.jpeg"
+                      alt="Mobile Technology"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Mobile Technology
+                  </h5>
+
+                  <a href="/mobile-technology/mobile-technology.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
+
+              <!-- <div class="row mt-0 pt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/cyber_security.jpeg"
+                      alt="Cyber Security"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Cyber Security
+                  </h5>
+
+                  <a href="/cyber-security/cyber-security.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/international_relations.jpeg"
+                      alt="International Relations"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    International Relations
+                  </h5>
+
+                  <a
+                    href="/international-relations/international-relations.html"
+                  >
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
+              <!-- <div class="row mt-0 pt-2 gap-4 p-3">
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/science.jpeg"
+                      alt="Science"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Science
+                  </h5>
+
+                  <a href="/science/science.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="col p-2"
+                  style="border-radius: 12px; border: 1px solid #ff5c8a"
+                >
+                  <center>
+                    <img
+                      src="/assets/img/literature.jpeg"
+                      alt="Literature"
+                      class="img-fluid"
+                      style="border-radius: 6px; height: 80px; width: 100%"
+                    />
+                  </center>
+                  <h5 class="text-center mt-2" style="color: #f8f8ff">
+                    Literature
+                  </h5>
+
+                  <a href="/literature/literature.html">
+                    <button
+                      type="button"
+                      class="btn py-1 px-4 w-100"
+                      style="background-color: #ff5c8a; color: #fff"
+                    >
+                      Play
+                    </button>
+                  </a>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+
     <footer>
       <div class="sticky_ad_beta" id="sticky_ad_beta">
         <span class="close_sticky_ad_beta" id="close_sticky_ad_beta"> × </span>

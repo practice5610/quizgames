@@ -1,48 +1,41 @@
+a {
+  text-decoration: none !important;
+}
 
-        a {
-            text-decoration: none !important;
-            color: #fff !important;
-        }
+.result-button {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-        .result-button {
-            display: flex;
-            justify-content: space-evenly;
-        }
-    
+.iz-branding {
+  display: none !important;
+}
 
-
-        .iz-branding {
-            display: none !important;
-        }
-    
-
-
-      .sticky_ad_beta {
-        width: 100%;
-        float: left;
-        text-align: center;
-        background: #fff;
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        z-index: 99;
-        padding-top: 4px;
-        box-shadow: 0 -3px 3px rgba(0, 0, 0, .2)!important;
-    }
-    footer{
-       padding-bottom: 120px;
-    }
-    .close_sticky_ad_beta{
-        position: absolute;
-        top: -20px;
-        background: #fff;
-        color: #000;
-        right: 12px;
-        height: 20px;
-        width: 20px;
-        font-size: 26px;
-        line-height: 23px;
-        box-shadow: 0 -3px 3px rgba(0, 0, 0, .2)!important;
-        border-radius: 2px 2px 0 0;
-    }
-    
+.sticky_ad_beta {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  padding-top: 4px;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.2) !important;
+}
+footer {
+  padding-bottom: 120px;
+}
+.close_sticky_ad_beta {
+  position: absolute;
+  top: -20px;
+  background: #fff;
+  color: #000;
+  right: 12px;
+  height: 20px;
+  width: 20px;
+  font-size: 26px;
+  line-height: 23px;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 2px 2px 0 0;
+}

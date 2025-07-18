@@ -1,0 +1,518 @@
+body {
+  height: 100% !important;
+  background: url("/webappbdg.jpg") 0% 0% / cover no-repeat !important;
+}
+
+.app-wrapper-container {
+  max-width: 360px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #1a3881;
+  scrollbar-color: #eee transparent;
+  scrollbar-width: thin;
+  background: url("./bg.png") bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.quiz-container {
+  /*	max-width: 500px; */
+  background-color: #f1f1f1;
+  border-radius: 0;
+  padding: 10px;
+  /*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /*	width: 20%; */
+  min-height: calc(100vh - 76px);
+}
+#question-No {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f8f8ff;
+}
+
+#answer-buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  grid-gap: 10px;
+}
+button,
+.button {
+  height: auto;
+  min-height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 8px !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 25px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home-button {
+  border-radius: 5px !important;
+  height: auto;
+  font-size: 16px;
+  background-color: #758aab;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgba(206, 206, 206, 0.2);
+  color: #fff;
+}
+
+#controls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#timer-text {
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+}
+
+#timer {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.contentList_contentList__XvCWH h2 {
+  font-size: 22px;
+  font-weight: 700;
+  /* margin-bottom: 32px; */
+  position: relative;
+  text-align: center;
+}
+.funFact_funFact__9qqdA {
+  margin-top: 16px;
+  padding: 16px 8px;
+  border-radius: 16px;
+  background: #3737371a;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 93px;
+}
+.funFact_funFact__9qqdA p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.contentList_contentList__XvCWH ul li {
+  /* line-height: 1.4; */
+  /* padding-bottom: 24px; */
+  /* padding-left: 40px; */
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  color: #969696;
+}
+.playNow_playNow__HQEAM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* color: #fff; */
+  position: relative;
+  border-radius: 16px;
+  background: #3737371a;
+  margin-top: 0;
+  padding: 16px 30px 8px;
+  min-height: 200px;
+  margin-bottom: 16px;
+}
+.playNow_playNow__HQEAM h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.playNow_playNow__HQEAM p {
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  font-size: 15px;
+  color: #3a3a3a;
+  line-height: 22px;
+}
+
+.repeater {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 32px !important;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 auto 10px;
+}
+
+.repeater .live-btn {
+  color: #6dc658;
+  font-size: 11px;
+  font-weight: 600;
+}
+.repeater .entry-fees {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+.repeater .icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 48px;
+  height: 48px;
+}
+.repeater .icon img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.repeater .content {
+  padding-left: 26%;
+}
+.repeater .content h5 {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.repeater .content h3 {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+.repeater .content h3 img {
+  width: 100%;
+  max-width: 25px;
+}
+.repeater .content h6 {
+  color: #999;
+  font-size: 12px;
+  margin: 0;
+}
+.repeater .playbtn a {
+  color: #000 !important;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 7px 18px;
+  border: 1px solid #9015c5;
+  text-decoration: none;
+}
+.repeater .entry-fees img {
+  width: 100%;
+  max-width: 25px;
+}
+.entry-fees-and-playbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0;
+}
+
+.quizhead {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+
+.winners-information {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 14px;
+}
+.view-rand-block {
+  align-items: center;
+  justify-content: center;
+}
+.view-rand-block .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.view-rand-block .icon img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.winners-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.winners-information .or-with-anchor .text-anchor1 {
+  font-weight: 600;
+  border: 1px solid #9014c5;
+  width: 50%;
+  margin: auto;
+  padding: 11px 19px;
+  border-radius: 7px;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.points-list {
+  padding: 9px 2px 0 6px;
+}
+.points-list ul {
+  list-style: none;
+}
+.points-list ul li {
+  color: #fff;
+  font-size: 13.3px;
+  margin-top: 10px;
+  position: relative;
+  line-height: 1.5;
+  padding-left: 19px;
+}
+.points-list ul li::before {
+  color: #9014c5;
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 24%;
+  transform: translateY(-50%);
+  font-size: 27px;
+}
+
+.points li {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+}
+.points li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: #fcff07;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.new-introsuccess-page {
+  position: relative;
+  background-size: 310px;
+  min-height: 210px;
+  width: 100%;
+  max-width: 310px;
+  margin: 0 auto 10px;
+  background-color: #fff;
+  border-radius: 0 60px;
+}
+.new-introsuccess-page:before {
+  background: url(https://fecdn20.qureka.com/assets/newui_assets/newui/images/intro-screen-yellowline.png)
+    no-repeat bottom left;
+  width: 8px;
+  height: 199px;
+  background-size: 100%;
+  top: 0;
+  left: -1px;
+}
+.new-introsuccess-page h3 {
+  font-weight: 700;
+  color: #9015c5;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+.your-coins {
+  padding: 8px 15px 8px 95px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  position: relative;
+  height: 72px;
+  width: 100%;
+  max-width: 340px;
+  margin: 20px auto 8px;
+
+  background: linear-gradient(
+    90deg,
+    #fff 0,
+    #fff 18%,
+    #f8f8f8 19%,
+    #f8f8f8 100%
+  );
+}
+.intro-coin {
+  height: 85px;
+  width: 85px;
+  background: #fff548;
+  border-radius: 50px;
+  border: 5px solid #fecd4d;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: -6px;
+  padding: 18px 5px;
+}
+.intro-coin .large-size {
+  font-size: 26px;
+  letter-spacing: 0;
+  color: #000;
+}
+.intro-coin p {
+  line-height: 20px;
+  font-size: 18px;
+  text-transform: lowercase;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #000;
+  margin: 0;
+}
+.your-coins h6 {
+  font-weight: 700;
+  color: #3a3045;
+  font-size: 22px;
+  margin: 0;
+}
+.your-coins h6 span {
+  color: #ffae00;
+  font-weight: 700;
+}
+.your-coins h6 small {
+  float: left;
+  width: 100%;
+  font-weight: 700;
+}
+.new-introsuccess-page .loginbtn-parent {
+  width: initial;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+.new-introsuccess-page .loginbtn-parent .loginbtn {
+  background: transparent
+    url(https://fecdn20.qureka.com/assets/newui_assets/newui/images/button-witouttext.png)
+    no-repeat top right;
+  width: 100%;
+  max-width: 179px;
+  float: right;
+  background-size: cover;
+  margin: 0;
+  margin-right: -16px;
+  line-height: 46px;
+  font-size: 22px;
+  padding: 0 0 20px;
+}
+.shimmer {
+  text-align: center;
+  color: rgb(255 255 255 / 0%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fff548),
+    to(#fff548),
+    color-stop(0.5, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+.new-introsuccess-page .loginbtn-parent .loginbtn .shimmer {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+  background-size: 40px 100%;
+}
+.new-introsuccess-page .bottom-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 0 0 18px;
+  text-align: left;
+  display: inline-block;
+  margin: -10px 0 0;
+}
+.new-introsuccess-page:after {
+  background: url("https://fecdn20.qureka.com/assets/newui_assets/newui/images/intro-screen-blueline.png")
+    no-repeat top right;
+  width: 8px;
+  height: 120px;
+  background-size: 100%;
+  top: 50px;
+  content: "";
+  right: 0;
+}

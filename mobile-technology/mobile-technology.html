@@ -36,28 +36,36 @@
     <link rel="stylesheet" href="/css/custom.css" />
     <script src="/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/inline_styles.css" />
-
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../minified.css" />
+    <script
+      src="https://kit.fontawesome.com/cbb92bd480.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       a {
         text-decoration: none !important;
-        color: #fff !important;
       }
 
       .result-button {
         display: flex;
         justify-content: space-evenly;
       }
+
       .iz-branding {
         display: none !important;
       }
     </style>
   </head>
-  <body style="overflow-x: hidden; background-color: #FFF5E1 ">
+
+  <body style="overflow-x: hidden">
     <div class="container-fluid p-0" style="overflow-x: hidden">
       <div class="row justify-content-center">
         <div class="col" style="max-width: 385px">
-          <div class="row justify-content-center">
-            <div class="col-12" style="background-color: #00c9a7">
+          <div
+            class="app-wrapper-container intro-question-screen-bg row justify-content-center"
+          >
+            <div class="col-12">
               <a href="/">
                 <center>
                   <img
@@ -67,6 +75,12 @@
                   />
                 </center>
               </a>
+            </div>
+            <div class="quizhead">
+              <a href="../quiz.html"
+                ><i class="fas fa-arrow-left" style="color: #f8f8ff"></i
+              ></a>
+              back
             </div>
             <div class="googleads">
               <!-- Ads Here-->
@@ -101,72 +115,128 @@
                 </script>
               </div>
             </div>
-            <div style="background-color: #ffc371">
-              <div class="col-12 my-3" style="height: auto"></div>
-              <div class="quiz-container" style="background-color: #ffc371">
-                <h1>Mobile Technology quiz</h1>
-
-                <center>
-                  <img
-                    src="../assets/img/mobile_technology.jpeg"
-                    alt=""
-                    id="flage"
-                  />
-                </center>
-                <div id="question-container">
-                  <h4 id="question-No"></h4>
-
-                  <p id="question-text"></p>
-                  <div id="answer-buttons"></div>
+            <div></div>
+            <div class="winners-information w-100 mt-3">
+              <div class="view-rand-block w-100 d-flex mb-2">
+                <div class="icon">
+                  <img class="" src="../assets/img/literature.jpeg" alt="" />
                 </div>
-                <div id="controls-container">
-                  <button
-                    id="start-button"
-                    style="margin-bottom: 10px; background-color: #ff5f6d"
-                    onclick="hideImage()"
+                <div class="content pl-4">
+                  <h3 style="color: black">Win 10000 Coins</h3>
+                  <h2>
+                    <img
+                      class=""
+                      src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                      data-src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png"
+                      alt=""
+                    /><span style="color: black"> 10000</span>
+                  </h2>
+                  <a
+                    href="javascript:void(0);"
+                    class="text-anchor"
+                    style="color: black"
+                    >View Rank Breakup</a
                   >
-                    Start Quiz
-                  </button>
-                  <div id="timer-container">
-                    <span id="timer-text"
-                      >Time Left: <span id="timer">0</span></span
-                    >
+                </div>
+              </div>
+
+              <ul class="winners-list">
+                <li><i class="fas fa-check-circle"></i> You got 140 seconds</li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Answer as many questions
+                  as you can
+                </li>
+              </ul>
+
+              <div class="or-with-anchor text-center">
+                <a
+                  href="javascript:void(0);"
+                  class="text-anchor1"
+                  id="start-button"
+                  style="color: black"
+                  onclick="hideImage()"
+                  >Play Quiz</a
+                >
+              </div>
+            </div>
+            <div class="question-count-and-counter my-5" style="display: none">
+              <input
+                type="hidden"
+                class="questionCount"
+                name="questionCount"
+                value="1"
+              />
+              <h6><span class="currentQuesCount">1</span>/20</h6>
+              <div class="counter">
+                <div class="circle">
+                  <svg width="50" viewBox="0 0 220 220">
+                    <g transform="translate(110,110)">
+                      <circle r="100" class="e-c-base"></circle>
+                      <g transform="rotate(-90)">
+                        <circle
+                          r="100"
+                          class="e-c-progress"
+                          style="
+                            stroke-dasharray: 628.319;
+                            stroke-dashoffset: -989.602;
+                          "
+                        ></circle>
+                        <g id="e-pointer" style="transform: rotate(207deg)">
+                          <circle
+                            cx="100"
+                            cy="0"
+                            r="8"
+                            class="e-c-pointer"
+                          ></circle>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <div class="controlls">
+                    <div class="display-remain-time">140</div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="googleads">
-            <!-- Ads Here-->
-            <script
-              async
-              src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-              crossorigin="anonymous"
-            ></script>
-            <script>
-              window.googletag = window.googletag || { cmd: [] };
-              googletag.cmd.push(function () {
-                googletag
-                  .defineSlot(
-                    "/23284951307/BF02",
-                    [300, 250],
-                    "div-gpt-ad-1752410928619-0"
-                  )
-                  .addService(googletag.pubads());
-                googletag.enableServices();
-              });
-            </script>
-
-            <!-- /23284951307/BF02 -->
-            <div
-              id="div-gpt-ad-1752410928619-0"
-              style="min-width: 300px; min-height: 250px"
-            >
+            <div class="quiz-container" style="background: none">
+              <div id="question-container">
+                <h4 id="question-No" style="color: #f8f8ff"></h4>
+                <p id="question-text"></p>
+                <div id="answer-buttons"></div>
+              </div>
+            </div>
+            <div class="googleads">
+              <!-- Ads Here-->
+              <script
+                async
+                src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                crossorigin="anonymous"
+              ></script>
               <script>
+                window.googletag = window.googletag || { cmd: [] };
                 googletag.cmd.push(function () {
-                  googletag.display("div-gpt-ad-1752410928619-0");
+                  googletag
+                    .defineSlot(
+                      "/23284951307/BF02",
+                      [300, 250],
+                      "div-gpt-ad-1752410928619-0"
+                    )
+                    .addService(googletag.pubads());
+                  googletag.enableServices();
                 });
               </script>
+
+              <!-- /23284951307/BF02 -->
+              <div
+                id="div-gpt-ad-1752410928619-0"
+                style="min-width: 300px; min-height: 250px"
+              >
+                <script>
+                  googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1752410928619-0");
+                  });
+                </script>
+              </div>
             </div>
           </div>
         </div>
@@ -389,6 +459,16 @@
       function startQuiz() {
         // Hide the start button and display the first question
         document.getElementById("start-button").style.display = "none";
+        // Hide the winners-information card
+        var winnersInfo = document.querySelector(".winners-information");
+        if (winnersInfo) {
+          winnersInfo.style.display = "none";
+        }
+        // Show the counter
+        var counterRow = document.querySelector(".question-count-and-counter");
+        if (counterRow) {
+          counterRow.style.display = "flex";
+        }
         displayQuestion();
         startTimer();
       }
@@ -405,42 +485,68 @@
         questionText.innerHTML = "";
         answerButtons.innerHTML = "";
 
-        // Display the current question
-        questionNo.innerHTML = currentQuestion.question_no;
         questionText.innerHTML = currentQuestion.question;
+
+        // Update the counter above the timer
+        var currentQuesCount = document.querySelector(".currentQuesCount");
+        if (currentQuesCount) {
+          currentQuesCount.textContent = currentQuestionIndex + 1;
+        }
+        // If you want to ensure the total is always 20, you can also update the /20 part if needed
+        // var totalQuesCount = document.querySelector('.totalQuesCount');
+        // if (totalQuesCount) {
+        //   totalQuesCount.textContent = quizQuestions.length;
+        // }
 
         // Create answer buttons for each option
         currentQuestion.options.forEach((option) => {
           const button = document.createElement("button");
-          button.innerText = option;
           button.classList.add("answer-button");
-          button.style.backgroundColor = "#FF5F6D";
+          button.style.display = "flex";
+          button.style.alignItems = "center";
+          button.style.justifyContent = "space-between";
+          button.style.textAlign = "left";
+
+          // Add text and emoji spans
+          const textSpan = document.createElement("span");
+          textSpan.className = "btn-text";
+          textSpan.textContent = option;
+          const emojiSpan = document.createElement("span");
+          emojiSpan.className = "btn-emoji";
+          button.appendChild(textSpan);
+          button.appendChild(emojiSpan);
+
           answerButtons.appendChild(button);
 
           // Add click event listener to check the answer
           button.addEventListener("click", function () {
-            checkAnswer(option);
+            // Disable all buttons
+            const allButtons = document.querySelectorAll(".answer-button");
+            allButtons.forEach((b) => (b.disabled = true));
+
+            // Check if the selected answer is correct
+            if (option === currentQuestion.correctAnswer) {
+              button.style.backgroundColor = "#28a745";
+              button.style.border = "none";
+              emojiSpan.textContent = "😊";
+              score++;
+            } else {
+              button.style.backgroundColor = "#dc3545";
+              button.style.border = "none";
+              emojiSpan.textContent = "😢";
+            }
+
+            // Move to the next question or end the quiz after a short delay
+            setTimeout(() => {
+              currentQuestionIndex++;
+              if (currentQuestionIndex < quizQuestions.length) {
+                displayQuestion();
+              } else {
+                endQuiz();
+              }
+            }, 700);
           });
         });
-      }
-
-      // Function to check the selected answer
-      function checkAnswer(selectedOption) {
-        const currentQuestion = quizQuestions[currentQuestionIndex];
-
-        // Check if the selected answer is correct
-        if (selectedOption === currentQuestion.correctAnswer) {
-          score++;
-        }
-
-        // Move to the next question or end the quiz if all questions are answered
-        currentQuestionIndex++;
-
-        if (currentQuestionIndex < quizQuestions.length) {
-          displayQuestion();
-        } else {
-          endQuiz();
-        }
       }
 
       // Function to start the timer
@@ -448,8 +554,11 @@
         timerInterval = setInterval(function () {
           timeLeft--;
 
-          // Update the timer text
-          document.getElementById("timer").textContent = timeLeft;
+          // Update the timer text in the correct element
+          var timerDisplay = document.querySelector(".display-remain-time");
+          if (timerDisplay) {
+            timerDisplay.textContent = timeLeft;
+          }
 
           // End the quiz if time runs out
           if (timeLeft <= 0) {
@@ -465,21 +574,78 @@
 
         // Calculate the score percentage
         const scorePercentage = (score / quizQuestions.length) * 100;
-
+        const counter = document.querySelector(".question-count-and-counter");
+        counter.style.display = "none";
         // Display the final score
         const questionContainer = document.getElementById("question-container");
         questionContainer.innerHTML = `
-<h2>Quiz Completed!</h2>
-<p>Your Score: ${score} out of ${quizQuestions.length}</p>
-<p>Score Percentage: ${scorePercentage}%</p>
-<center class="result-button">
-    <a href="/">
-        <button id="home-button" style="background-color:#FF5F6D">Play Other quiz</button>
-    </a>
-    <a href="">
-        <button id="home-button" style="background-color:#FF5F6D">Play Again</button>
-    </a>
-</center>
+        
+
+<div class="view-rand-block w-100 d-flex mt-4 mb-3 gap-2 ">
+                <div class="icon"><img class="" src="../assets/img/mobile_technology.jpeg" alt=""></div>
+                <div class="content text-left">
+                  <h3>Win 5000 Coins</h3>
+                  <h2>Time's up, well played!</h2>
+                  <h5 style="color:#fff">Your score : <span>${score}</span></h5>
+                </div>
+              </div>
+              <div class="score-guest-content text-center mb-3">
+                <h4>Based on your score, you can win <img class="" src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png" alt=""> 10</h4>
+                                <!-- <h4>Want to continue playing as guest?</h4> -->
+                <span>Try any of the following contest to continue playing</span>
+                              </div>
+                              <div class="playmorequizzes">
+                                <div class="cricket-and-quiz-tabs couple-quizz">
+                  <div class="tab-content">
+                                                              <div class="repeater">
+                   <!--   <div class="userplaying text-right w-100"><span class="active-sign"></span><small>40 </small>  users playing</div> -->
+                      <div class="quiz-info position-relative w-100 mt-1">
+                        <div class="icon"><img class="" src="../assets/img/science.jpeg" alt=""></div>
+                        <div class="content">
+                          <h5>Science</h5>
+                          <h3>Play &amp; Win: <img class="" src="../assets/coinstack.png" alt=""><span> 5000</span></h3>
+                          <h6>Winner announcement: <span id="similarcontest_31271">00:09:59</span></h6>
+                        </div>
+                      </div>
+                      <div class="w-100 entry-fees-and-playbtn">
+                        <div class="live-btn"><span class="active-sign"></span>Live</div>
+                        <div class="entry-fees">Entry : 
+                                                      <img class="" src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png" data-src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png" alt=""><span> 5 </span>
+                                                </div>
+
+                      
+                        <div class="playbtn">
+                          <a href="/science/science.html" id="contest_play_31271" onclick="isTimeOut('2025-07-18 19:15:00','180','contest_play_31271', '5');">Play Now</a>
+                        </div>
+                      </div>
+                    </div>
+                                                                                <div class="repeater">
+                   <!--   <div class="userplaying text-right w-100"><span class="active-sign"></span><small>57 </small>  users playing</div> -->
+                      <div class="quiz-info position-relative w-100 mt-1">
+                        <div class="icon"><img class="" src="../assets/img/cricket.jpeg" alt=""></div>
+                        <div class="content">
+                          <h5>Cricket</h5>
+                          <h3>Play &amp; Win: <img class="" src="../assets/coinstack.png"  alt=""><span> 10000</span></h3>
+                          <h6>Winner announcement: <span id="similarcontest_31272">00:24:59</span></h6>
+                        </div>
+                      </div>
+                      <div class="w-100 entry-fees-and-playbtn">
+                        <div class="live-btn"><span class="active-sign"></span>Live</div>
+                        <div class="entry-fees">Entry : 
+                                                      <img class="" src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png" data-src="https://fetocdn.qureka.com/assets/newui_assets/newui/images/coinstack.png" alt=""><span> 10 </span>
+                                                </div>
+
+                      
+                        <div class="playbtn">
+                          <a href="/cricket/cricket.html" id="contest_play_31272" onclick="isTimeOut('2025-07-18 19:30:00','180','contest_play_31272', '10');">Play Now</a>
+                        </div>
+                      </div>
+                    </div>
+                                                                                                                                                                                                                                                                  
+                  </div>
+                </div>
+              </div>
+
 `;
       }
 
