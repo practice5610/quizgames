@@ -22,7 +22,7 @@
 
     const adDiv = document.createElement("div");
     adDiv.id = slotId;
-    adDiv.style.minWidth = `${width}px`;
+    adDiv.style.width = `100%`;
     adDiv.style.minHeight = `${height}px`;
     container.appendChild(adDiv);
 
